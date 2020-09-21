@@ -1,3 +1,4 @@
+
 module: ietf-flexi-grid-topology
   augment /nw:networks/nw:network/nw:network-types/tet:te-topology:
     +--rw flexi-grid-topology!
@@ -7,65 +8,109 @@ module: ietf-flexi-grid-topology
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:te-node-attributes/tet:connectivity-matrices
             /tet:label-restrictions/tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:te-node-attributes/tet:connectivity-matrices
             /tet:connectivity-matrix/tet:from/tet:label-restrictions
             /tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:te-node-attributes/tet:connectivity-matrices
             /tet:connectivity-matrix/tet:to/tet:label-restrictions
             /tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:information-source-entry/tet:connectivity-matrices
             /tet:label-restrictions/tet:label-restriction:
-    +--ro grid-type?   identityref
-    +--ro priority?    uint8
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:information-source-entry/tet:connectivity-matrices
             /tet:connectivity-matrix/tet:from/tet:label-restrictions
             /tet:label-restriction:
-    +--ro grid-type?   identityref
-    +--ro priority?    uint8
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:information-source-entry/tet:connectivity-matrices
             /tet:connectivity-matrix/tet:to/tet:label-restrictions
             /tet:label-restriction:
-    +--ro grid-type?   identityref
-    +--ro priority?    uint8
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:tunnel-termination-point
             /tet:local-link-connectivities/tet:label-restrictions
             /tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:tunnel-termination-point
             /tet:local-link-connectivities
             /tet:local-link-connectivity/tet:label-restrictions
             /tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nt:link/tet:te
             /tet:te-link-attributes/tet:label-restrictions
             /tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nt:link/tet:te
             /tet:information-source-entry/tet:label-restrictions
             /tet:label-restriction:
-    +--ro grid-type?   identityref
-    +--ro priority?    uint8
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
   augment /nw:networks/tet:te/tet:templates/tet:link-template
             /tet:te-link-attributes/tet:label-restrictions
             /tet:label-restriction:
-    +--rw grid-type?   identityref
-    +--rw priority?    uint8
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
   augment /nw:networks/nw:network/nw:node/tet:te
             /tet:te-node-attributes/tet:connectivity-matrices
             /tet:label-restrictions/tet:label-restriction
