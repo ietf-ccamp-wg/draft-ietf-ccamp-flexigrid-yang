@@ -68,7 +68,7 @@ module ietf-flexi-grid-topology {
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2020-09-17 {
+  revision 2020-09-21 {
     description
       "Initial Version";
     reference
@@ -124,7 +124,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TE node
        connectivity matrices.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -140,7 +140,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the source LTP
        of the connectivity matrix entry.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -156,7 +156,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the destination LTP
        of the connectivity matrix entry.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -172,7 +172,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TE node
        connectivity matrices information source.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -188,7 +188,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the source LTP
        of the connectivity matrix entry information source.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -204,7 +204,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the destination LTP
        of the connectivity matrix entry information source.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -220,7 +220,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TTP
        Local Link Connectivities.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -237,7 +237,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TTP
        Local Link Connectivity entry.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nt:link/tet:te/"
@@ -251,7 +251,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label range information for the TE link.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/nw:network/nt:link/tet:te/"
@@ -266,7 +266,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TE link
        information source.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   augment "/nw:networks/tet:te/tet:templates/"
@@ -274,7 +274,7 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction" {
     description
       "Augment TE label range information for the TE link template.";
-    uses l0-types:l0-label-range-info;
+    uses l0-types:flexi-grid-label-range-info;
   }
 
   /*
