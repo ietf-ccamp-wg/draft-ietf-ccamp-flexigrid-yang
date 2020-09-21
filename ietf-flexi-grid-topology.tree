@@ -1,0 +1,831 @@
+
+module: ietf-flexi-grid-topology
+  augment /nw:networks/nw:network/nw:network-types/tet:te-topology:
+    +--rw flexi-grid-topology!
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes:
+    +--rw flexi-grid-node!
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction:
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction:
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction:
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:label-restrictions
+            /tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:label-restrictions
+            /tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:information-source-entry/tet:label-restrictions
+            /tet:label-restriction:
+    +--ro grid-type?    identityref
+    +--ro priority?     uint8
+    +--ro flexi-grid
+       +--ro slot-width-granularity?   identityref
+       +--ro min-slot-width-factor?    uint16
+       +--ro max-slot-width-factor?    uint16
+  augment /nw:networks/tet:te/tet:templates/tet:link-template
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction:
+    +--rw grid-type?    identityref
+    +--rw priority?     uint8
+    +--rw flexi-grid
+       +--rw slot-width-granularity?   identityref
+       +--rw min-slot-width-factor?    uint16
+       +--rw max-slot-width-factor?    uint16
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction
+            /tet:label-start/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction
+            /tet:label-end/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction
+            /tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:underlay/tet:primary-path/tet:path-element/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:underlay/tet:backup-path/tet:path-element/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:optimizations/tet:algorithm/tet:metric
+            /tet:optimization-metric
+            /tet:explicit-route-exclude-objects
+            /tet:route-object-exclude-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:optimizations/tet:algorithm/tet:metric
+            /tet:optimization-metric
+            /tet:explicit-route-include-objects
+            /tet:route-object-include-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:path-properties/tet:path-route-objects
+            /tet:path-route-object/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:underlay/tet:primary-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:underlay/tet:backup-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:optimizations/tet:algorithm
+            /tet:metric/tet:optimization-metric
+            /tet:explicit-route-exclude-objects
+            /tet:route-object-exclude-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:optimizations/tet:algorithm
+            /tet:metric/tet:optimization-metric
+            /tet:explicit-route-include-objects
+            /tet:route-object-include-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:te-node-attributes/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:path-properties
+            /tet:path-route-objects/tet:path-route-object/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction
+            /tet:label-start/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction
+            /tet:label-end/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:label-restrictions/tet:label-restriction
+            /tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-grid-channel-spacing?   identityref
+       +--ro flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:underlay/tet:primary-path/tet:path-element/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:underlay/tet:backup-path/tet:path-element/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:optimizations/tet:algorithm/tet:metric
+            /tet:optimization-metric
+            /tet:explicit-route-exclude-objects
+            /tet:route-object-exclude-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:optimizations/tet:algorithm/tet:metric
+            /tet:optimization-metric
+            /tet:explicit-route-include-objects
+            /tet:route-object-include-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:path-properties/tet:path-route-objects
+            /tet:path-route-object/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:from/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-grid-channel-spacing?   identityref
+       +--ro flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:to/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-grid-channel-spacing?   identityref
+       +--ro flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:underlay/tet:primary-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:underlay/tet:backup-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:optimizations/tet:algorithm
+            /tet:metric/tet:optimization-metric
+            /tet:explicit-route-exclude-objects
+            /tet:route-object-exclude-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:optimizations/tet:algorithm
+            /tet:metric/tet:optimization-metric
+            /tet:explicit-route-include-objects
+            /tet:route-object-include-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:information-source-entry/tet:connectivity-matrices
+            /tet:connectivity-matrix/tet:path-properties
+            /tet:path-route-objects/tet:path-route-object/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:underlay
+            /tet:primary-path/tet:path-element/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:underlay
+            /tet:backup-path/tet:path-element/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:optimizations
+            /tet:algorithm/tet:metric/tet:optimization-metric
+            /tet:explicit-route-exclude-objects
+            /tet:route-object-exclude-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:optimizations
+            /tet:algorithm/tet:metric/tet:optimization-metric
+            /tet:explicit-route-include-objects
+            /tet:route-object-include-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities/tet:path-properties
+            /tet:path-route-objects/tet:path-route-object/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:underlay
+            /tet:primary-path/tet:path-element/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:underlay/tet:backup-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:optimizations
+            /tet:algorithm/tet:metric/tet:optimization-metric
+            /tet:explicit-route-exclude-objects
+            /tet:route-object-exclude-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:optimizations
+            /tet:algorithm/tet:metric/tet:optimization-metric
+            /tet:explicit-route-include-objects
+            /tet:route-object-include-object/tet:type/tet:label
+            /tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nw:node/tet:te
+            /tet:tunnel-termination-point
+            /tet:local-link-connectivities
+            /tet:local-link-connectivity/tet:path-properties
+            /tet:path-route-objects/tet:path-route-object/tet:type
+            /tet:label/tet:label-hop/tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--ro (single-or-super-channel)?
+          +--:(single)
+          |  +--ro flexi-n?              l0-types:flexi-n
+          |  +--ro flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--ro subcarrier-flexi-n* [flexi-n]
+                +--ro flexi-n    l0-types:flexi-n
+                +--ro flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:te-link-attributes/tet:underlay/tet:primary-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:te-link-attributes/tet:underlay/tet:backup-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:information-source-entry/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:information-source-entry/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-n?   l0-types:flexi-n
+  augment /nw:networks/nw:network/nt:link/tet:te
+            /tet:information-source-entry/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--ro flexi-grid-channel-spacing?   identityref
+       +--ro flexi-n-step?                 uint8
+  augment /nw:networks/tet:te/tet:templates/tet:link-template
+            /tet:te-link-attributes/tet:underlay/tet:primary-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/tet:te/tet:templates/tet:link-template
+            /tet:te-link-attributes/tet:underlay/tet:backup-path
+            /tet:path-element/tet:type/tet:label/tet:label-hop
+            /tet:te-label/tet:technology:
+    +--:(flexi-grid)
+       +--rw (single-or-super-channel)?
+          +--:(single)
+          |  +--rw flexi-n?              l0-types:flexi-n
+          |  +--rw flexi-m?              l0-types:flexi-m
+          +--:(super)
+             +--rw subcarrier-flexi-n* [flexi-n]
+                +--rw flexi-n    l0-types:flexi-n
+                +--rw flexi-m?   l0-types:flexi-m
+  augment /nw:networks/tet:te/tet:templates/tet:link-template
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction/tet:label-start/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/tet:te/tet:templates/tet:link-template
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction/tet:label-end/tet:te-label
+            /tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-n?   l0-types:flexi-n
+  augment /nw:networks/tet:te/tet:templates/tet:link-template
+            /tet:te-link-attributes/tet:label-restrictions
+            /tet:label-restriction/tet:label-step/tet:technology:
+    +--:(flexi-grid)
+       +--rw flexi-grid-channel-spacing?   identityref
+       +--rw flexi-n-step?                 uint8
