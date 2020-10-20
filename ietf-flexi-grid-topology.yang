@@ -38,7 +38,7 @@ module ietf-flexi-grid-topology {
      WG List: <mailto:ccamp@ietf.org>
 
      Editor: Jorge E. Lopez de Vergara  
-             <mailtojorge.lopez_vergara@uam.es>
+             <mailto:jorge.lopez_vergara@uam.es>
 
      Editor: Daniel Perdices 
              <mailto:daniel.perdices@naudit.es>
@@ -53,7 +53,12 @@ module ietf-flexi-grid-topology {
              <mailto:younglee.tx@gmail.com>";
 
   description
-    "This module defines a model for flexi-grid topology.
+    "This module provides a YANG data model for the routing and
+     wavelength assignment (RWA) Traffic Engineering (TE)
+     topology in Flexi-grid optical networks. The YANG model 
+     described in this document is a Flexi-grid technology-specific
+     YANG model augmenting the generic TE topology module 
+     (ietf-te-topology, RFC 9795) based on the RFC 7698.
 
      Copyright (c) 2020 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
@@ -72,7 +77,7 @@ module ietf-flexi-grid-topology {
     description
       "Initial Version";
     reference
-      "RFC XXXX: A Yang Data Model for flexi-grid Optical Networks";
+      "RFC XXXX: A YANG Data Model for Flexi-grid Optical Networks";
     // RFC Ed.: replace XXXX with actual RFC number, update date
     // information and remove this note
   }
@@ -104,7 +109,7 @@ module ietf-flexi-grid-topology {
     description "Augment TE node attributes.";
     container flexi-grid-node {
       presence "The TE node is a Flexi-grid node.";
-      description "Flexi-grid node attributes";
+      description "Flexi-grid node attributes.";
     }
   }
 
@@ -138,8 +143,8 @@ module ietf-flexi-grid-topology {
          Flexi-grid topology type.";
     }
     description
-      "Augment TE label range information for the source LTP
-       of the connectivity matrix entry.";
+      "Augment TE label range information for the source Link
+       Termination Point (LTP) of the connectivity matrix entry.";
     uses l0-types:flexi-grid-label-range-info;
   }
 
@@ -218,8 +223,8 @@ module ietf-flexi-grid-topology {
          Flexi-grid topology type.";
     }
     description
-      "Augment TE label range information for the TTP
-       Local Link Connectivities.";
+      "Augment TE label range information for the Tunnel 
+      Termination Point (TTP) Local Link Connectivities.";
     uses l0-types:flexi-grid-label-range-info;
   }
 
@@ -294,7 +299,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label range start for the TE node
-       connectivity matrices";
+       connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-start-end;
     }
@@ -313,7 +318,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label range end for the TE node
-       connectivity matrices";
+       connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-start-end;
     }
@@ -332,7 +337,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label range step for the TE node
-       connectivity matrices";
+       connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-step;
     }
@@ -352,7 +357,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label hop for the underlay primary path of the
-       TE node connectivity matrices";
+       TE node connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -372,7 +377,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label hop for the underlay backup path of the
-       TE node connectivity matrices";
+       TE node connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -396,7 +401,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label hop for the explicit route objects excluded
        by the path computation of the TE node connectivity
-       matrices";
+       matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -420,7 +425,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label hop for the explicit route objects included
        by the path computation of the TE node connectivity
-       matrices";
+       matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -440,7 +445,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label hop for the computed path route objects
-       of the TE node connectivity matrices";
+       of the TE node connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
