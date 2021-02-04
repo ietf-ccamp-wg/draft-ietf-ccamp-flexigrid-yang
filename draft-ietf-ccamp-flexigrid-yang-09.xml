@@ -120,7 +120,7 @@
      network scalability and flexibility, allowing the optimization of
      bandwidth usage.</t>
 
-  <t><xref target="RFC7698" /> provides a framework GMPLS-Based control of
+  <t><xref target="RFC7698" /> provides a framework for GMPLS-Based control of
      flexi-grid DWDM networks while <xref target="RFC7699" /> defines
      generalized labels for the use in flexi-grid in GMPLS networks.</t>
 
@@ -134,10 +134,10 @@
      underlying physical layer.</t>
 
   <t>This document identifies the flexi-grid components, parameters and
-     their values, characterizes the features and the performances of the
-     flexi-grid elements. For this, it augments <xref target="RFC8340" />. 
-     An application example is provided towards the end of the document 
-     to better understand their utility.</t>
+	  their values, characterizes the features and the performances of the
+	  flexi-grid elements.. For this, it augments <xref target="RFC8340" />. 
+     An application example is provided towards the end of the document to
+	  better understand the utility of this YANG model.</t>
 
   <t>A partner document defines a second YANG module that described flexi-
      grid tunnels, i.e., the paths from source to destination
@@ -263,6 +263,29 @@
                                 +----------+
             <-------------------------------------------------->
                                   Path y
+
+                            Media channel
+	      <========================================================>
+	                               Path x
+	      <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+	  +-----------+                                        +-----------+
+	  |  Optical  |                                        |  Optical  |
+	  |   Edge    |                                        |   Edge    |
+	  |           |                                        |           |
+	  |   ........|        +------+        +------+        |........   |
+	  |   :       | Link 1 |Flexi-| Link 2 |Flexi-| Link 3 |       :   |
+	  |   : Flexi-|<------>|  grid|<------>|  grid|<------>|Flexi- :   |
+	  |   :   grid|        |node B|        |node C|        |  grid :   |
+	  |   : Trans-|        +------+        +------+        |Trans- :   |
+	  |   : ponder|                                        |ponder :   |
+	  |   :    A  |              +----------+              |   E   :   |
+	  |   :       |     Link 4   |Flexi-grid|   Link 5     |       :   |
+	  |   :       |<------------>|   node   |<------------>|       :   |
+	  |   :.......|              |    D     |              |.......:   |
+	  |           |              +----------+              |           |
+	  +-----------+                                        +-----------+
+	      <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+	                               Path y
          ]]>
       </artwork>
    </figure>
@@ -291,16 +314,18 @@
 
          <t>Next, we can configure the media channel from the information we
             have stored in the flexi-grid TED, by querying which elements are
-            available, and planning the resources that have to be provided on
-            each situation.  Note that every element in the flexi-grid TED has a
-            reference, and this is the way in which they are called in the media
-            channel.  We refer to <xref target="I-D.ietf-ccamp-flexigrid-media-channel-yang" />
-            to complete this example.</t>
+            available, and planning the resources that have to be provided in
+            each situation.  Note that every element in the flexi-grid Traffic 
+            Engineering Database (TED) has a reference, and this is the way in
+            which they are called in the media channel.  Details of how to 
+            configure a flexi-grid media channel can be found in 
+            <xref target="I-D.ietf-ccamp-flexigrid-media-channel-yang" /> to 
+            complete this example.</t>
 
       </list></t>
 </section>
 
- <section anchor="tree" title="YANG Model (Tree Structure) for Flexi-grid topology" toc="default">
+ <section anchor="tree" title="YANG Model (Tree Structure) for Flexi-Grid Topology" toc="default">
    <t>
    <figure anchor="treefigure" title="" suppress-title="true" align="left" alt="" width="" height="">
     <artwork xml:space="preserve" name="" type="" align="left" alt="" width="" height="">
@@ -3003,18 +3028,18 @@ module ietf-flexi-grid-topology {
   &RFC8446;
   &RFC8795;
 
+  <?rfc include='reference.I-D.ietf-ccamp-flexigrid-media-channel-yang'?>
+
+  <?rfc include='reference.I-D.ietf-ccamp-layer0-types'?>
+
+  <?rfc include='reference.I-D.ietf-ccamp-optical-impairment-topology-yang'?>
+
 </references>
 
 <references title="Informative References">
   &RFC7698;
   &RFC7699;
   &RFC8340;
-
-  <?rfc include='reference.I-D.ietf-ccamp-flexigrid-media-channel-yang'?>
-
-  <?rfc include='reference.I-D.ietf-ccamp-layer0-types'?>
-
-  <?rfc include='reference.I-D.ietf-ccamp-optical-impairment-topology-yang'?>
 
   <reference anchor="G.694.1">
     <front>
