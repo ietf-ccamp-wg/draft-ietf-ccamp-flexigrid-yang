@@ -1,7 +1,7 @@
 module ietf-flexi-grid-topology {
   yang-version 1.1;
   namespace "urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology";
-  prefix "flexi-grid";
+  prefix "tet-flexig";
 
   import ietf-network {
     prefix "nw";
@@ -38,7 +38,7 @@ module ietf-flexi-grid-topology {
      WG List: <mailto:ccamp@ietf.org>
 
      Editor: Jorge E. Lopez de Vergara  
-             <mailtojorge.lopez_vergara@uam.es>
+             <mailto:jorge.lopez_vergara@uam.es>
 
      Editor: Daniel Perdices 
              <mailto:daniel.perdices@naudit.es>
@@ -53,7 +53,12 @@ module ietf-flexi-grid-topology {
              <mailto:younglee.tx@gmail.com>";
 
   description
-    "This module defines a model for flexi-grid topology.
+    "This module provides a YANG data model for the routing and
+     wavelength assignment (RWA) Traffic Engineering (TE)
+     topology in flexi-grid optical networks. The YANG model 
+     described in this document is a flexi-grid technology-specific
+     YANG model augmenting the generic TE topology module 
+     (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
 
      Copyright (c) 2020 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
@@ -68,11 +73,11 @@ module ietf-flexi-grid-topology {
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2020-09-21 {
+  revision 2020-10-21 {
     description
       "Initial Version";
     reference
-      "RFC XXXX: A Yang Data Model for flexi-grid Optical Networks";
+      "RFC XXXX: A YANG Data Model for Flexi-Grid Optical Networks";
     // RFC Ed.: replace XXXX with actual RFC number, update date
     // information and remove this note
   }
@@ -84,27 +89,28 @@ module ietf-flexi-grid-topology {
   augment "/nw:networks/nw:network/nw:network-types"
         + "/tet:te-topology" {
     description
-      "Augment network types to define Flexi-grid topology type.";
+      "Augment network types to define flexi-grid topology type.";
     container flexi-grid-topology {
       presence
-        "Its presence identifies the Flexi-grid topology type.";
+        "Its presence identifies the flexi-grid topology type.";
       description
-        "Introduce new network type for Flexi-grid topology.";
+        "Introduce new network type for flexi-grid topology.";
     }
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te"
         + "/tet:te-node-attributes" {
     when "/nw:networks/nw:network/nw:network-types"
-       + "/tet:te-topology/flexi-grid:flexi-grid-topology" {
+       + "/tet:te-topology/tet-flexig:flexi-grid-topology" {
       description
       "Augmentation parameters apply only for networks with
-       Flexi-grid topology type.";
+       flexi-grid topology type.";
     }
     description "Augment TE node attributes.";
     container flexi-grid-node {
-      presence "The TE node is a Flexi-grid node.";
-      description "Flexi-grid node attributes";
+      presence "The TE node is a flexi-grid node.";
+      description 
+        "Introduce new TE node type for flexi-grid node.";
     }
   }
 
@@ -116,10 +122,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-node-attributes/tet:connectivity-matrices/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the TE node
@@ -132,14 +138,14 @@ module ietf-flexi-grid-topology {
         + "tet:connectivity-matrix/tet:from/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
-      "Augment TE label range information for the source LTP
-       of the connectivity matrix entry.";
+      "Augment TE label range information for the source Link
+       Termination Point (LTP) of the connectivity matrix entry.";
     uses l0-types:flexi-grid-label-range-info;
   }
 
@@ -148,10 +154,10 @@ module ietf-flexi-grid-topology {
         + "tet:connectivity-matrix/tet:to/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the destination LTP
@@ -164,10 +170,10 @@ module ietf-flexi-grid-topology {
         + "tet:connectivity-matrices/tet:label-restrictions/"
         + "tet:label-restriction" {
     when "../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the TE node
@@ -180,10 +186,10 @@ module ietf-flexi-grid-topology {
         + "tet:connectivity-matrix/"
         + "tet:from/tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the source LTP
@@ -196,10 +202,10 @@ module ietf-flexi-grid-topology {
         + "tet:connectivity-matrix/"
         + "tet:to/tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the destination LTP
@@ -212,14 +218,14 @@ module ietf-flexi-grid-topology {
         + "tet:local-link-connectivities/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
-      "Augment TE label range information for the TTP
-       Local Link Connectivities.";
+      "Augment TE label range information for the Tunnel 
+      Termination Point (TTP) Local Link Connectivities.";
     uses l0-types:flexi-grid-label-range-info;
   }
 
@@ -229,10 +235,10 @@ module ietf-flexi-grid-topology {
         + "tet:local-link-connectivity/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the TTP
@@ -244,10 +250,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-link-attributes/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the TE link.";
@@ -258,10 +264,10 @@ module ietf-flexi-grid-topology {
         + "tet:information-source-entry/"
         + "tet:label-restrictions/tet:label-restriction" {
     when "../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range information for the TE link
@@ -287,14 +293,14 @@ module ietf-flexi-grid-topology {
         + "tet:label-start/"
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the TE node
-       connectivity matrices";
+       connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-start-end;
     }
@@ -306,14 +312,14 @@ module ietf-flexi-grid-topology {
         + "tet:label-restriction/tet:label-end/"
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the TE node
-       connectivity matrices";
+       connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-start-end;
     }
@@ -325,14 +331,14 @@ module ietf-flexi-grid-topology {
         + "tet:label-restriction/tet:label-step/"
         + "tet:technology" {
     when "../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the TE node
-       connectivity matrices";
+       connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-step;
     }
@@ -345,14 +351,14 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path of the
-       TE node connectivity matrices";
+       TE node connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -365,14 +371,14 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path of the
-       TE node connectivity matrices";
+       TE node connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -388,15 +394,15 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects excluded
        by the path computation of the TE node connectivity
-       matrices";
+       matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -412,15 +418,15 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects included
        by the path computation of the TE node connectivity
-       matrices";
+       matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -433,14 +439,14 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the computed path route objects
-       of the TE node connectivity matrices";
+       of the TE node connectivity matrices.";
     case flexi-grid {
       uses l0-types:flexi-grid-label-hop;
     }
@@ -454,10 +460,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the source LTP
@@ -475,10 +481,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the source LTP
@@ -496,10 +502,10 @@ module ietf-flexi-grid-topology {
         + "tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the source LTP
@@ -517,10 +523,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the destination LTP
@@ -538,10 +544,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the destination LTP
@@ -559,10 +565,10 @@ module ietf-flexi-grid-topology {
         + "tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the destination LTP
@@ -580,10 +586,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path
@@ -601,10 +607,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path
@@ -623,10 +629,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects excluded
@@ -645,10 +651,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects included
@@ -666,10 +672,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the computed path route objects
@@ -686,10 +692,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-start/tet:te-label/tet:technology" {
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the TE node connectivity
@@ -706,10 +712,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-end/tet:te-label/tet:technology" {
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the TE node connectivity
@@ -726,10 +732,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-step/tet:technology" {
     when "../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the TE node connectivity
@@ -745,10 +751,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path
@@ -765,10 +771,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path
@@ -788,10 +794,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects excluded
@@ -811,10 +817,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects included
@@ -832,10 +838,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the computed path route objects
@@ -853,10 +859,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-start/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the source LTP
@@ -873,10 +879,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-end/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the source LTP
@@ -894,10 +900,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-step/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the source LTP
@@ -914,10 +920,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-start/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the destination LTP
@@ -934,10 +940,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-end/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the destination LTP
@@ -954,10 +960,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-step/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the destination LTP
@@ -974,10 +980,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path
@@ -994,10 +1000,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path
@@ -1017,10 +1023,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects excluded
@@ -1041,10 +1047,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects included
@@ -1063,10 +1069,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the computed path route objects
@@ -1084,10 +1090,10 @@ module ietf-flexi-grid-topology {
       + "tet:te-label/tet:technology" {
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the TTP
@@ -1105,10 +1111,10 @@ module ietf-flexi-grid-topology {
         + "tet:te-label/tet:technology"{
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the TTP
@@ -1126,10 +1132,10 @@ module ietf-flexi-grid-topology {
         + "tet:technology"{
     when "../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the TTP
@@ -1146,10 +1152,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path
@@ -1166,10 +1172,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path
@@ -1189,10 +1195,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects excluded
@@ -1213,10 +1219,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects included
@@ -1235,10 +1241,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the computed path route objects
@@ -1256,10 +1262,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-start/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the TTP
@@ -1277,10 +1283,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-end/tet:te-label/tet:technology" {
     when "../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the TTP
@@ -1298,10 +1304,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-step/tet:technology" {
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the TTP
@@ -1319,10 +1325,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path
@@ -1340,10 +1346,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path
@@ -1364,10 +1370,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects excluded
@@ -1389,10 +1395,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the explicit route objects included
@@ -1412,10 +1418,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the computed path route objects
@@ -1430,10 +1436,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay primary path
@@ -1449,10 +1455,10 @@ module ietf-flexi-grid-topology {
         + "tet:label/tet:label-hop/tet:te-label/tet:technology" {
     when "../../../../../../../../"
        + "nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label hop for the underlay backup path
@@ -1467,10 +1473,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction/"
         + "tet:label-start/tet:te-label/tet:technology" {
     when "../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the TE link.";
@@ -1484,10 +1490,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction/"
         + "tet:label-end/tet:te-label/tet:technology" {
     when "../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the TE link.";
@@ -1501,10 +1507,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction/"
         + "tet:label-step/tet:technology" {
     when "../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the TE link.";
@@ -1518,10 +1524,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction/"
         + "tet:label-start/tet:te-label/tet:technology" {
     when "../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range start for the TE link
@@ -1536,10 +1542,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction/"
         + "tet:label-end/tet:te-label/tet:technology" {
     when "../../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range end for the TE link
@@ -1554,10 +1560,10 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction/"
         + "tet:label-step/tet:technology" {
     when "../../../../../../nw:network-types/tet:te-topology/"
-       + "flexi-grid:flexi-grid-topology" {
+       + "tet-flexig:flexi-grid-topology" {
       description
         "Augmentation parameters apply only for networks with
-         Flexi-grid topology type.";
+         flexi-grid topology type.";
     }
     description
       "Augment TE label range step for the TE link
