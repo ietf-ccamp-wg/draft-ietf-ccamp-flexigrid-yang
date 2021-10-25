@@ -54,7 +54,7 @@
 </author>
 
 <author initials="D." surname="Perdices Burrero" fullname="Daniel Perdices Burrero">
-  <organization>Universidad Autónoma de Madrid</organization>
+  <organization>Universidad AutÃ³noma de Madrid</organization>
   <address>
     <email>daniel.perdices@uam.es</email>
   </address>
@@ -120,16 +120,16 @@
      flexi-grid DWDM networks while <xref target="RFC7699" /> defines
      generalized labels for the use of GMPLS in flexi-grid networks.</t>
 
-  <t>This document presents a YANG data model <xref target="RFC7950" /> for
-     flexi-grid objects in the dynamic optical network, including nodes, 
-     transponders and links, as well as how such
-     links interconnect nodes.</t>
+  <t>This document presents a YANG data model <xref target="RFC7950" /> for flexi-grid
+     objects in the dynamic optical network, including nodes, transponders
+     and links, as well as how such links interconnect nodes. This model is
+     independent of control plane protocols.</t>
 
   <t>This document identifies the flexi-grid components, parameters and
 	  their values, characterizes the features and the performances of the
 	  flexi-grid elements. For this, it augments <xref target="RFC8795" />, 
 	  and imports the generic Layer 0 types and use of "media-channel" defined in 
-	  <xref target="I-D.ietf-ccamp-layer0-types" />.</t>
+	  <xref target="RFC9093" />.</t>
 	  
 	<t>An application example in Section 4 is also provided to better understand
 	  the utility of this YANG model.</t> 
@@ -196,7 +196,7 @@
      <t>In this document, names of data nodes and other data model objects
         are prefixed using the standard prefix associated with the
         corresponding YANG imported modules, as shown in <xref target="PrefixTab" />.
-        It uses prefixes from <xref target="I-D.ietf-ccamp-layer0-types" />,
+        It uses prefixes from <xref target="RFC9093" />,
         <xref target="RFC8345" />, and <xref target="RFC8795" />.</t>
 
      <figure title="Prefixes and Corresponding YANG modules" anchor="PrefixTab">
@@ -205,7 +205,7 @@
       +-------------+-------------------------+-----------------+
       | Prefix      | YANG module             | Reference       |
       +-------------+-------------------------+-----------------+
-      | l0-types    | ietf-layer0-types       | [RFCXXXX]       |
+      | l0-types    | RFC9093                 | [RFCXXXX]       |
       | flexgt      | ietf-flexi-grid-topology| [RFCYYYY]       |
       | nw          | ietf-network            | [RFC8345]       |
       | nt          | ietf-network-topology   | [RFC8345]       |
@@ -216,7 +216,7 @@
      </figure>
 
      <t>RFC Editor Note: Please replace XXXX with the RFC numbers assigned to
-        <xref target="I-D.ietf-ccamp-layer0-types" />.  Please replace YYYY with the RFC
+        <xref target="RFC9093" />.  Please replace YYYY with the RFC
         number assigned to this document.  Please remove this note.</t>
 
   </section>
@@ -234,7 +234,6 @@
    <figure anchor="egfig" title="Topology Example" align="left" alt="" width="" height="">
       <artwork xml:space="preserve" name="" type="" align="left" alt="" width="" height="">
          <![CDATA[
-
    +----------+                                        +----------+
    |  Flexi-  |                                        | Flexi-   |
    |   grid   |                                        |  grid    |
@@ -251,8 +250,6 @@
    |          |              |    D     |              |          |
    |          |              +----------+              |          |
    +----------+                                        +----------+
-
-
          ]]>
       </artwork>
    </figure>
@@ -294,7 +291,7 @@
        te-topology, as specified in <xref target="RFC8795" />, 
        following the guidelines provided in section 6 of <xref target="RFC8795" />.</t>
 
-    <t>Common types, identities and groupings defined in <xref target="I-D.ietf-ccamp-layer0-types" />
+    <t>Common types, identities and groupings defined in <xref target="RFC9093" />
        are reused in this document.</t>
 
     <t>The figure below shows the augmentation relationship between YANG models.</t>
@@ -312,7 +309,6 @@
                      +------------+-------------+
         Flexi-Grid   | ietf-flexi-grid-topology |
                      +--------------------------+
-
          ]]>
        </artwork>
      </figure>
@@ -327,7 +323,7 @@
      <t>The Flexi-Grid specific attributes in <xref target="RFC7699" />, 
         including the grid type, channel spacing, slot width granularity, n and m 
         parameters, can be used to represent the label information.  These attributes
-        have been specified in <xref target="I-D.ietf-ccamp-layer0-types" />,
+        have been specified in <xref target="RFC9093" />,
         and used in this document for augmentation of the generic TE topology model.</t>
 
      <t>The YANG module ietf-flexi-grid-topology defined in this document conforms
@@ -352,7 +348,6 @@
        
        augment /nw:networks/nw:network/nw:network-types/tet:te-topology:
          +--rw flexi-grid-topology!
-
          ]]>
        </artwork>
      </figure>
@@ -391,12 +386,12 @@
 
      <t>The model augments all the occurrences of the label-restriction list
         with flexi-grid technology specific attributes using the flexi-grid-label-range-info
-        grouping defined in [I-D.ietf-ccamp-layer0-types].</t>
+        grouping defined in <xref target="RFC9093" />.</t>
        
      <t>Moreover, following the guidelines in <xref target="RFC8795" />, the model augments
         all the occurrences of the te-label container with the flexi-Grid technology
         specific attributes using the flexi-grid-label-start-end, flexi-grid-label-hop and
-        flexi-grid-label-step groupings defined in <xref target="I-D.ietf-ccamp-layer0-types" />. </t>
+        flexi-grid-label-step groupings defined in <xref target="RFC9093" />. </t>
         
   </section>
 
@@ -1237,7 +1232,6 @@ module: ietf-flexi-grid-topology
     +--:(flexi-grid)
        +--rw flexi-grid-channel-spacing?   identityref
        +--rw flexi-n-step?                 uint8
-
 ]]> 
     </artwork>
    </figure>
@@ -1251,7 +1245,7 @@ module: ietf-flexi-grid-topology
    <figure>
       <artwork>
          <![CDATA[
-<CODE BEGINS> file "ietf-flexi-grid-topology@2020-02-22.yang"
+<CODE BEGINS> file "ietf-flexi-grid-topology@2021-10-25.yang"
 module ietf-flexi-grid-topology {
   yang-version 1.1;
   namespace "urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology";
@@ -1279,20 +1273,17 @@ module ietf-flexi-grid-topology {
   import ietf-layer0-types {
     prefix "l0-types";
     reference
-      "RFC XXXX: A YANG Data Model for Layer 0 Types";
+      "RFC 9093: A YANG Data Model for Layer 0 Types";
   }
-
-/* Note: The RFC Editor will replace XXXX with the number assigned
-   to the RFC once draft-ietf-ccamp-layer0-types becomes an RFC.*/
 
   organization
      "IETF CCAMP Working Group";
   contact
     "WG Web: <http://tools.ietf.org/wg/ccamp/>
      WG List: <mailto:ccamp@ietf.org>
-     Editor: Jorge E. Lopez de Vergara  
+     Editor: Jorge E. Lopez de Vergara
              <mailto:jorge.lopez_vergara@uam.es>
-     Editor: Daniel Perdices 
+     Editor: Daniel Perdices
              <mailto:daniel.perdices@uam.es>
      Editor: Haomian Zheng
              <mailto:zhenghaomian@huawei.com>
@@ -1304,9 +1295,9 @@ module ietf-flexi-grid-topology {
   description
     "This module provides a YANG data model for the routing and
      wavelength assignment (RWA) Traffic Engineering (TE)
-     topology in flexi-grid optical networks. The YANG model 
+     topology in flexi-grid optical networks. The YANG model
      described in this document is a flexi-grid technology-specific
-     YANG model augmenting the generic TE topology module 
+     YANG model augmenting the generic TE topology module
      (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
      Copyright (c) 2020 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
@@ -1316,11 +1307,10 @@ module ietf-flexi-grid-topology {
      BSD License set forth in Section 4.c of the IETF Trust's
      Legal Provisions Relating to IETF Documents
      (http://trustee.ietf.org/license-info).
-     
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2020-02-22 {
+  revision 2021-09-30 {
     description
       "Initial Version";
     reference
@@ -1356,7 +1346,7 @@ module ietf-flexi-grid-topology {
     description "Augment TE node attributes.";
     container flexi-grid-node {
       presence "The TE node is a flexi-grid node.";
-      description 
+      description
         "Introduce new TE node type for flexi-grid node.";
     }
   }
@@ -1411,7 +1401,6 @@ module ietf-flexi-grid-topology {
        of the connectivity matrix entry.";
     uses l0-types:flexi-grid-label-range-info;
   }
-
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:information-source-entry/"
         + "tet:connectivity-matrices/tet:label-restrictions/"
@@ -1471,7 +1460,7 @@ module ietf-flexi-grid-topology {
          flexi-grid topology type.";
     }
     description
-      "Augment TE label range information for the Tunnel 
+      "Augment TE label range information for the Tunnel
       Termination Point (TTP) Local Link Connectivities.";
     uses l0-types:flexi-grid-label-range-info;
   }
@@ -1761,7 +1750,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:te-node-attributes/tet:connectivity-matrices/"
         + "tet:connectivity-matrix/tet:to/"
@@ -1824,7 +1813,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:te-node-attributes/tet:connectivity-matrices/"
         + "tet:connectivity-matrix/"
@@ -1991,7 +1980,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:information-source-entry/tet:connectivity-matrices/"
         + "tet:underlay/tet:primary-path/tet:path-element/tet:type/"
@@ -2159,7 +2148,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:information-source-entry/tet:connectivity-matrices/"
         + "tet:connectivity-matrix/"
@@ -2219,7 +2208,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:information-source-entry/tet:connectivity-matrices/"
         + "tet:connectivity-matrix/"
@@ -2563,7 +2552,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:tunnel-termination-point/"
         + "tet:local-link-connectivities/"
@@ -2765,7 +2754,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/nw:network/nt:link/tet:te/"
         + "tet:information-source-entry/"
         + "tet:label-restrictions/tet:label-restriction/"
@@ -2819,7 +2808,7 @@ module ietf-flexi-grid-topology {
       uses l0-types:flexi-grid-label-step;
     }
   }
-  
+
   augment "/nw:networks/tet:te/tet:templates/"
         + "tet:link-template/tet:te-link-attributes/"
         + "tet:underlay/tet:primary-path/tet:path-element/tet:type/"
@@ -2920,15 +2909,11 @@ module ietf-flexi-grid-topology {
       <artwork>
          <![CDATA[
    /nw:networks/nw:network/nw:network-types/tet:te-topology
-
    /nw:networks/nw:network/nt:link/tet:te/tet:te-link-attributes
-
    /nw:networks/nw:network/nw:node/nt:termination-point/tet:te
-
    /nw:networks/nw:network/nw:node/tet:te/tet:te-node-attributes
    /te-connectivity-matrices/te-connectivity-matrix/tet:path-
    constraints/tet:te-bandwidth/tet:technology
-
    /nw:networks/nw:network/nw:node/tet:te
    /tet:tunnel-termination-point/tet:local-link-connectivities
    /tet:label-restrictions/tet:label-restriction
@@ -2948,7 +2933,6 @@ module ietf-flexi-grid-topology {
       URI: urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology
       Registrant Contact: The IESG
       XML: N/A; the requested URI is an XML namespace.
-
          ]]>
       </artwork>
    </figure>
@@ -3048,7 +3032,6 @@ module ietf-flexi-grid-topology {
    <figure>
       <artwork>
          <![CDATA[
-
        o Oscar Gonzalez de Dios, Telefonica I+D/GCTO
        o Gabriele Galimberti, Cisco Photonics Srl
        o Zafar Ali, Cisco Systems
@@ -3057,7 +3040,6 @@ module ietf-flexi-grid-topology {
        o Victor Lopez, Nokia
 	    o Italo Busi, Huawei 
 	    o Aihua Guo, Futurewei
-
          ]]>
       </artwork>
    </figure>
@@ -3100,8 +3082,7 @@ module ietf-flexi-grid-topology {
   &RFC8345;
   &RFC8446;
   &RFC8795;
-
-  <?rfc include='reference.I-D.ietf-ccamp-layer0-types'?>
+  &RFC9093;
 
 </references>
 
