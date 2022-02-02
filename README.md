@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository is to facilitate the work on the [CCAMP TEAS](https://datatracker.ietf.org/wg/ccamp/documents/) WG Internet-Draft, "[A YANG Data Model for Flexi-Grid Optical Networks](https://datatracker.ietf.org/doc/draft-ietf-ccamp-flexigrid-yang/)".
+This repository is to facilitate the work on the [IETF CCAMP](https://datatracker.ietf.org/wg/ccamp/documents/) WG Internet-Draft, "[A YANG Data Model for Flexi-Grid Optical Networks](https://datatracker.ietf.org/doc/draft-ietf-ccamp-flexigrid-yang/)".
 
 ## Abstract
 
