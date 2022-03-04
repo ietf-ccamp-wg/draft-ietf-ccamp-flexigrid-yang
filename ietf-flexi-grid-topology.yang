@@ -58,7 +58,7 @@ module ietf-flexi-grid-topology {
      YANG model augmenting the generic TE topology module
      (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
 
-     Copyright (c) 2020 IETF Trust and the persons identified
+     Copyright (c) 2022 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
 
      Redistribution and use in source and binary forms, with
@@ -71,7 +71,7 @@ module ietf-flexi-grid-topology {
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2022-01-07 {
+  revision 2022-03-04 {
     description
       "Initial Version";
     reference
