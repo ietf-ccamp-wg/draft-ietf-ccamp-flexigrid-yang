@@ -32,7 +32,6 @@ module ietf-flexi-grid-topology {
      "IETF CCAMP Working Group";
   contact
     "WG Web: <https://datatracker.ietf.org/wg/ccamp/>
-
      WG List: <mailto:ccamp@ietf.org>
 
      Editor: Jorge E. Lopez de Vergara
@@ -56,14 +55,14 @@ module ietf-flexi-grid-topology {
      topology in flexi-grid optical networks. The YANG model
      described in this document is a flexi-grid technology-specific
      YANG model augmenting the generic TE topology module
-     (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
+     (ietf-te-topology, RFC 9795) based on RFC 7698 and RFC 7699.
 
      Copyright (c) 2022 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
 
      Redistribution and use in source and binary forms, with
      or without modification, is permitted pursuant to, and
-     subject to the license terms contained in, the Simplified
+     subject to the license terms contained in, the Revised
      BSD License set forth in Section 4.c of the IETF Trust's
      Legal Provisions Relating to IETF Documents
      (https://trustee.ietf.org/license-info).
@@ -71,7 +70,7 @@ module ietf-flexi-grid-topology {
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2022-03-04 {
+  revision 2022-07-04 {
     description
       "Initial Version";
     reference
