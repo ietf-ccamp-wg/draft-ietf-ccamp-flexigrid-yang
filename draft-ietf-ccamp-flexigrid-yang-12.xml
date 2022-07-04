@@ -55,7 +55,7 @@
 </author>
 
 <author initials="D." surname="Perdices Burrero" fullname="Daniel Perdices Burrero">
-  <organization>Universidad Aut�noma de Madrid</organization>
+  <organization>Universidad Autonoma de Madrid</organization>
   <address>
     <email>daniel.perdices@uam.es</email>
   </address>
@@ -401,6 +401,7 @@
     <artwork xml:space="preserve" name="" type="" align="left" alt="" width="" height="">
 <![CDATA[
 module: ietf-flexi-grid-topology
+
   augment /nw:networks/nw:network/nw:network-types/tet:te-topology:
     +--rw flexi-grid-topology!
   augment /nw:networks/nw:network/nw:node/tet:te
@@ -1277,16 +1278,21 @@ module ietf-flexi-grid-topology {
   organization
      "IETF CCAMP Working Group";
   contact
-    "WG Web: <https://tools.ietf.org/wg/ccamp/>
+    "WG Web: <https://datatracker.ietf.org/wg/ccamp/>
      WG List: <mailto:ccamp@ietf.org>
+
      Editor: Jorge E. Lopez de Vergara
              <mailto:jorge.lopez_vergara@uam.es>
+
      Editor: Daniel Perdices
              <mailto:daniel.perdices@uam.es>
+
      Editor: Haomian Zheng
              <mailto:zhenghaomian@huawei.com>
+
      Editor: Daniel King
              <mailto:d.king@lancaster.ac.uk>
+
      Editor: Young Lee
              <mailto:younglee.tx@gmail.com>";
 
@@ -1297,18 +1303,21 @@ module ietf-flexi-grid-topology {
      described in this document is a flexi-grid technology-specific
      YANG model augmenting the generic TE topology module
      (ietf-te-topology, RFC 9795) based on RFC 7698 and RFC 7699.
+
      Copyright (c) 2022 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
+
      Redistribution and use in source and binary forms, with
      or without modification, is permitted pursuant to, and
-     subject to the license terms contained in, the Simplified
+     subject to the license terms contained in, the Revised
      BSD License set forth in Section 4.c of the IETF Trust's
      Legal Provisions Relating to IETF Documents
-     (http://trustee.ietf.org/license-info).
+     (https://trustee.ietf.org/license-info).
+
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2022-06-30 {
+  revision 2022-07-04 {
     description
       "Initial Version";
     reference
