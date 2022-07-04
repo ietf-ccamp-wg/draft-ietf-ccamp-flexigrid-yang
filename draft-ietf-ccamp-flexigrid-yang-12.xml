@@ -55,7 +55,7 @@
 </author>
 
 <author initials="D." surname="Perdices Burrero" fullname="Daniel Perdices Burrero">
-  <organization>Universidad Autónoma de Madrid</organization>
+  <organization>Universidad Autï¿½noma de Madrid</organization>
   <address>
     <email>daniel.perdices@uam.es</email>
   </address>
@@ -207,7 +207,7 @@
       | Prefix      | YANG module             | Reference       |
       +-------------+-------------------------+-----------------+
       | l0-types    | RFC9093                 | [RFC9093]       |
-      | flexgt      | ietf-flexi-grid-topology| [RFCYYYY]       |
+      | flexgt      | ietf-flexi-grid-topology| RFCXXXX         |
       | nw          | ietf-network            | [RFC8345]       |
       | nt          | ietf-network-topology   | [RFC8345]       |
       | tet         | ietf-te-topology        | [RFC8795]       |
@@ -1243,7 +1243,7 @@ module: ietf-flexi-grid-topology
    <figure>
       <artwork>
          <![CDATA[
-<CODE BEGINS> file "ietf-flexi-grid-topology@2021-10-25.yang"
+<CODE BEGINS> file "ietf-flexi-grid-topology@2022-07-04.yang"
 module ietf-flexi-grid-topology {
   yang-version 1.1;
   namespace "urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology";
@@ -2944,7 +2944,7 @@ module ietf-flexi-grid-topology {
       Name: ietf-flexi-grid-topology
       Namespace: urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology
       Prefix: flexgt
-      Reference: [RFC XXXX]
+      Reference: RFC XXXX
          ]]>
       </artwork>
    </figure>
@@ -3103,7 +3103,7 @@ module ietf-flexi-grid-topology {
        </author>
     <date month="February" year="2012"/>
     </front>
-    <seriesInfo name="ITUT" value="ITU-T_G.694.1"/>
+    <seriesInfo name="ITU-T Recommendation" value="G.694.1"/>
   </reference>
 
   <reference anchor="ITU-T_G.872">
@@ -3116,7 +3116,7 @@ module ietf-flexi-grid-topology {
        </author>
     <date month="November" year="2010"/>
     </front>
-    <seriesInfo name="ITUT" value="G.872"/>
+    <seriesInfo name="ITU-T Recommendation" value="G.872, Amendment 1"/>
   </reference>
 
 </references>

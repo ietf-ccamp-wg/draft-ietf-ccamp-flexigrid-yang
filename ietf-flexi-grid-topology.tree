@@ -1,5 +1,5 @@
-
 module: ietf-flexi-grid-topology
+
   augment /nw:networks/nw:network/nw:network-types/tet:te-topology:
     +--rw flexi-grid-topology!
   augment /nw:networks/nw:network/nw:node/tet:te
