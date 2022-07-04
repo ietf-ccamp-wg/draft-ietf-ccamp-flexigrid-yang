@@ -207,7 +207,7 @@
       | Prefix      | YANG module             | Reference       |
       +-------------+-------------------------+-----------------+
       | l0-types    | RFC9093                 | [RFC9093]       |
-      | flexgt      | ietf-flexi-grid-topology| RFCXXXX         |
+      | flexgt      | ietf-flexi-grid-topology| RFC XXXX        |
       | nw          | ietf-network            | [RFC8345]       |
       | nt          | ietf-network-topology   | [RFC8345]       |
       | tet         | ietf-te-topology        | [RFC8795]       |
