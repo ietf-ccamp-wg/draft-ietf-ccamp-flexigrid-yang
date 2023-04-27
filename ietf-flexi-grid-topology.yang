@@ -25,16 +25,13 @@ module ietf-flexi-grid-topology {
   import ietf-layer0-types {
     prefix "l0-types";
     reference
-      "RFC XXXX: A YANG Data Model for Layer 0 Types";
+      "RFC 9093: A YANG Data Model for Layer 0 Types";
   }
-
-/* Note: The RFC Editor will replace XXXX with the number assigned
-   to the RFC once draft-ietf-ccamp-layer0-types becomes an RFC.*/
 
   organization
      "IETF CCAMP Working Group";
   contact
-    "WG Web: <http://tools.ietf.org/wg/ccamp/>
+    "WG Web: <https://datatracker.ietf.org/wg/ccamp/>
 
      WG List: <mailto:ccamp@ietf.org>
 

@@ -38,9 +38,10 @@
 <!ENTITY RFC8641 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.8641.xml">
 <!ENTITY RFC8650 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.8650.xml">
 <!ENTITY RFC8795 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.8795.xml">
+<!ENTITY RFC9093 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.9093.xml">
 ]>
 
-<rfc category="info" docName="draft-ietf-ccamp-flexigrid-yang-10" ipr="trust200902">
+<rfc category="std" docName="draft-ietf-ccamp-flexigrid-yang-12" ipr="trust200902">
 
 <front>
 
@@ -54,7 +55,7 @@
 </author>
 
 <author initials="D." surname="Perdices Burrero" fullname="Daniel Perdices Burrero">
-  <organization>Universidad Autónoma de Madrid</organization>
+  <organization>Universidad Autonoma de Madrid</organization>
   <address>
     <email>daniel.perdices@uam.es</email>
   </address>
@@ -81,7 +82,7 @@
   </address>
 </author>
 
-<date year="2021" />
+<date year="2022" />
 
 <workgroup>CCAMP Working Group</workgroup>
 
@@ -109,7 +110,7 @@
   <t>The flexible grid (flexi-grid) optical network technology defined by
      the International Telecommunication Union Telecommunication
      Standardization Sector (ITU-T) and documented in Recommendation
-     G.694.1 <xref target="G.694.1" /> and G.872 <xref target="G.872" />
+     ITU-T_G.694.1 <xref target="ITU-T_G.694.1" /> and ITU-T_G.872 <xref target="ITU-T_G.872" />
      provides an enhanced Dense Wavelength Division Multiplexing (DWDM) 
      grid by defining a set of nominal central frequencies, slot widths, and the concept of the
      "frequency slot". This technology increases both transport
@@ -125,9 +126,9 @@
      and links, as well as how such links interconnect nodes. This model is
      independent of control plane protocols.</t>
 
-  <t>This document identifies the flexi-grid components, parameters and
-	  their values, characterizes the features and the performances of the
-	  flexi-grid elements. For this, it augments <xref target="RFC8795" />, 
+  <t>This document identifies the flexi-grid components, parameters, and
+     their values. It characterizes the features and the performances of
+     the flexi-grid elements. For this, it augments <xref target="RFC8795" />, 
 	  and imports the generic Layer 0 types and use of "media-channel" defined in 
 	  <xref target="RFC9093" />.</t>
 	  
@@ -137,7 +138,7 @@
   <t>A partner document defines a second YANG module that described flexi-
      grid tunnels, i.e., the paths from source to destination
      through a number of intermediate nodes
-     <xref target="I-D.ietf-ccamp-flexigrid-media-channel-yang" />.</t>
+     <xref target="I-D.ietf-ccamp-flexigrid-tunnel-yang" />.</t>
   
   <t>Impairment-aware traffic engineering topology is described in 
      <xref target="I-D.ietf-ccamp-optical-impairment-topology-yang" />.</t>
@@ -205,8 +206,8 @@
       +-------------+-------------------------+-----------------+
       | Prefix      | YANG module             | Reference       |
       +-------------+-------------------------+-----------------+
-      | l0-types    | RFC9093                 | [RFCXXXX]       |
-      | flexgt      | ietf-flexi-grid-topology| [RFCYYYY]       |
+      | l0-types    | RFC9093                 | [RFC9093]       |
+      | flexgt      | ietf-flexi-grid-topology| RFC XXXX        |
       | nw          | ietf-network            | [RFC8345]       |
       | nt          | ietf-network-topology   | [RFC8345]       |
       | tet         | ietf-te-topology        | [RFC8795]       |
@@ -215,9 +216,7 @@
        </artwork>
      </figure>
 
-     <t>RFC Editor Note: Please replace XXXX with the RFC numbers assigned to
-        <xref target="RFC9093" />.  Please replace YYYY with the RFC
-        number assigned to this document.  Please remove this note.</t>
+     <t>Please replace XXXX with the RFC number assigned to this document. Please remove this note.</t>
 
   </section>
 
@@ -228,8 +227,7 @@
 
    <t>In order to explain how this model is used, we provide the following
       example.  An optical network usually has multiple transponders,
-      switches (nodes) and links. Figure 1 shows a simple
-      topology.</t>
+      switches (nodes) and links. Figure 2 shows a simple topology.</t>
 
    <figure anchor="egfig" title="Topology Example" align="left" alt="" width="" height="">
       <artwork xml:space="preserve" name="" type="" align="left" alt="" width="" height="">
@@ -262,8 +260,7 @@
 
          <t>We define the transponders within nodes A and E as tunnel termination
             points (TTPs) and provide their internal local link connectivity 
-            towards the node interfaces.  We also provide nodes A and B identifiers,
-            addresses and interfaces.</t>
+            towards the node interfaces.  We also provide the identifiers, addresses and interfaces of nodes A and B.</t>
 
          <t>We do the same for the nodes B, C and D, providing their
             identifiers, addresses and interfaces, as well as the internal
@@ -283,15 +280,15 @@
   <section anchor="OVERVIEW" title="Flexi-Grid Topology Data Model Overview">
 
 
-    <t>This document aims to describe the data model for Flexi-Grid topology. As a
-       classic Traffic-engineering (TE) technology, Flexi-Grid provide WDM
+    <t>This document describes the data model for flexi-Grid topology. As a
+       classic traffic engineering (TE) technology, flexi-grid provides WDM
        switching in transport network.  Therefore the YANG
        module presented in this document augments from a more generic
-       Traffic Engineered (TE) network topology data model, i.e., the ietf-
+       TE network topology data model, i.e., the ietf-
        te-topology, as specified in <xref target="RFC8795" />, 
        following the guidelines provided in section 6 of <xref target="RFC8795" />.</t>
 
-    <t>Common types, identities and groupings defined in <xref target="RFC9093" />
+    <t>Common types, identities, and groupings defined in <xref target="RFC9093" />
        are reused in this document.</t>
 
     <t>The figure below shows the augmentation relationship between YANG models.</t>
@@ -315,15 +312,14 @@
 
 
      <t>The entities and TE attributes, such as node, termination points and
-        links, are still applicable for describing an Flexi-Grid topology and the
-        model presented in this document only specifies with technology-
+        links, are still applicable for describing an flexi-Grid topology and the
+        model presented in this document only specifies the technology-
         specific attributes/information.</t>
         
         
-     <t>The Flexi-Grid specific attributes in <xref target="RFC7699" />, 
+     <t>The flexi-Grid specific attributes and label format is defined in <xref target="RFC7699" />, 
         including the grid type, channel spacing, slot width granularity, n and m 
-        parameters, can be used to represent the label information.  These attributes
-        have been specified in <xref target="RFC9093" />,
+        parameters.  A collection of common data types have also been specified in <xref target="RFC9093" />,
         and used in this document for augmentation of the generic TE topology model.</t>
 
      <t>The YANG module ietf-flexi-grid-topology defined in this document conforms
@@ -332,7 +328,7 @@
 
   </section>
       
-  <section anchor="ATTAUG" title="Attributes Augmentation">
+  <section anchor="ATTAUG" title="Augmentations for Flexi-Grid Topology and Node">
 
      <t>There are a few characteristics augmenting to the generic TE
         topology.</t>
@@ -340,7 +336,7 @@
 
      <t>Following the guidelines in <xref target="RFC8795" />, a 
         flexi-grid-topology network-type is specified as the 
-        indicator of Flexi-Grid in the topology as follows.</t>
+        indicator of flexi-Grid in the topology as shown in Figure 4.</t>
 
     <figure title="Flexi-Grid Topology Augmentation" anchor="FlexGridAugments">
        <artwork>
@@ -353,7 +349,7 @@
      </figure>
 
      <t>A flexi-grid-node presence container is specified, augmenting the
-        generic TE node attributes, to indicate that the TE node is a Flexi-Grid node</t>
+        generic TE node attributes, to indicate that the TE node is a Flexi-Grid node as shown in Figure 5.</t>
 
     <figure title="Flex-Grid Node Augmentation" anchor="FlexiGridNodeAugments">
        <artwork>
@@ -366,17 +362,19 @@
        </artwork>
      </figure>
 
-     <t>It is assumed that all the Flexi-Grid nodes are reconfigurable.</t>   
+     <t>It is assumed that all the flexi-Grid nodes are reconfigurable.</t>   
         
   </section>
 
   <section anchor="BWAUG" title="Bandwidth Augmentation">
 
+     <t>No bandwidth augmentations are needed for this YANG module.</t>
+
      <t>As described in Section 4.2 of <xref target="RFC7699" />,
-        there is some overlap between bandwidth and label in layer0.</t>
+        there is some overlap between bandwidth and label in Layer 0.</t>
 
      <t>The flexi-grid label resource information described in section 5.4,
-        is sufficient to describe also the spectrum resources within a flexi-grid network.
+        is sufficient to also describe the spectrum resources within a flexi-grid network.
         Therefore, the model does not define any augmentation for the te-bandwidth 
         containers defined in <xref target="RFC8795" />.</t>
         
@@ -384,7 +382,7 @@
 
   <section anchor="LBLAUG" title="Label Augmentation">
 
-     <t>The model augments all the occurrences of the label-restriction list
+     <t>The model augments all the occurrences of the label-restriction list in <xref target="RFC8795"/>
         with flexi-grid technology specific attributes using the flexi-grid-label-range-info
         grouping defined in <xref target="RFC9093" />.</t>
        
@@ -403,6 +401,7 @@
     <artwork xml:space="preserve" name="" type="" align="left" alt="" width="" height="">
 <![CDATA[
 module: ietf-flexi-grid-topology
+
   augment /nw:networks/nw:network/nw:network-types/tet:te-topology:
     +--rw flexi-grid-topology!
   augment /nw:networks/nw:network/nw:node/tet:te
@@ -1245,7 +1244,7 @@ module: ietf-flexi-grid-topology
    <figure>
       <artwork>
          <![CDATA[
-<CODE BEGINS> file "ietf-flexi-grid-topology@2021-10-25.yang"
+<CODE BEGINS> file "ietf-flexi-grid-topology@2022-07-04.yang"
 module ietf-flexi-grid-topology {
   yang-version 1.1;
   namespace "urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology";
@@ -1279,16 +1278,21 @@ module ietf-flexi-grid-topology {
   organization
      "IETF CCAMP Working Group";
   contact
-    "WG Web: <http://tools.ietf.org/wg/ccamp/>
+    "WG Web: <https://datatracker.ietf.org/wg/ccamp/>
      WG List: <mailto:ccamp@ietf.org>
+
      Editor: Jorge E. Lopez de Vergara
              <mailto:jorge.lopez_vergara@uam.es>
+
      Editor: Daniel Perdices
              <mailto:daniel.perdices@uam.es>
+
      Editor: Haomian Zheng
              <mailto:zhenghaomian@huawei.com>
+
      Editor: Daniel King
              <mailto:d.king@lancaster.ac.uk>
+
      Editor: Young Lee
              <mailto:younglee.tx@gmail.com>";
 
@@ -1298,19 +1302,22 @@ module ietf-flexi-grid-topology {
      topology in flexi-grid optical networks. The YANG model
      described in this document is a flexi-grid technology-specific
      YANG model augmenting the generic TE topology module
-     (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
-     Copyright (c) 2020 IETF Trust and the persons identified
+     (ietf-te-topology, RFC 9795) based on RFC 7698 and RFC 7699.
+
+     Copyright (c) 2022 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
+
      Redistribution and use in source and binary forms, with
      or without modification, is permitted pursuant to, and
-     subject to the license terms contained in, the Simplified
+     subject to the license terms contained in, the Revised
      BSD License set forth in Section 4.c of the IETF Trust's
      Legal Provisions Relating to IETF Documents
-     (http://trustee.ietf.org/license-info).
+     (https://trustee.ietf.org/license-info).
+
      This version of this YANG module is part of RFC XXXX; see
      the RFC itself for full legal notices.";
 
-  revision 2021-09-30 {
+  revision 2022-07-04 {
     description
       "Initial Version";
     reference
@@ -2945,8 +2952,8 @@ module ietf-flexi-grid-topology {
          <![CDATA[
       Name: ietf-flexi-grid-topology
       Namespace: urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology
-      Prefix: flexi-grid-topology
-      Reference: [This.I-D]
+      Prefix: flexgt
+      Reference: RFC XXXX
          ]]>
       </artwork>
    </figure>
@@ -3090,12 +3097,12 @@ module ietf-flexi-grid-topology {
   &RFC7698;
   &RFC8340;
 
-  <?rfc include='reference.I-D.ietf-ccamp-flexigrid-media-channel-yang'?>
+  <?rfc include='reference.I-D.ietf-ccamp-flexigrid-tunnel-yang'?>
 
   <?rfc include='reference.I-D.ietf-ccamp-optical-impairment-topology-yang'?>
 
 
-  <reference anchor="G.694.1">
+  <reference anchor="ITU-T_G.694.1">
     <front>
     <title>
     Spectral grids for WDM applications: DWDM frequency grid
@@ -3105,10 +3112,10 @@ module ietf-flexi-grid-topology {
        </author>
     <date month="February" year="2012"/>
     </front>
-    <seriesInfo name="ITUT" value="G.872"/>
+    <seriesInfo name="ITU-T Recommendation" value="G.694.1"/>
   </reference>
 
-  <reference anchor="G.872">
+  <reference anchor="ITU-T_G.872">
     <front>
     <title>
     Architecture of optical transport networks
@@ -3118,7 +3125,7 @@ module ietf-flexi-grid-topology {
        </author>
     <date month="November" year="2010"/>
     </front>
-    <seriesInfo name="ITUT" value="G.872"/>
+    <seriesInfo name="ITU-T Recommendation" value="G.872, Amendment 1"/>
   </reference>
 
 </references>
