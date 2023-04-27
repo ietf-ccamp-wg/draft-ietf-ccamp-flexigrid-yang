@@ -35,15 +35,21 @@ module ietf-flexi-grid-topology {
      "IETF CCAMP Working Group";
   contact
     "WG Web: <http://tools.ietf.org/wg/ccamp/>
+
      WG List: <mailto:ccamp@ietf.org>
+
      Editor: Jorge E. Lopez de Vergara
              <mailto:jorge.lopez_vergara@uam.es>
+
      Editor: Daniel Perdices
              <mailto:daniel.perdices@uam.es>
+
      Editor: Haomian Zheng
              <mailto:zhenghaomian@huawei.com>
+
      Editor: Daniel King
              <mailto:d.king@lancaster.ac.uk>
+
      Editor: Young Lee
              <mailto:younglee.tx@gmail.com>";
 
@@ -54,25 +60,53 @@ module ietf-flexi-grid-topology {
      described in this document is a flexi-grid technology-specific
      YANG model augmenting the generic TE topology module
      (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
-     Copyright (c) 2020 IETF Trust and the persons identified
+
+     Copyright (c) 2023 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
+
      Redistribution and use in source and binary forms, with
      or without modification, is permitted pursuant to, and
-     subject to the license terms contained in, the Simplified
+     subject to the license terms contained in, the Revised
      BSD License set forth in Section 4.c of the IETF Trust's
      Legal Provisions Relating to IETF Documents
-     (http://trustee.ietf.org/license-info).
+     (https://trustee.ietf.org/license-info).
 
      This version of this YANG module is part of RFC XXXX; see
-     the RFC itself for full legal notices.";
+     the RFC itself for full legal notices.
 
-  revision 2021-09-30 {
+     The key words 'MUST', 'MUST NOT', 'REQUIRED', 'SHALL', 'SHALL
+     NOT', 'SHOULD', 'SHOULD NOT', 'RECOMMENDED', 'NOT RECOMMENDED',
+     'MAY', and 'OPTIONAL' in this document are to be interpreted as
+     described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
+     they appear in all capitals, as shown here.";
+
+  revision 2023-04-27 {
     description
       "Initial Version";
     reference
       "RFC XXXX: A YANG Data Model for Flexi-Grid Optical Networks";
     // RFC Ed.: replace XXXX with actual RFC number, update date
     // information and remove this note
+  }
+
+  /*
+   * Groupings
+   */
+
+  grouping label-range-info {
+    description
+      "To be added";
+    container flexi-grid-label-range {
+      presence
+        "Indicates the label range is a flexi-grid label range.
+        
+        This container MUST NOT be present if there are other 
+        presence containers or attributes indicating another type 
+        of label range.";
+      description
+        "Flexi-grid-specific label range related information.";
+      uses l0-types:flexi-grid-label-range-info;
+    }
   }
 
   /*
@@ -123,7 +157,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TE node
        connectivity matrices.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -139,7 +173,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the source Link
        Termination Point (LTP) of the connectivity matrix entry.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -155,7 +189,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the destination LTP
        of the connectivity matrix entry.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
   augment "/nw:networks/nw:network/nw:node/tet:te/"
         + "tet:information-source-entry/"
@@ -170,7 +204,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TE node
        connectivity matrices information source.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -186,7 +220,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the source LTP
        of the connectivity matrix entry information source.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -202,7 +236,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the destination LTP
        of the connectivity matrix entry information source.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -218,7 +252,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the Tunnel
       Termination Point (TTP) Local Link Connectivities.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nw:node/tet:te/"
@@ -235,7 +269,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TTP
        Local Link Connectivity entry.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nt:link/tet:te/"
@@ -249,7 +283,7 @@ module ietf-flexi-grid-topology {
     }
     description
       "Augment TE label range information for the TE link.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/nw:network/nt:link/tet:te/"
@@ -264,7 +298,7 @@ module ietf-flexi-grid-topology {
     description
       "Augment TE label range information for the TE link
        information source.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   augment "/nw:networks/tet:te/tet:templates/"
@@ -272,7 +306,7 @@ module ietf-flexi-grid-topology {
         + "tet:label-restrictions/tet:label-restriction" {
     description
       "Augment TE label range information for the TE link template.";
-    uses l0-types:flexi-grid-label-range-info;
+    uses label-range-info;
   }
 
   /*
