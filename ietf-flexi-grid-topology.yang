@@ -56,7 +56,7 @@ module ietf-flexi-grid-topology {
      topology in flexi-grid optical networks. The YANG model
      described in this document is a flexi-grid technology-specific
      YANG model augmenting the generic TE topology module
-     (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.
+     (ietf-te-topology, RFC 9795) based on RFC 7698 and RFC 7699.
 
      Copyright (c) 2023 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
