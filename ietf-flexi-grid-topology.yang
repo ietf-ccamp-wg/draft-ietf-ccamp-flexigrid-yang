@@ -25,8 +25,10 @@ module ietf-flexi-grid-topology {
   import ietf-layer0-types {
     prefix "l0-types";
     reference
-      "RFC 9093: A YANG Data Model for Layer 0 Types";
+      "RFC YYYY: A YANG Data Model for Layer 0 Types";
   }
+  /* Note: The RFC Editor will replace YYYY with the number assigned
+     to the RFC once draft-ietf-ccamp-rfc9093-bis becomes an RFC.*/
 
   organization
      "IETF CCAMP Working Group";
@@ -84,7 +86,7 @@ module ietf-flexi-grid-topology {
       RFC 7699: Generalized Labels for the Flexi-Grid in Lambda 
         Switch Capable (LSC) Label Switching Routers.";
 
-  revision 2023-09-20 {
+  revision 2023-12-15 {
     description
       "Initial Version";
     reference
