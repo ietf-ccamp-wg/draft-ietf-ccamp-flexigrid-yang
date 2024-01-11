@@ -25,8 +25,10 @@ module ietf-flexi-grid-topology {
   import ietf-layer0-types {
     prefix "l0-types";
     reference
-      "RFC 9093: A YANG Data Model for Layer 0 Types";
+      "RFC YYYY: A YANG Data Model for Layer 0 Types";
   }
+  /* Note: The RFC Editor will replace YYYY with the number assigned
+     to the RFC once draft-ietf-ccamp-rfc9093-bis becomes an RFC.*/
 
   organization
      "IETF CCAMP Working Group";
@@ -51,12 +53,13 @@ module ietf-flexi-grid-topology {
              <mailto:younglee.tx@gmail.com>";
 
   description
-    "This module provides a YANG data model for the routing and
-     wavelength assignment (RWA) Traffic Engineering (TE)
-     topology in flexi-grid optical networks. The YANG model
-     described in this document is a flexi-grid technology-specific
-     YANG model augmenting the generic TE topology module
-     (ietf-te-topology, RFC 9795) based on RFC 7698 and RFC 7699.
+    "This YANG module defines a topology model for flexi-grid 
+     optical networks. The model augments the technology-agnostic 
+     TE topology model with flexi-grid technology specific 
+     definitions, based on RFC 7698 and RFC 7699.
+
+     The model fully conforms to the Network Management Datastore 
+     Architecture (NMDA).
 
      Copyright (c) 2023 IETF Trust and the persons identified
      as authors of the code.  All rights reserved.
@@ -76,8 +79,14 @@ module ietf-flexi-grid-topology {
      'MAY', and 'OPTIONAL' in this document are to be interpreted as
      described in BCP 14 (RFC 2119) (RFC 8174) when, and only when,
      they appear in all capitals, as shown here.";
+    reference
+      "RFC 7698: Framework and Requirements for GMPLS-Based Control 
+        of Flexi-Grid Dense Wavelength Division Multiplexing 
+        (DWDM) Networks;
+      RFC 7699: Generalized Labels for the Flexi-Grid in Lambda 
+        Switch Capable (LSC) Label Switching Routers.";
 
-  revision 2023-07-06 {
+  revision 2023-12-15 {
     description
       "Initial Version";
     reference
