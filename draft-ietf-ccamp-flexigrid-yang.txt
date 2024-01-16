@@ -26,9 +26,6 @@ Abstract
    a flexi-grid network.  It is based on and augments existing YANG
    models that describe network and traffic engineering topologies.
 
-   The YANG data model defined in this document conforms to the Network
-   Management Datastore Architecture (NMDA).
-
 About This Document
 
    This note is to be removed before publishing as an RFC.

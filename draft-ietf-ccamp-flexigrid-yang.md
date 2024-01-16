@@ -105,9 +105,6 @@ traffic engineering database that is used to describe the topology of
 a flexi-grid network.  It is based on and augments existing YANG
 models that describe network and traffic engineering topologies.
 
-The YANG data model defined in this document conforms to the Network
-Management Datastore Architecture (NMDA).
-
 --- middle
 
 # Introduction
