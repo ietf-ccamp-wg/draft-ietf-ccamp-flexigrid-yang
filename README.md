@@ -16,6 +16,14 @@ See the
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
 
+### Weekly Calls
+
+The contributors on this draft has weekly informal conference calls every two weeks at 4:30am NA EDT, from December 5, 2023 till March 12, 2023:
+- [CCAMP WG Announcement](https://mailarchive.ietf.org/arch/msg/ccamp/5cXZ96fPkbcc-3FAQ2xmlvjgGK0/)
+- [Add to Calendar](https://ietf.webex.com/ietf/j.php?MTID=m0d60fb1833a13a0aefac48bb18ec3428)
+- [Join Meeting](https://ietf.webex.com/ietf/j.php?MTID=m1ce2a9e11921f2e7fe2879ab61024743)
+
+The official minutes of these calls are available in this repository: [Archived Minutes](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/tree/main/meetings)
 
 ## Command Line Usage
 
