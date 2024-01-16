@@ -233,9 +233,7 @@ switches (nodes) and links.  {{fig-topo}} shows a simple topology.
 ~~~~
 {: #fig-topo title="Topology Example"}
 
-In order to configure a network media channel to interconnect
-transponders A and E, first of all we have to populate the flexi-grid
-topology YANG model with all elements in the network:
+In order to configure a flexi-grid network to interconnect transponders A and E, first of all we have to populate the flexi-grid topology YANG model with all elements in the network:
 
 - We define the transponders within nodes A and E as tunnel
 termination points (TTPs) and provide their internal local link

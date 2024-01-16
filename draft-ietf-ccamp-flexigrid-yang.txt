@@ -227,7 +227,7 @@ Table of Contents
 
                         Figure 1: Topology Example
 
-   In order to configure a network media channel to interconnect
+   In order to configure a flexi-grid network to interconnect
    transponders A and E, first of all we have to populate the flexi-grid
    topology YANG model with all elements in the network:
 
