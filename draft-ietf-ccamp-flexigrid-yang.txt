@@ -129,7 +129,7 @@ Table of Contents
    their values.  It characterizes the features and the performances of
    the flexi-grid elements.  For this, it augments [RFC8795], and
    imports the generic Layer 0 types and use of "media-channel" defined
-   in [RFC9093].
+   in [I-D.ietf-ccamp-rfc9093-bis].
 
    An application example in Section 4 is also provided to better
    understand the utility of this YANG model.
@@ -183,14 +183,14 @@ Table of Contents
    In this document, names of data nodes and other data model objects
    are prefixed using the standard prefix associated with the
    corresponding YANG imported modules, as shown in Table 1.  It uses
-   prefixes from [RFC9093], [RFC8345], and [RFC8795].
+   prefixes from [I-D.ietf-ccamp-rfc9093-bis], [RFC8345], and [RFC8795].
 
             +==========+==========================+===========+
             | Prefix   | YANG module              | Reference |
             +==========+==========================+===========+
-            | l0-types | ietf-layer0-types        | [RFC9093] |
+            | l0-types | ietf-layer0-types        | [RFCYYYY] |
             +----------+--------------------------+-----------+
-            | flexgt   | ietf-flexi-grid-topology | RFC XXXX  |
+            | flexgt   | ietf-flexi-grid-topology | RFCXXXX   |
             +----------+--------------------------+-----------+
             | nw       | ietf-network             | [RFC8345] |
             +----------+--------------------------+-----------+
@@ -202,7 +202,8 @@ Table of Contents
               Table 1: Prefixes and corresponding YANG modules
 
    RFC Editor Note: Please replace XXXX with the RFC number assigned to
-   this document.  Please remove this note.
+   this document.  Please replace YYYY with the RFC numbers assigned to
+   [I-D.ietf-ccamp-rfc9093-bis].  Please remove this note.
 
 4.  Example of Use
 
@@ -259,8 +260,8 @@ Table of Contents
    data model, i.e., the ietf-te-topology, as specified in [RFC8795],
    following the guidelines provided in section 6 of [RFC8795].
 
-   Common types, identities, and groupings defined in [RFC9093] are
-   reused in this document.
+   Common types, identities, and groupings defined in
+   [I-D.ietf-ccamp-rfc9093-bis] are reused in this document.
 
    The figure below shows the augmentation relationship between YANG
    models.
@@ -284,9 +285,10 @@ Table of Contents
    specific attributes/information.
 
    The flexi-grid specific attributes and label format is defined in
-   [RFC7699], including the grid type, channel spacing, slot width
-   granularity, n and m parameters.  A collection of common data types
-   have also been specified in [RFC9093], and used in this document for
+   [RFC7699], including the grid type, nominal central frequency
+   granularity, slot width granularity, n and m parameters.  A
+   collection of common data types have also been specified in
+   [I-D.ietf-ccamp-rfc9093-bis], and used in this document for
    augmentation of the generic TE topology model.
 
    The YANG module ietf-flexi-grid-topology defined in this document
@@ -335,13 +337,14 @@ Table of Contents
 
    The model augments all the occurrences of the label-restriction list
    in [RFC8795] with flexi-grid technology specific attributes using the
-   flexi-grid-label-range-info grouping defined in [RFC9093].
+   flexi-grid-label-range-info grouping defined in
+   [I-D.ietf-ccamp-rfc9093-bis].
 
    Moreover, following the guidelines in [RFC8795], the model augments
    all the occurrences of the te-label container with the flexi-grid
    technology specific attributes using the flexi-grid-label-start-end,
    flexi-grid-label-hop and flexi-grid-label-step groupings defined in
-   [RFC9093].
+   [I-D.ietf-ccamp-rfc9093-bis].
 
 6.  YANG Model (Tree Structure) for Flexi-Grid Topology
 
@@ -3107,6 +3110,14 @@ Table of Contents
 
 10.1.  Normative References
 
+   [I-D.ietf-ccamp-rfc9093-bis]
+              Belotti, S., Busi, I., Beller, D., Zheng, H., Le Rouzic,
+              E., Guo, A., and D. King, "A YANG Data Model for Layer 0
+              Types", Work in Progress, Internet-Draft, draft-ietf-
+              ccamp-rfc9093-bis-07, 23 October 2023,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-
+              rfc9093-bis-07>.
+
    [ITU-T_G.694.1]
               ITU-T Recommendation G.694.1, "Spectral grids for WDM
               applications: DWDM frequency grid", ITU-T G.694.1 ,
@@ -3178,11 +3189,6 @@ Table of Contents
               Engineering (TE) Topologies", RFC 8795,
               DOI 10.17487/RFC8795, August 2020,
               <https://www.rfc-editor.org/rfc/rfc8795>.
-
-   [RFC9093]  Zheng, H., Lee, Y., Guo, A., Lopez, V., and D. King, "A
-              YANG Data Model for Layer 0 Types", RFC 9093,
-              DOI 10.17487/RFC9093, August 2021,
-              <https://www.rfc-editor.org/rfc/rfc9093>.
 
 10.2.  Informative References
 

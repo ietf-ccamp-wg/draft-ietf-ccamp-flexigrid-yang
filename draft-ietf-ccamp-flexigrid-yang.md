@@ -138,7 +138,7 @@ This document identifies the flexi-grid components, parameters, and
 their values.  It characterizes the features and the performances of
 the flexi-grid elements.  For this, it augments {{!RFC8795}}, and
 imports the generic Layer 0 types and use of "media-channel" defined
-in {{!RFC9093}}.
+in {{!I-D.ietf-ccamp-rfc9093-bis}}.
 
 An application example in {{example}} is also provided to better
 understand the utility of this YANG model.
@@ -192,19 +192,20 @@ defined in {{?RFC8340}}.
 In this document, names of data nodes and other data model objects
 are prefixed using the standard prefix associated with the
 corresponding YANG imported modules, as shown in {{tab-prefixes}}.  It uses
-prefixes from {{!RFC9093}}, {{!RFC8345}}, and {{!RFC8795}}.
+prefixes from {{!I-D.ietf-ccamp-rfc9093-bis}}, {{!RFC8345}}, and {{!RFC8795}}.
 
-| Prefix      | YANG module             | Reference       |
-|-------------|--------------------------|----------------+
-| l0-types    | ietf-layer0-types       | {{!RFC9093}}    |
-| flexgt      | ietf-flexi-grid-topology| RFC XXXX        |
-| nw          | ietf-network            | {{!RFC8345}}    |
-| nt          | ietf-network-topology   | {{!RFC8345}}    |
-| tet         | ietf-te-topology        | {{!RFC8795}}    |
+| Prefix      | YANG module              | Reference       |
+|-------------|--------------------------|-----------------+
+| l0-types    | ietf-layer0-types        | \[RFCYYYY]      |
+| flexgt      | ietf-flexi-grid-topology | RFCXXXX         |
+| nw          | ietf-network             | {{!RFC8345}}    |
+| nt          | ietf-network-topology    | {{!RFC8345}}    |
+| tet         | ietf-te-topology         | {{!RFC8795}}    |
 {: #tab-prefixes title="Prefixes and corresponding YANG modules"}
 
 RFC Editor Note:
 Please replace XXXX with the RFC number assigned to this document.
+Please replace YYYY with the RFC numbers assigned to {{!I-D.ietf-ccamp-rfc9093-bis}}.
 Please remove this note.
 
 {: #example}
@@ -265,7 +266,7 @@ in this document augments from a more generic TE network topology
 data model, i.e., the ietf-te-topology, as specified in {{!RFC8795}},
 following the guidelines provided in section 6 of {{!RFC8795}}.
 
-Common types, identities, and groupings defined in {{!RFC9093}} are
+Common types, identities, and groupings defined in {{!I-D.ietf-ccamp-rfc9093-bis}} are
 reused in this document.
 
 The figure below shows the augmentation relationship between YANG
@@ -291,9 +292,9 @@ the model presented in this document only specifies the technology-
 specific attributes/information.
 
 The flexi-grid specific attributes and label format is defined in
-{{!RFC7699}}, including the grid type, channel spacing, slot width
+{{!RFC7699}}, including the grid type, nominal central frequency granularity, slot width
 granularity, n and m parameters.  A collection of common data types
-have also been specified in {{!RFC9093}}, and used in this document for
+have also been specified in {{!I-D.ietf-ccamp-rfc9093-bis}}, and used in this document for
 augmentation of the generic TE topology model.
 
 The YANG module ietf-flexi-grid-topology defined in this document
@@ -346,13 +347,13 @@ for the te-bandwidth containers defined in {{!RFC8795}}.
 
 The model augments all the occurrences of the label-restriction list
 in {{!RFC8795}} with flexi-grid technology specific attributes using the
-flexi-grid-label-range-info grouping defined in {{!RFC9093}}.
+flexi-grid-label-range-info grouping defined in {{!I-D.ietf-ccamp-rfc9093-bis}}.
 
 Moreover, following the guidelines in {{!RFC8795}}, the model augments
 all the occurrences of the te-label container with the flexi-grid
 technology specific attributes using the flexi-grid-label-start-end,
 flexi-grid-label-hop and flexi-grid-label-step groupings defined in
-{{!RFC9093}}.
+{{!I-D.ietf-ccamp-rfc9093-bis}}.
 
 # YANG Model (Tree Structure) for Flexi-Grid Topology
 
