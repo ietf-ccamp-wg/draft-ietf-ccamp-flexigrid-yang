@@ -1,0 +1,2741 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-01-18T01:00:46.904172+00:00",
+  "repo": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    },
+    {
+      "name": "agreed",
+      "description": "",
+      "color": "0E8A16"
+    },
+    {
+      "name": "discussion required",
+      "description": "",
+      "color": "FBCA04"
+    }
+  ],
+  "issues": [
+    {
+      "number": 3,
+      "id": "MDU6SXNzdWU3OTU5MTU1NTA=",
+      "title": "Introduction Update",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/3",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "OLD\r\n  [RFC7698] provides a framework GMPLS-Based control\r\n\r\nNEW\r\n  [RFC7698] provides a framework for GMPLS-Based control",
+      "createdAt": "2021-01-28T11:21:56Z",
+      "updatedAt": "2021-02-04T12:03:28Z",
+      "closedAt": "2021-02-04T12:03:28Z",
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "MDU6SXNzdWU3OTU5MTYwNjI=",
+      "title": "Introduction Update ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/4",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "OLD\r\n   This document identifies the flexi-grid components, parameters and\r\n   their values, characterizes the features and the performances of the\r\n   flexi-grid elements.\r\n\r\nNEW\r\n   This document identifies the flexi-grid components, parameters and\r\n   their values, and it characterizes the features and the performance\r\n   of the flexi-grid elements.",
+      "createdAt": "2021-01-28T11:22:38Z",
+      "updatedAt": "2021-02-04T12:03:09Z",
+      "closedAt": "2021-02-04T12:03:09Z",
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "MDU6SXNzdWU3OTU5MTY0NDA=",
+      "title": "Introduction Update",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/5",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "OLD\r\n   An application example is provided towards the end of the document to\r\n   better understand their utility.\r\nOLD\r\n\r\nNEW\r\n   An application example is provided towards the end of the document to\r\n   better understand the utility of this YANG model.\r\nEND",
+      "createdAt": "2021-01-28T11:23:12Z",
+      "updatedAt": "2021-02-04T12:02:37Z",
+      "closedAt": "2021-02-04T12:02:37Z",
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "MDU6SXNzdWU3OTU5MTY4MDM=",
+      "title": "Reordering of sections",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/6",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Sections 3 and 3.1 look a bit odd how they are. How about moving them to 2.1 and 2.2 respectively.",
+      "createdAt": "2021-01-28T11:23:44Z",
+      "updatedAt": "2021-02-04T12:02:13Z",
+      "closedAt": "2021-02-04T12:02:13Z",
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "MDU6SXNzdWU3OTU5MTcxNDY=",
+      "title": "Request for a diagram showing relationship between YANG modules used.",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/7",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "It would also be good to add a diagram showing the relationship between the various YANG modules.",
+      "createdAt": "2021-01-28T11:24:16Z",
+      "updatedAt": "2021-02-22T07:59:07Z",
+      "closedAt": "2021-02-22T07:59:07Z",
+      "comments": []
+    },
+    {
+      "number": 8,
+      "id": "MDU6SXNzdWU3OTU5MTg0MTc=",
+      "title": "Figure 2 Update",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/8",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I think Figure 2 could be cleaned up a little to show that the transponders are in optical edge nodes. Possibly...\r\n\r\n[https://mailarchive.ietf.org/arch/msg/ccamp/foUbVnfpO0BsPZoBMDdT48-kURw/](url)",
+      "createdAt": "2021-01-28T11:25:58Z",
+      "updatedAt": "2021-02-04T12:02:03Z",
+      "closedAt": "2021-02-04T12:02:03Z",
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "MDU6SXNzdWU3OTU5MTg3NzA=",
+      "title": "Section 4 - TED usage ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/9",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Could you please expand \"TED\" on first use.\r\n",
+      "createdAt": "2021-01-28T11:26:26Z",
+      "updatedAt": "2021-02-04T12:01:58Z",
+      "closedAt": "2021-02-04T12:01:58Z",
+      "comments": []
+    },
+    {
+      "number": 10,
+      "id": "MDU6SXNzdWU3OTU5MTg5MzU=",
+      "title": "Section 4 typo",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/10",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "s/provided on each situation/provided in each situation/\r\n",
+      "createdAt": "2021-01-28T11:26:40Z",
+      "updatedAt": "2021-02-04T12:00:41Z",
+      "closedAt": "2021-02-04T12:00:41Z",
+      "comments": []
+    },
+    {
+      "number": 11,
+      "id": "MDU6SXNzdWU3OTU5MTkzOTM=",
+      "title": "Section 4 text change",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/11",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Section 4\r\n      We refer to [I-D.ietf-ccamp-flexigrid-media-channel-yang] to complete this\r\n      example.\r\n\r\nMaybe...\r\n      Details of how to configure a flexi-grid media channel can be found in [I-D.ietf-ccamp-flexigrid-media-channel-yang].\r\n",
+      "createdAt": "2021-01-28T11:27:19Z",
+      "updatedAt": "2021-02-04T12:00:12Z",
+      "closedAt": "2021-02-04T12:00:12Z",
+      "comments": []
+    },
+    {
+      "number": 12,
+      "id": "MDU6SXNzdWU3OTU5MTk3MDY=",
+      "title": "Section 5 Typo",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/12",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "OLD\r\n5.  YANG Model (Tree Structure) for Flexi-grid topology\r\n\r\nNEW\r\n5.  YANG Model (Tree Structure) for Flexi-Grid Topology\r\n",
+      "createdAt": "2021-01-28T11:27:45Z",
+      "updatedAt": "2021-02-04T11:59:01Z",
+      "closedAt": "2021-02-04T11:59:01Z",
+      "comments": []
+    },
+    {
+      "number": 13,
+      "id": "MDU6SXNzdWU3OTU5MjAwMjc=",
+      "title": "Change in Normative References",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/13",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I think three of your informative references should be moved to normative: \r\n\r\n- [I-D.ietf-ccamp-flexigrid-media-channel-yang]\r\n- [I-D.ietf-ccamp-layer0-types]\r\n- [I-D.ietf-ccamp-optical-impairment-topology-yang]",
+      "createdAt": "2021-01-28T11:28:11Z",
+      "updatedAt": "2021-02-04T12:04:29Z",
+      "closedAt": "2021-02-04T12:04:29Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "For Italo...",
+          "createdAt": "2021-01-28T13:25:25Z",
+          "updatedAt": "2021-01-28T13:25:25Z"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "id": "MDU6SXNzdWU3OTU5Nzg0MDc=",
+      "title": "Request Document Shepherd from Chairs after submission of new version. ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/14",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-01-28T12:53:15Z",
+      "updatedAt": "2021-02-11T13:05:33Z",
+      "closedAt": "2021-02-11T13:05:32Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Adrian Farrel will be Shepherd.",
+          "createdAt": "2021-02-11T13:05:32Z",
+          "updatedAt": "2021-02-11T13:05:32Z"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "id": "MDU6SXNzdWU3OTU5OTY1NjU=",
+      "title": " Figure 2 could be cleaned up a little to show that the  transponders are in optical edge nodes.",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/15",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-01-28T13:18:12Z",
+      "updatedAt": "2021-02-04T11:57:59Z",
+      "closedAt": "2021-02-04T11:57:59Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Figure 2 currently https://tools.ietf.org/html/draft-ietf-ccamp-flexigrid-yang-08#page-4\r\n\r\nTo be updated with: https://mailarchive.ietf.org/arch/msg/ccamp/foUbVnfpO0BsPZoBMDdT48-kURw/",
+          "createdAt": "2021-01-28T13:18:40Z",
+          "updatedAt": "2021-01-28T13:18:40Z"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "id": "MDU6SXNzdWU3OTYwMjEzOTM=",
+      "title": "Prefix may need to follow common rule that is applied across all CCAMP I-Ds",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/16",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "haomianzheng"
+      ],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-01-28T13:49:52Z",
+      "updatedAt": "2021-02-22T06:37:47Z",
+      "closedAt": "2021-02-22T06:37:47Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Next steps, we should:\r\n\r\n1. Make just one suggestion for everyone to agree to\r\n2. Reference the YANG models by the model name (not some random descriptive text string)\r\n3. Also include the draft names",
+          "createdAt": "2021-02-04T13:07:55Z",
+          "updatedAt": "2021-02-04T13:07:55Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Ongoing issue, will not stop us submitting but aware that we may need update.",
+          "createdAt": "2021-02-11T13:08:57Z",
+          "updatedAt": "2021-02-11T13:08:57Z"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "id": "MDU6SXNzdWU4MDEyNzE3ODU=",
+      "title": "Final review of I-D before submission (of version 9)",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/17",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [],
+      "body": "By Weds 10th Feb",
+      "createdAt": "2021-02-04T13:13:23Z",
+      "updatedAt": "2021-02-22T07:59:25Z",
+      "closedAt": "2021-02-22T07:59:25Z",
+      "comments": [
+        {
+          "author": "dperdices",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I leave here my review. Most of the things are typos, inconsistencies and minor issues. As you see, it is divided in the same sections of the document so that it is easier to find the issues.\r\n\r\nAnything I get wrong, please let me know\r\n\r\n\r\n-----------------------------------------------------\r\n## 1 Introduction\r\n* ITU recommendations should be cite in a consistent way, i.e. instead of `G.694.1 [G.694.1] and G.872 [G.872]`, it should be `[G.694.1] and [G.872]`, the same way we cite RFCs or drafts.\r\n\r\n* Typo `flexi-grid elements..`\r\n\r\n## 3 Tree diagram\r\n\r\n### 3.1 Prefixes in Data Node Names\r\n\r\n* Should caption of the table be `Table 1:...` instead of `Figure 1:...`?\r\n\r\n## 4 Example of use\r\n\r\n* We should only keep the second version of the figure instead of both of them. \r\n\r\n* Reference in text should be `Figure 2` in this version, but as I pointed out in 3.1, maybe Figure 1 should be Table and this closes this issue.\r\n\r\n## 6 Yang code \r\n\r\n* In contact leaf, Dan's email is not the same of section Authors' Addresses. (Not an issue but a piece of information for Dan in case he didn't notice).\r\n\r\n* I think that should change the reference and description and use `RFC YYYY` instead of `RFC XXXX`. We have in section 3.1 this note \r\n\r\n```\r\nRFC Editor Note: Please replace XXXX with the RFC numbers assigned to\r\ndraft-ietf-ccamp-layer0-types.  Please replace YYYY with the RFC\r\nnumber assigned to this document.  Please remove this note.\r\n```\r\n\r\nand in the yang code this note\r\n\r\n```\r\nThis version of this YANG module is part of RFC XXXX; see\r\nthe RFC itself for full legal notices.\";\r\n\r\nrevision 2020-10-21 {\r\ndescription\r\n    \"Initial Version\";\r\nreference\r\n    \"RFC XXXX: A YANG Data Model for Flexi-Grid Optical Networks\";\r\n// RFC Ed.: replace XXXX with actual RFC number, update date\r\n// information and remove this note\r\n}\r\n```\r\n\r\nIt's not a big issue but something kind to the RFC Editors so that they can replace XXXX with RFC number for layer0-types and YYYY with our document's number :)\r\n\r\n* Only validation warning is the one I pointed out in last meeting (solved in layer-0-types)\r\n\r\n## 7 Security considerations\r\n\r\n* `Secure Shell (SSH)` is used there three times. Should we just expand the first time? Maybe keep the ones that are titles of RFCs?  Also, should we expand TLS or is already well-known?\r\n\r\n## 9 Contributors\r\n\r\n* Daniel Michaud's corporative email should be `daniel.michaud@estudiante.uam.es` but it is probably already disabled. Jorge should confirm this.\r\n\r\n* Maybe, for consistency, we should ask Victor and Oscar to have also their second surname as Jorge and I do. Or remove our second surname. It's not such a big deal in any case and should be left to each one's discretion.\r\n\r\n* Italo's affiliation (Huawei) is not the same as Haomian's (Huawei Technologies). (Maybe they are different companies and I am messing this up, my apologies in advance in that case :) )\r\n\r\n## 11 References\r\n\r\n### 11.1 Normative references\r\n\r\n* `Madrid, U.` should be `Lopez de Vergara, J. E.`\r\n\r\n* `Lopezalvarez, V` should be `Lopez, V.` (or `Lopez-Alvarez, V.`)\r\n\r\n* `Dios, O.` should be `Gonzalez de Dios, O.`\r\n\r\n### 11.2 Informative references\r\n\r\n* `ITUT` should be `ITU-T`\r\n-------------------------------------",
+          "createdAt": "2021-02-10T10:37:04Z",
+          "updatedAt": "2021-02-10T10:38:17Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Please find my review comments in embedded word comments: \r\n[draft-ietf-ccamp-flexigrid-yang-09-ib@2021-02-10.docx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/5959589/draft-ietf-ccamp-flexigrid-yang-09-ib%402021-02-10.docx)\r\n\r\nProposed text changes, marked with revision bars, are also provided.",
+          "createdAt": "2021-02-10T16:12:13Z",
+          "updatedAt": "2021-02-10T16:12:13Z"
+        },
+        {
+          "author": "jorgelopezdevergara",
+          "authorAssociation": "NONE",
+          "body": "Given that Daniel Perdices is now working at Universidad Aut\u00f3noma de Madrid, maybe we can switch these affiliations (as I am also at Naudit), to keep this information updated.\r\n\r\nDaniel Perdices and I need to add acknowledgements to a national project (probably, instead of Trafica project that is currently there), and to a research scholar for Daniel Perdices. The new acks would be the \"This work is also partially funded by the Spanish State Research Agency under the project AgileMon (AEI PID2019-104451RB-C21) and by the Spanish Ministry of Science, Innovation and Universities under the program for the training of university lecturers (Grant number: FPU19/05678).\"\r\n\r\nWith respect to Daniel Michaud e-mail, I have his personal e-mail. I'm not sure if he needs to be contacted by e-mail, as he worked on this with me at the beginning of the draft. If the e-mail is needed, we can put his UAM e-mail (daniel.michaud@estudiante.uam.es). \r\n\r\nAlso need to update affiliation in YANG code.",
+          "createdAt": "2021-02-11T10:20:39Z",
+          "updatedAt": "2021-02-11T13:19:40Z"
+        },
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I have some comments about the version 9 that I collected in this attached word version.\r\n[draft-ietf-ccamp-flexigrid-yang-09-comment-SB.docx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/5965004/draft-ietf-ccamp-flexigrid-yang-09-comment-SB.docx)\r\n",
+          "createdAt": "2021-02-11T11:55:17Z",
+          "updatedAt": "2021-02-11T11:55:17Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Add some short text stating that media channel resource model is discussion in draft-ietf-ccamp-flex-media-foo and not in scope of this document. ",
+          "createdAt": "2021-02-11T13:16:10Z",
+          "updatedAt": "2021-02-11T13:16:10Z"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "id": "MDU6SXNzdWU4MDYzOTUwNTM=",
+      "title": "Request WG presentation slot at 110 where we will present both topo (one-slide) and media channel I-D. ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/18",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-02-11T13:34:25Z",
+      "updatedAt": "2021-03-10T19:53:51Z",
+      "closedAt": "2021-03-10T19:53:51Z",
+      "comments": []
+    },
+    {
+      "number": 19,
+      "id": "MDU6SXNzdWU4NTMzMjU0MzY=",
+      "title": "Send response to Yangdoctor Last Call Review",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/19",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "https://mailarchive.ietf.org/arch/msg/ccamp/cRUciNQPjBXfjjgz9FwmUbxbsZI/",
+      "createdAt": "2021-04-08T10:33:36Z",
+      "updatedAt": "2021-04-22T11:09:05Z",
+      "closedAt": "2021-04-22T11:09:05Z",
+      "comments": []
+    },
+    {
+      "number": 20,
+      "id": "MDU6SXNzdWU4NTMzMjYwMzI=",
+      "title": "Section 1 - Introduction NITs",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/20",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "s/[G.694.1] and G.872 [G.872] provides/[G.694.1] and G.872 [G.872] provide/\r\n\r\ns/flexi-grid elements../flexi-grid elements/\r\n",
+      "createdAt": "2021-04-08T10:34:17Z",
+      "updatedAt": "2021-04-22T11:11:32Z",
+      "closedAt": "2021-04-22T11:11:32Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed in latest version.",
+          "createdAt": "2021-04-22T11:11:32Z",
+          "updatedAt": "2021-04-22T11:11:32Z"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "id": "MDU6SXNzdWU4NTMzMjc0OTQ=",
+      "title": "Section 4 - Example of Use",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/21",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "\"Thank you first of all for putting together an example to help folks understand the different terminologies used in the document. However, I am confused whose perspective does the example present. The paragraph starts by saying \"In order to configure a network media channel ...\", which to me sounds like a client *configuring* the network media channel. How does configuring of nodes A and E provide connectivity towards the node interface? Or did you mean to say that the act of configuring nodes A and E will somehow bring up the connection towards the node interface?\"\r\n\r\nI (Dan) plan to update as follows: \r\n\r\n>> In order to configure a path between A and E, the operator. \r\n>> Remove \u201cwe\u201d \r\n>> \u201cTransponders A & E are the path termination points\u201d",
+      "createdAt": "2021-04-08T10:36:05Z",
+      "updatedAt": "2021-04-22T11:12:10Z",
+      "closedAt": "2021-04-22T11:12:09Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed in latest version. ",
+          "createdAt": "2021-04-22T11:12:09Z",
+          "updatedAt": "2021-04-22T11:12:09Z"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": "MDU6SXNzdWU4NTMzMjkwMTE=",
+      "title": "Review I-D and replace YANG model \"use\" with \"configure\" and \"configuration\" ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/22",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "As we use the YANG model to configure.",
+      "createdAt": "2021-04-08T10:37:56Z",
+      "updatedAt": "2021-04-22T11:12:20Z",
+      "closedAt": "2021-04-22T11:12:20Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed in latest version.",
+          "createdAt": "2021-04-22T11:12:20Z",
+          "updatedAt": "2021-04-22T11:12:20Z"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "id": "MDU6SXNzdWU4NTMzMjk2NzQ=",
+      "title": "Check I-D and replace first-person text, such as \"we\". ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/23",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "OLD:\r\n      Then, we also define the links 1 to 5 that interconnect nodes,\r\n      indicating which flexi-grid labels are available.\r\n\r\nNEW:\r\n      This example configures links 1 to 5 that interconnect nodes,\r\n      with flexi-grid labels that are available.",
+      "createdAt": "2021-04-08T10:38:48Z",
+      "updatedAt": "2021-04-22T11:11:11Z",
+      "closedAt": "2021-04-22T11:11:11Z",
+      "comments": []
+    },
+    {
+      "number": 24,
+      "id": "MDU6SXNzdWU4NTMzMzA2NDg=",
+      "title": "Use of XXXX and YYYY",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/24",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Use of XXXX is assigned to draft-ietf-ccamp-layer0-types:\r\n\r\n     import ietf-layer0-types {\r\n       prefix \"l0-types\";\r\n       reference\r\n         \"RFC XXXX: A YANG Data Model for Layer 0 Types\";\r\n     }\r\n\r\nyet the YANG model says:\r\n\r\n        This version of this YANG module is part of RFC XXXX; see\r\n        the RFC itself for full legal notices.\";\r\n\r\nand\r\n          \"RFC XXXX: A YANG Data Model for Flexi-Grid Optical Networks\";\r\n        // RFC Ed.: replace XXXX with actual RFC number, update date\r\n       // information and remove this note\r\n\r\nI (Dan) will update, for instance Page 24 and Page 25 YYYY instead of XXXX\r\n",
+      "createdAt": "2021-04-08T10:40:04Z",
+      "updatedAt": "2021-04-22T11:12:33Z",
+      "closedAt": "2021-04-22T11:12:33Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "We duplicate IANA should replace XXXX/YYYY text. Need to clean up.",
+          "createdAt": "2021-04-08T12:10:40Z",
+          "updatedAt": "2021-04-08T12:10:40Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed in latest version.",
+          "createdAt": "2021-04-22T11:12:33Z",
+          "updatedAt": "2021-04-22T11:12:33Z"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "id": "MDU6SXNzdWU4NTMzMzEwMDQ=",
+      "title": "Check us of substitutions ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/25",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "RFC editors prefer that all instructions for substitution are provided in one location instead of having them sprinkled all over the document.\r\n",
+      "createdAt": "2021-04-08T10:40:32Z",
+      "updatedAt": "2022-02-03T12:28:25Z",
+      "closedAt": "2022-02-03T12:28:25Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Legitimate use to be highlighted on list when we submit version 11. ",
+          "createdAt": "2021-10-07T11:25:25Z",
+          "updatedAt": "2021-10-07T11:25:25Z"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "id": "MDU6SXNzdWU4NTMzMzE4MDM=",
+      "title": "Section 6 \"YANG model\" revision statement data is incorrect",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/26",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "ietf-flexi-grid-topology@2020-02-22.yang:1: warning: unexpected latest revision \"2020-10-21\" in ietf-flexi-grid-topology@2020-02-22.yang, should be \"2020-02-22\"",
+      "createdAt": "2021-04-08T10:41:31Z",
+      "updatedAt": "2021-07-12T16:20:32Z",
+      "closedAt": "2021-07-12T16:20:32Z",
+      "comments": []
+    },
+    {
+      "number": 27,
+      "id": "MDU6SXNzdWU4NTMzMzI4MzM=",
+      "title": "Application Example",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/27",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "oscargdd",
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "The document says - \"An application example is provided towards the end of the document to better understand the utility of this YANG model.\" However, no such example exists in the document. With no example, how is an operator supposed to know how to use the module. Besides, there is no way to know that this model is even valid.\r\n\r\nThe example is/will (be) provided in the media channel. Will updated text and point to reference in media channel I-D.\r\n",
+      "createdAt": "2021-04-08T10:42:43Z",
+      "updatedAt": "2021-07-12T16:19:22Z",
+      "closedAt": "2021-07-12T16:19:22Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Dan and Oscar to have skype call and discuss. ",
+          "createdAt": "2021-04-08T12:30:25Z",
+          "updatedAt": "2021-04-08T12:30:25Z"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "id": "MDU6SXNzdWU4NTMzMzQ1NDA=",
+      "title": "Container and When Statements",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/28",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "agva123",
+        "danielkinguk",
+        "italobusi",
+        "sergiobelotti"
+      ],
+      "labels": [],
+      "body": "\"What is not clear with the model is the first container and the when statement. As another YANG doctor explained, the when-stmt applies to *instances* of a model, not to the schema. Therefore a when-stmt that points back to a node that is part of schema and is a presence container does not achieve what I think the authors intended, i.e. a when condition.\"\r\n\r\nHaving looked at other examples, several CCAMP documents make use of \"when\" statements, but non-CCAMP I-Ds do not. Do we really need the \"when\" statement? To me \u201cwhen\u201d might apply to a data object, such as \u201ctrue\u201d \u201cfalse\u201d \u201c3\u201d, etc. ",
+      "createdAt": "2021-04-08T10:44:53Z",
+      "updatedAt": "2022-06-30T12:26:29Z",
+      "closedAt": "2022-06-30T12:26:29Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "We should also check usage for WSON I-D. \r\n\r\nWSON YANG Dr Review - https://datatracker.ietf.org/doc/review-ietf-ccamp-wson-yang-15-yangdoctors-lc-lindem-2018-11-13/\r\nWSON https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-wson-yang-15 in version 15 they commented out. \r\n",
+          "createdAt": "2021-04-08T10:45:23Z",
+          "updatedAt": "2021-04-08T10:45:23Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Dan to check with NETMOD, but it looks like a legitimate use of the \"when\" statement as applied other TE documents.  ",
+          "createdAt": "2021-04-08T12:22:29Z",
+          "updatedAt": "2021-04-08T12:22:29Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Aihua and I have made some checks on:\r\n\r\nhttps://stackoverflow.com/questions/5689966/how-to-check-if-an-element-exists-in-the-xml-using-xpath/5690522\r\n\r\nhttps://www.w3.org/TR/1999/REC-xpath-19991116/#booleans\r\n\r\nIt seems to us that the current when statements are correct since the boolean () XPath function is automatically applied and it returns true when the node exists\r\n\r\nHowever, it is still good to double check with NETMOD",
+          "createdAt": "2021-10-01T09:13:56Z",
+          "updatedAt": "2021-10-01T09:13:56Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Legitimate use to be highlighted on list when we submit version 11. ",
+          "createdAt": "2021-10-07T11:25:09Z",
+          "updatedAt": "2021-10-07T11:25:09Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "<tp>\r\nI commented before that I struggle with the complexity of the 'when' statements in many CCAMP and TEAS I-D such as this one.\r\n\r\nIs it\r\n      when \"../../../../../../../../../../\"\r\n          + \"nw:network-types/tet:te-topology/\"\r\n or\r\n      when \"../../../../../../../../../\"\r\n          + \"nw:network-types/tet:te-topology/\"\r\n or\r\n      when \"../../../../../../../nw:network-types/tet:te-topology/\"\r\n\r\n? answer all of them depending!\r\n\r\nI speculated that the absolute form of the path statement would be much simpler but it was pointed out to me by Martin that that would not work as 'nw:network is a list and so would return true if 'flexi-grid-topology' appeared anywhere in the list which in this case it is almost bound to; but there is the XPath 'ancestor' function which returns true only if the value appears in an immediate ancestor of the context node.  This is almost what I want the caveat being that it returns true if any of the predicates - e.g. primary-path, route-object-exclude-object, etc -  has the value  in question but I believe that that will never be the case.\r\n\r\nIn which case,\r\n when \"ancestor::node()/nw:network-types/tet:te-topology\"\r\nas proposed by Lada will do the job for almost all the 'when' statements (and I can understand it ).\r\n\r\nThe thread is on the netmod WG list from 29dec21 under the subject\r\nYANG 'when' with absolute path\r\n\r\nTom Petch",
+          "createdAt": "2022-01-13T12:58:17Z",
+          "updatedAt": "2022-01-13T12:58:17Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Lets investigate use of xpath ancestor (parent/grandparent) see: \r\n\r\nhttps://www.educba.com/xpath-ancestor/\r\n\r\nHow widespread is this function in IETF YANG modules? \r\n\r\nSergio and Italo will inspect further and we will also need to check with other similar implementations. \r\n",
+          "createdAt": "2022-01-13T13:26:55Z",
+          "updatedAt": "2022-01-13T13:26:55Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "YANG model updated but we have found some issues with yanglint compilation:\r\n\r\nhttps://mailarchive.ietf.org/arch/msg/netmod/SvYTvbqNEeBT5IL74xtDQYwfy_A/\r\n",
+          "createdAt": "2022-01-17T16:08:27Z",
+          "updatedAt": "2022-01-17T16:08:27Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Pyang compilation does not return any error/warnings, but when we use yanglint we see errors as it does recognize ancestor statements. \r\n\r\nResponse from Michal Va\u0161ko <mvasko@cesnet.cz> Tue, 18 January 2022 07:07 UTCShow header\r\n\r\n>>\r\nHi,\r\n\r\nyanglint uses its own XPath implementation, which unfortunately does not support axes, hence the error.\r\n\r\nRegards,\r\nMichal\r\n<<\r\n",
+          "createdAt": "2022-01-27T13:22:27Z",
+          "updatedAt": "2022-02-03T12:29:20Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "YANG experts have confirmed the YANG xpath axes ancestor structure and function is reasonable, but not widely used in other IETF modules, and we can ignore the libyang compilation errors due to a lack of support for axes.  \r\n\r\nWe will summerise the situation with WG and ask other implementers for feedback. \r\n\r\n- Dan to email CCAMP WG for flexi-grid module feedback\r\n- All, decide if we should present an update on the issue to NETMOD and/or CCAMP at IETF 113 (March)\r\n",
+          "createdAt": "2022-02-03T13:33:08Z",
+          "updatedAt": "2022-02-03T13:33:08Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "An ongoing discussion with NETMOD and tools team Re: XPATH ancestor function. Although the NETMOD team is not negative towards using ancestor function in our model(s), the tools are not able to cope with the function, and we may need to revert ro a more conservative approach.   ",
+          "createdAt": "2022-02-24T13:07:46Z",
+          "updatedAt": "2022-02-24T13:07:46Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Reverted to YANG code that uses absolute path, in version 12.  ",
+          "createdAt": "2022-06-30T12:26:29Z",
+          "updatedAt": "2022-06-30T12:26:29Z"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "id": "MDU6SXNzdWU4NTMzMzU5NjM=",
+      "title": "Augmentation Statements",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/29",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk",
+        "italobusi",
+        "sergiobelotti"
+      ],
+      "labels": [],
+      "body": "\"The second general comments has to do with the 80 augment statements. As an operator, I would find it very tedious to configure this model, what with 80 different XPaths to follow. Would it not be better to gather all the augmenting (flexi-grid) parameters together and use leafrefs to link these data structures to the ietf-network module?\"\r\n\r\nThis does seem like a valid comment? When wandering down the branches of the tree, why not add a whole new branch augmentation with the new objects in a single branch augmentation, instead of lots of augmentations? ",
+      "createdAt": "2021-04-08T10:46:31Z",
+      "updatedAt": "2022-01-27T13:18:21Z",
+      "closedAt": "2022-01-27T13:18:21Z",
+      "comments": [
+        {
+          "author": "dperdices",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "To provide more information, the actual version follows the example provided in RFC8795, see https://datatracker.ietf.org/doc/html/rfc8795#appendix-C.",
+          "createdAt": "2021-04-08T11:59:10Z",
+          "updatedAt": "2021-04-08T11:59:10Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "This issue was discussed upfront with Netmod WG:\r\n\r\nhttps://mailarchive.ietf.org/arch/msg/netmod/-6L8KYVVhFiS8KpmH2fUpBmdSy8/\r\n\r\nAppendix C of RFC8795 is based on the feedbacks received from Netmod WG.",
+          "createdAt": "2021-04-08T13:00:02Z",
+          "updatedAt": "2021-04-08T13:00:02Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Legitimate used to be highlighted on list when we submit version 11. ",
+          "createdAt": "2021-10-07T11:25:43Z",
+          "updatedAt": "2021-10-07T11:25:43Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Continued in issue #28 ",
+          "createdAt": "2022-01-27T13:18:21Z",
+          "updatedAt": "2022-01-27T13:18:21Z"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "id": "MDU6SXNzdWU4NTMzMzczNTc=",
+      "title": "Tree Structure ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/30",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk",
+        "italobusi"
+      ],
+      "labels": [],
+      "body": "Having 17 pages of a tree diagram without any explanation for the different sections of the tree diagram is hardly helpful. On the other hand an abridged version of the tree diagram explaining the different sections would be more helpful normative text. Suggest that --tree-depth and --tree-path options be used in pyang to reduce the size of the tree and to break it up into smaller\r\npieces that can then be explained. The full tree diagram can be added as non-normative text in the Appendix.\r\n\r\nThis is a valid comment, having looked at other YANG models I found https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l3sm-l3nm-07#section-7 as a good example. ",
+      "createdAt": "2021-04-08T10:48:13Z",
+      "updatedAt": "2021-07-12T16:18:54Z",
+      "closedAt": "2021-07-12T16:18:54Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Please find some proposed text for clause 5 (similar to the text we have provided for OTN topology) to address this issue\r\n\r\n[draft-ietf-ccamp-flexigrid-yang-09-ib@2021-04-26.docx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/6390242/draft-ietf-ccamp-flexigrid-yang-09-ib%402021-04-26.docx)\r\n\r\nPlease note that this document contains also some review comments to other sections of the draft (for further discussion)\r\n",
+          "createdAt": "2021-04-28T08:24:47Z",
+          "updatedAt": "2021-04-28T08:24:47Z"
+        },
+        {
+          "author": "dperdices",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Thank you, Italo! In my opinion, this new section 5 is really explanatory and makes the model easier to understand so readers will surely appreciate it.\r\n\r\nI leave here some minor issues to check before merging. (English-related things should be double-checked by @danielkinguk, just in case I report things that are in fact correct, my apologies in advance).\r\n- \"Therefore the YANG\" => \"Therefore, the YANG\"\r\n- \"an Flexi-Grid\" => \"a flexi-grid\"\r\n- In the rest of the document, we use flexi-grid (with this capitalization, instead of Flexi-Grid)\r\n- Section 3.2 should not be 3.2 but 5.X. In general, when merging this, we should revise the section numbering.\r\n- \"in the topology as follow.\" => \"in the topology as follows:\"\r\n- \"Therefore the model does not define\" => \"Therefore, the model does not define\"\r\n",
+          "createdAt": "2021-04-29T08:42:11Z",
+          "updatedAt": "2021-04-29T08:42:11Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Dan to integrate into XML version v10.",
+          "createdAt": "2021-04-29T12:09:28Z",
+          "updatedAt": "2021-04-29T12:09:28Z"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "id": "MDU6SXNzdWU4NjQ4NzE5NzA=",
+      "title": "Change affiliation of Victor to Nokia",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/31",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-04-22T12:08:11Z",
+      "updatedAt": "2021-07-12T15:03:09Z",
+      "closedAt": "2021-07-12T15:03:09Z",
+      "comments": []
+    },
+    {
+      "number": 32,
+      "id": "MDU6SXNzdWU4NjQ5MDkxNzQ=",
+      "title": "Definition of media-channel and superchannel",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/32",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Definitions will be clarified and described in impairments or layer-0 types document, so we can reference there.",
+      "createdAt": "2021-04-22T12:47:22Z",
+      "updatedAt": "2021-07-12T15:01:43Z",
+      "closedAt": "2021-07-12T15:01:43Z",
+      "comments": []
+    },
+    {
+      "number": 33,
+      "id": "MDU6SXNzdWU4NzA5NTA4NTQ=",
+      "title": "All authors - Confirm prefix agreement with Tom/CCAMP list ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/33",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Dan to update V10 I-D to use \"flexgt\".  \r\n",
+      "createdAt": "2021-04-29T12:14:53Z",
+      "updatedAt": "2021-07-12T14:57:31Z",
+      "closedAt": "2021-07-12T14:57:31Z",
+      "comments": []
+    },
+    {
+      "number": 34,
+      "id": "MDU6SXNzdWU4NzY2ODE3NjU=",
+      "title": "Issue compiling XML file",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/34",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "I am having issues compiling the latest XML file: 8db86ff14251f07d648dc14df95fe59605434c94\r\n\r\nI have used the on-line tool: https://xml2rfc.tools.ietf.org/\r\n\r\nThis is the error message that I got:\r\n\r\n> Error: Unable to parse the XML document: INPUT\r\n>  INPUT: Line 150: Opening and ending tag mismatch: t line 132 and section\r\n>  INPUT: Line 150: Opening and ending tag mismatch: t line 132 and section\r\n>  INPUT: Line 2966: Opening and ending tag mismatch: section line 132 and middle\r\n>  INPUT: Line 3027: Opening and ending tag mismatch: middle line 132 and rfc\r\n>  INPUT: Line 3027: EndTag: '</' not found\r\n> ",
+      "createdAt": "2021-05-05T17:30:09Z",
+      "updatedAt": "2021-07-12T14:49:39Z",
+      "closedAt": "2021-07-12T14:49:39Z",
+      "comments": []
+    },
+    {
+      "number": 36,
+      "id": "MDU6SXNzdWU5NDk0ODIzODE=",
+      "title": "Editorial comment to section 5.4 of revision 10",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/36",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "This paragraph duplicates the content of section 5.3 (looks like an unintended cut&paste):\r\n\r\nhttps://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/blob/37aa8c588cd504a859579948cf1289fa54d1cf4d/draft-ietf-ccamp-flexigrid-yang-10.xml#L396-L399\r\n\r\nI think it should be removed\r\n\r\nSee: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-flexigrid-yang#section-5.4",
+      "createdAt": "2021-07-21T08:54:34Z",
+      "updatedAt": "2021-10-20T15:13:17Z",
+      "closedAt": "2021-10-20T15:13:17Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Agree.\r\n",
+          "createdAt": "2021-07-21T09:03:08Z",
+          "updatedAt": "2021-07-21T09:03:08Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed. ",
+          "createdAt": "2021-10-07T11:24:10Z",
+          "updatedAt": "2021-10-07T11:24:10Z"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "id": "I_kwDOEaoOG848yuph",
+      "title": "All - Check version 11 of the document, then submit. ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/38",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-10-07T11:26:05Z",
+      "updatedAt": "2021-11-11T15:39:11Z",
+      "closedAt": "2021-11-11T15:39:11Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Please let me have comments by Tuesday 19, 2021. ",
+          "createdAt": "2021-10-14T12:07:43Z",
+          "updatedAt": "2021-10-14T12:07:43Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "I think the -11 version is ready for submission. I have few comments that could be addressed either before -11 submission or afterwards (before or during WG LC):\r\n\r\n1. an English review would be helpful.\r\n    For example, \u201cthe following example is provided\u201d instead of \u201cwe provide the following example\u201d)\r\n2. In the introduction it would be useful to clarify that this model does not require GMPLS implementation:\r\n    **OLD**\r\n         This document presents a YANG data model [RFC7950] for flexi-grid\r\n         objects in the dynamic optical network, including nodes, transponders\r\n         and links, as well as how such links interconnect nodes. \r\n    **NEW**\r\n         This document presents a YANG data model [RFC7950] for flexi-grid\r\n         objects in the dynamic optical network, including nodes, transponders\r\n         and links, as well as how such links interconnect nodes. This model is\r\n         independent of control plane protocols.\r\n3. The use of term \"media channel\" thought the document needs to be reviewed, in line with https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-media-channel-yang/issues/33\r\n4. The layer0-types I-D has now been published as RFC9093",
+          "createdAt": "2021-10-20T15:23:14Z",
+          "updatedAt": "2021-10-20T15:23:14Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "We wont be able to refer to the new draft-ietf-ccamp-flexigrid-tunnel-yang I-D until the Chairs approve the new 00 version (uploaded earlier today). I will queue the I-D for submission when the tool opens again at the start of IETF week. ",
+          "createdAt": "2021-10-25T18:51:32Z",
+          "updatedAt": "2021-10-25T18:51:32Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Comments 2, 3 & 4 are addressed in the latest version of the I-D. ",
+          "createdAt": "2021-10-25T18:55:40Z",
+          "updatedAt": "2021-10-25T18:55:40Z"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "id": "I_kwDOEaoOG849LF_b",
+      "title": "Move new YANG code into version 11 of the I-D",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/39",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "To be done before submission of I-D. ",
+      "createdAt": "2021-10-14T12:08:27Z",
+      "updatedAt": "2021-10-25T18:47:04Z",
+      "closedAt": "2021-10-25T18:47:04Z",
+      "comments": []
+    },
+    {
+      "number": 40,
+      "id": "I_kwDOEaoOG85ApqAa",
+      "title": "LC Review from Tom",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/40",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "<tp>\r\nwrong YANG  prefix (s.9)\r\n\r\nAfter all the discussions on CCAMP and TEAS WG lists about what would make for a good prefix, this does not bode well - sigh\r\n\r\n<tp2>\r\nAnd while I am on the admin ...\r\n\r\nThe dates ib the module are wrong but differently wrong in different places - if it were all the same wrong I would live with it.\r\n\r\nSecurity Considerations make no mention of any nodes in this I-D - I doubt if the AD will countenance that.\r\n\r\nRFC Editor Note Please replace XXXX with the numbers assigned to RFC9093 Really?  Look in the YANG module revision reference and you may think again\r\n\r\nTLP is out of date\r\n\r\nCopyright out of date  - perhaps 2022!\r\n\r\nURL lack security (https:) in several places\r\n\r\nURL to an obsolete web page (tool)\r\n\r\n[G.694.1] .... G-872\r\nReally?\r\n\r\nAs I have commented before, it is a pig to review because TE got its YANG structure wrong in the first place so whether or not I will look at the semantics of the model , I do not know - perhaps if Boxing Day gets very boring:-)",
+      "createdAt": "2021-12-20T11:12:44Z",
+      "updatedAt": "2022-06-30T13:05:52Z",
+      "closedAt": "2022-06-30T13:05:51Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "1. Date used in file name and revision needs to be consistent. (DK)\r\n\r\n2. For \"RFC XXXX\" and \"RFC YYYY\" need to check usage within I-D for consistency  (DK)\r\n\r\n3. IANA Section referred to old prefix. (DK)\r\n\r\nOLD\r\n   IANA is requested to assign a new YANG module name in the \"YANG\r\n    Module Names\" registry [RFC6020] as follows:\r\n\r\n          Name: ietf-flexi-grid-topology\r\n          Namespace: urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology\r\n          Prefix: flexi-grid-topology\r\n          Reference: [This.I-D]\r\nNEW\r\n   IANA is requested to assign a new YANG module name in the \"YANG\r\n    Module Names\" registry [RFC6020] as follows:\r\n\r\n          Name: ietf-flexi-grid-topology\r\n          Namespace: urn:ietf:params:xml:ns:yang:ietf-flexi-grid-topology\r\n          Prefix: flexgt\r\n          Reference: RFC XXXX\r\n\r\n4. Need to check how we reference an ITU-T amendment. (see Issue #41)\r\n\r\n5. Security issues in code, check WSON TOPO (9094) and TE TOPO [RFC8795] (DK)\r\n\r\n6. URL usage should be \"https\" - Check uses of \"http\" and use \"https\" wherever possible (DK)\r\n\r\n7. Time to move from \"Informational\" to \"Standards Track\"? Italo to raise on list. - We should change to \"Standards\" (DK)\r\n\r\nAlso waiting on additional comments from LC. ",
+          "createdAt": "2021-12-23T13:09:24Z",
+          "updatedAt": "2022-01-13T13:19:32Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "> TLP is out of date\r\n\r\nWhat is the meaning of TLP?\r\n",
+          "createdAt": "2022-01-17T15:44:50Z",
+          "updatedAt": "2022-01-17T15:44:50Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Oh, wonder if its \"Trust Legal Provisions\" in YANG code. \"Copyright (c) 2020 IETF Trust and the persons identified as authors of the code\"",
+          "createdAt": "2022-01-17T16:09:22Z",
+          "updatedAt": "2022-01-17T16:09:22Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "then it should be fixed by the YANG model update in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/commit/c8710322327eb1d974b2dd0075bed3eaf807522d\r\n",
+          "createdAt": "2022-01-17T16:13:31Z",
+          "updatedAt": "2022-01-17T16:13:31Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Addressed in version 12.",
+          "createdAt": "2022-06-30T13:05:51Z",
+          "updatedAt": "2022-06-30T13:05:51Z"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "id": "I_kwDOEaoOG85A2FTy",
+      "title": "How we reference an ITU-T amendment",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/41",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "danielkinguk",
+        "italobusi"
+      ],
+      "labels": [],
+      "body": "Need to check how we reference an ITU-T amendment.\r\n\r\n_Originally posted by @danielkinguk in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/40#issuecomment-1000293680_",
+      "createdAt": "2021-12-23T18:27:54Z",
+      "updatedAt": "2022-06-30T12:31:40Z",
+      "closedAt": "2022-06-30T12:31:40Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "I have checked for some guidelines or previous examples but I have not found any common guidelines nor consistent examples ...\r\n\r\nFew options an input for further discussion (other options or a combination of these options are also possible):\r\n\r\nOLD\r\n```\r\n   [G.694.1]  International Telecommunication Union, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITUT G.872,\r\n              February 2012.\r\n\r\n   [G.872]    International Telecommunication Union, \"Architecture of\r\n              optical transport networks\", ITUT G.872, November 2010.\r\n\r\n```\r\nNEW (option 1)\r\n```\r\n   [G.694.1]  International Telecommunication Union, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITU-T Recommendation G.694.1,\r\n              October 2020.\r\n\r\n   [G.872]    International Telecommunication Union, \"Architecture of\r\n              optical transport networks\", ITU-T Recommendation G.872, December 2019.\r\n\r\n```\r\nNEW (option 2)\r\n```\r\n   [ITU-T_G.694.1]  International Telecommunication Union, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITU-T Recommendation G.694.1,\r\n              October 2020.\r\n\r\n   [ITU-T_G.872]    International Telecommunication Union, \"Architecture of\r\n              optical transport networks\", ITU-T Recommendation G.872, December 2019.\r\n\r\n```\r\nNEW (option 3)\r\n```\r\n   [ITU-T_G.694.1]  ITU-T, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITU-T Recommendation G.694.1,\r\n              October 2020.\r\n\r\n   [ITU-T_G.872]    ITU-T, \"Architecture of\r\n              optical transport networks\", ITU-T Recommendation G.872, December 2019.\r\n\r\n```\r\nNEW (option 4)\r\n```\r\n   [ITU-T_G.694.1]  ITU-T, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITU-T Recommendation G.694.1,\r\n              October 2020.\r\n\r\n   [ITU-T_G.872]    ITU-T, \"Architecture of\r\n              optical transport networks\", ITU-T Recommendation G.872, Amendment 1, January 2021.\r\n\r\n```\r\nNEW (option 5)\r\n```\r\n   [ITU-T_G.694.1]  International Telecommunications Union \u2013 Telecommunications Sector (ITU-T), \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITU-T Recommendation G.694.1,\r\n              October 2020.\r\n\r\n   [ITU-T_G.872]    International Telecommunications Union \u2013 Telecommunications Sector (ITU-T), \"Architecture of\r\n              optical transport networks\", ITU-T Recommendation G.872, Amendment 1, January 2021.\r\n\r\n```\r\n",
+          "createdAt": "2021-12-23T18:29:44Z",
+          "updatedAt": "2021-12-23T18:29:44Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Possible split of the different options:\r\n1) Citation:\r\n   1) [G.872] \r\n   2) [ITU-T_G.872] (Preferred)\r\n2) Source: \r\n   1) International Telecommunication Union (Preferred)\r\n   2) ITU-T\r\n   3) International Telecommunications Union \u2013 Telecommunications Sector (ITU-T)\r\n3) version:\r\n   1) ITU-T Recommendation G.872, December 2019 \r\n   2) ITU-T Recommendation G.872, Amendment 1, January 2021 (Preferred) \r\n",
+          "createdAt": "2021-12-23T18:34:58Z",
+          "updatedAt": "2022-01-13T13:39:02Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "OLD\r\n```\r\n   [G.694.1]  International Telecommunication Union, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITUT G.872,\r\n              February 2012.\r\n\r\n   [G.872]    International Telecommunication Union, \"Architecture of\r\n              optical transport networks\", ITUT G.872, November 2010.\r\n\r\n```\r\nNEW\r\n```\r\n   [ITU-T_G.694.1]\r\n              International Telecommunication Union, \"Spectral grids for\r\n              WDM applications: DWDM frequency grid\", ITU-T\r\n              Recommendation G.694.1, February 2012.\r\n\r\n   [ITU-T_G.872]\r\n              International Telecommunication Union, \"Architecture of\r\n              optical transport networks\", ITU-T Recommendation G.872,\r\n              Amendment 1, January 2021.\r\n```\r\n",
+          "createdAt": "2022-03-01T14:03:55Z",
+          "updatedAt": "2022-03-01T14:03:55Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Updated in version 12.",
+          "createdAt": "2022-06-30T12:31:40Z",
+          "updatedAt": "2022-06-30T12:31:40Z"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "id": "I_kwDOEaoOG85BTq8x",
+      "title": "LC Review from Adrian ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/42",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "tl;dr This is ready for publication with some nits that need to be\r\nsorted out.\r\n\r\nBest,\r\nAdrian\r\n\r\n===\r\n\r\nThroughout:\r\n\r\nPlease resolve \"Flexi-Grid\" or \"flexi-grid\"\r\n\r\n---\r\n\r\nAs a general comment, I think it was only clear to me on reading sections\r\n6 and 7 that this YANG module is entirely made up of individual \r\naugmentations of leaf nodes defined in other modules. That's not a \r\nproblem, but it might helpful to highlight this in Section 1.\r\n\r\n---\r\n\r\nSection 1\r\n\r\n   This document identifies the flexi-grid components, parameters and\r\n   their values, characterizes the features and the performances of the\r\n   flexi-grid elements.\r\n\r\nI think this should be\r\n\r\n   This document identifies the flexi-grid components, parameters, and\r\n   their values.  It characterizes the features and the performances of\r\n   the flexi-grid elements.\r\n\r\n---\r\n\r\nSection 3\r\n\r\n   RFC Editor Note: Please replace XXXX with the RFC numbers assigned to\r\n   [RFC9093].  Please replace YYYY with the RFC number assigned to this\r\n   document.  Please remove this note.\r\n\r\nI suspect that the number for XXXX is 9093 :-)\r\n\r\nNote, however, that in Section 7 you use XXXX for this document. It may\r\nhelp the RFC editor if you are consistent.\r\n\r\n---\r\n\r\nSection 4\r\n\r\nOLD\r\n      We also provide nodes A\r\n      and B identifiers, addresses and interfaces.\r\nNEW\r\n      We also provide the identifiers, addresses and interfaces of nodes\r\n      A and B.\r\nEND\r\n\r\ns/Figure 1 shows a simple topology./Figure 2 shows a simple topology./\r\n\r\n---\r\n\r\n5.1\r\n\r\ns/This document aims to describe/This document describes/\r\ns/Traffic-engineering (TE)/traffic engineering (TE)/\r\ns/Grid provide WDM/Grid provides WDM/\r\ns/Traffic Engineered (TE)/TE/\r\ns/identities and groupings/identities, and groupings/\r\ns/The figure below/Figure 3/\r\ns/describing an Flexi-Grid/describing a Flexi-Grid/\r\ns/specifies with/specifies the/\r\n\r\n---\r\n\r\n5.1\r\n\r\n   The Flexi-Grid specific attributes in [RFC7699], including the grid\r\n   type, channel spacing, slot width granularity, n and m parameters,\r\n   can be used to represent the label information.\r\n\r\nPerhaps I am being pedantic, but isn't the label a representation of \r\nthose parameters, not the other way round?\r\n\r\n---\r\n\r\n5.2.  Attributes Augmentation\r\n\r\n   There are a few characteristics augmenting to the generic TE\r\n   topology.\r\n\r\nI think, probably...\r\n\r\n5.2.  Augmentations for Flexi-Grid Topology and Node\r\n\r\n   There are a few augmentations to the generic TE topology as described\r\n   in this section.\r\n\r\n---\r\n\r\n5.2\r\n\r\ns/topology as follows./topology as shown in Figure 4./\r\ns/is a Flexi-Grid node/is a Flexi-Grid node as shown in Figure 5./\r\n\r\n---\r\n\r\n5.3\r\n\r\n/layer0/Layer 0/\r\ns/to describe also/to also describe/\r\n\r\n---\r\n\r\nSection 5.3 contains a little surprise. \"Here are the bandwidth \r\naugmentations: there are n bandwidth augmentations.\"\r\n\r\nPerhaps resolve this by adding a paragraph at the very top of the \r\nsection to say...\r\n\r\n   No bandwidth augmentations are needed for this YANG module.\r\n\r\nThen the rest of the section will appear as an explanation.\r\n\r\n---\r\n\r\n5.4\r\n\r\n   The model augments all the occurrences of the label-restriction list\r\n   with flexi-grid technology specific attributes using the flexi-grid-\r\n   label-range-info grouping defined in [RFC9093].\r\n\r\nCan you add a reference for where the label-restriction list is \r\ndefined. I think it is RFC 8795.\r\n\r\n---\r\n\r\n7.\r\n\r\n   module ietf-flexi-grid-topology {\r\n     description\r\n       \"This module provides a YANG data model for the routing and\r\n        wavelength assignment (RWA) Traffic Engineering (TE)\r\n        topology in flexi-grid optical networks. The YANG model\r\n        described in this document is a flexi-grid technology-specific\r\n        YANG model augmenting the generic TE topology module\r\n        (ietf-te-topology, RFC 9795) based on the RFC 7698 and 7699.\r\n\r\ns/based on the RFC 7698 and 7699./based on RFC 7698 and RFC 7699./\r\n\r\n---\r\n\r\n7.\r\n\r\nObviously, the copyright date is broken in the YANG\r\n",
+      "createdAt": "2022-01-06T20:37:01Z",
+      "updatedAt": "2022-06-30T12:57:53Z",
+      "closedAt": "2022-06-30T12:57:53Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Addressed in version 12.",
+          "createdAt": "2022-06-30T12:57:53Z",
+          "updatedAt": "2022-06-30T12:57:53Z"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "id": "I_kwDOEaoOG85DW0tR",
+      "title": "Check vendors to summarise support for ANCESTOR function",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/44",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "agva123",
+        "danielkinguk",
+        "dperdices",
+        "italobusi",
+        "sergiobelotti"
+      ],
+      "labels": [],
+      "body": "We need to confirm implementers are willing to support ancestor function. ",
+      "createdAt": "2022-02-10T13:11:51Z",
+      "updatedAt": "2022-03-24T12:01:45Z",
+      "closedAt": "2022-03-24T12:01:45Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Use of Ancestor function was not widely supported and will revert to earlier code using relative paths. ",
+          "createdAt": "2022-03-24T12:01:45Z",
+          "updatedAt": "2022-03-24T12:01:45Z"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "id": "I_kwDOEaoOG85HSOIU",
+      "title": "Check to make sure all the LC comments are addressed.",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/46",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Prepare final version of the document for submission. Then notify Italo so he can compile with core and submit via IETF Submissions.",
+      "createdAt": "2022-04-07T12:12:55Z",
+      "updatedAt": "2022-06-30T13:06:32Z",
+      "closedAt": "2022-06-30T13:06:32Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Reviewed outstanding LC comments and addressed open issues in v12 of the document. ",
+          "createdAt": "2022-06-30T13:06:31Z",
+          "updatedAt": "2022-06-30T13:06:31Z"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "id": "I_kwDOEaoOG85HSOmy",
+      "title": "Create MD version of the document in preparation for submission.",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/47",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-04-07T12:14:42Z",
+      "updatedAt": "2022-06-30T13:14:48Z",
+      "closedAt": "2022-06-30T13:14:48Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Ensure that all LC comments have addressed. ",
+          "createdAt": "2022-04-21T12:28:24Z",
+          "updatedAt": "2022-04-21T12:28:24Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "XML and text versions are available in the GitHub repository.",
+          "createdAt": "2022-06-30T13:14:48Z",
+          "updatedAt": "2022-06-30T13:14:48Z"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "id": "I_kwDOEaoOG85L59gv",
+      "title": "Update header in new version to \"Standards Track\"",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/49",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Now a Standards Track Document. ",
+      "createdAt": "2022-06-16T12:17:56Z",
+      "updatedAt": "2022-06-30T12:25:04Z",
+      "closedAt": "2022-06-30T12:25:04Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed in version 12. ",
+          "createdAt": "2022-06-30T12:25:04Z",
+          "updatedAt": "2022-06-30T12:25:04Z"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "id": "I_kwDOEaoOG85NIqhj",
+      "title": "Review contributor list and also add Sergio ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/51",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "To be added: \r\n\r\nBelotti, Sergio (Nokia)\r\nsergio.belotti@nokia.com",
+      "createdAt": "2022-07-05T10:37:50Z",
+      "updatedAt": "2022-07-10T19:42:14Z",
+      "closedAt": "2022-07-10T19:42:14Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Fixed in version 13. ",
+          "createdAt": "2022-07-10T19:42:14Z",
+          "updatedAt": "2022-07-10T19:42:14Z"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "id": "I_kwDOEaoOG85TarFc",
+      "title": "Update text in Section 4",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/52",
+      "state": "OPEN",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "Proposed text:\r\n\r\n\"In order to configure a flexi-grid network to interconnect transponders A and E, first of all we have to populate the flexi-grid    topology YANG model with all elements in the network:\"",
+      "createdAt": "2022-10-06T12:18:06Z",
+      "updatedAt": "2023-12-20T13:26:26Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 53,
+      "id": "I_kwDOEaoOG85TatvZ",
+      "title": "Add Reference to rfc7698 for RSA",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/53",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "We will use RFC7698 for RSA definition/reference. \r\n\r\n\"Routing and Spectrum Assignment (RSA)\"",
+      "createdAt": "2022-10-06T12:24:19Z",
+      "updatedAt": "2023-01-19T13:09:32Z",
+      "closedAt": "2023-01-19T13:09:32Z",
+      "comments": []
+    },
+    {
+      "number": 54,
+      "id": "I_kwDOEaoOG85TauNw",
+      "title": "Need to update YANG Abstract to fix RWA/RSA",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/54",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "Need to fix Abstract text to refer to RSA. ",
+      "createdAt": "2022-10-06T12:25:25Z",
+      "updatedAt": "2024-01-11T12:21:46Z",
+      "closedAt": "2024-01-11T12:21:46Z",
+      "comments": []
+    },
+    {
+      "number": 55,
+      "id": "I_kwDOEaoOG85TbU17",
+      "title": "Remove NMDA statement from the abstract",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/55",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "Dhruv suggests \"removing the NMDA statement from the abstract, you have it covered in the Introduction\"\r\n\r\nI have checked RFC8407 and it seems that the NMDA statement is needed only in the Introduction:\r\n\r\nhttps://datatracker.ietf.org/doc/html/rfc8407#section-3.5",
+      "createdAt": "2022-10-06T13:49:05Z",
+      "updatedAt": "2023-12-20T13:26:46Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 56,
+      "id": "I_kwDOEaoOG85bOvyV",
+      "title": "Muxponders' configuration constraints",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/56",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "danielkinguk",
+        "italobusi"
+      ],
+      "labels": [],
+      "body": "During ACTN POI discussion, it has been noted that \"in MXPs usually the client ports are assigned to the time slots by default (or by design)\".\r\n\r\nSee: https://github.com/FabioPeruzzini/actn-poi/issues/108\r\n\r\nIf the muxponder can constraint which client ports can be connected together, this constraint shall be reported to the MDSC through the MPI but this information is not defined in the existing topology YANG models.\r\n\r\nIt is not yet clear how this constraint can be reported and whether this information should be reported by the flexi-grid topology model (e.g., a V2 version of the model) or by the optical impairments topology model",
+      "createdAt": "2023-01-12T12:01:20Z",
+      "updatedAt": "2023-12-14T13:19:51Z",
+      "closedAt": "2023-12-14T13:19:51Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Need to decide what configuration information/attribute constraints to report and then update the model/document.\r\n\r\nhttps://datatracker.ietf.org/doc/html/rfc8795#name-te-inter-layer-lock\r\n",
+          "createdAt": "2023-01-19T13:16:54Z",
+          "updatedAt": "2023-01-19T13:44:54Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Slide discussed during the meeting: [mxp-constraints-00.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10466574/mxp-constraints-00.pptx)\r\n\r\n\r\nThe inter-layer lock indicates that the 10 LTPs on node A (or node Z) can be connected to a WDM tunnel starting from the TTP in node A (or in node Z, respectively)\r\n\r\nIf at least one of the two muxponders support a flexible multiplexing label allocation, the 10GE service between MXP-A-1 and MXP-Z-5 is feasible\r\n\r\nIf the two muxponders support a fixed multiplexing label allocation, the 10GE service between MXP-A-1 and MXP-Z-5 is not feasible while the 10GE service between MXP-A-1 and MXP-Z-1 is feasible.\r\n\r\nFrom the inter-layer lock information it seems possible to setup a 10GE service between MXP-A-1 and MXP-Z-5, so additional information is needed to report when there are additional constraints that make it not possible\r\n\r\nIn many cases the multiplexing label is proprietary. It is therefore also important to check that the two muxponders support the same multiplexing label. The type of multiplexing label can also report whether the label allocation is fixed or flexible.\r\n\r\nIn order to report the type of multiplexing label, it has been agreed to re-use the switching-capability*  with vendor-specific values for vendor-proprietary multiplexing types\r\n\r\nHowever, even if the type of multiplexing label reports that the label allocation is fixed, the information about which LTP is associated with which label or muxponder physical port is still missing\r\n",
+          "createdAt": "2023-01-20T13:15:27Z",
+          "updatedAt": "2023-01-20T13:17:55Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Created some examples. \r\n\r\n[Muxponder Constraints v1.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10795160/Muxponder.Constraints.v1.pptx)\r\n\r\n",
+          "createdAt": "2023-02-21T15:48:36Z",
+          "updatedAt": "2023-02-21T15:48:36Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "When the the mapping/multiplexing technology is proprietary, the two muxponders shall be under the control of the same PNC so any proprietary configuration can be managed by the PNC with no need to be exposed at the MPI toward the MDSC. However, these constraints have an impact on the pair of LTPs the MDSC can request the service setup and therefore it is worthwhile to expose it at the MPI through a standardized YANG model\r\n\r\nHowever, the solution should be generic enough not to depend on any specific standard or proprietary mapping/multiplexing technology\r\n\r\nProposed resolution:\r\n\r\n```\r\n       +--rw termination-point* [tp-id]\r\n         +--rw tp-id?   ...\r\n         +--rw te-tp-id?   te-types:te-tp-id\r\n         +--rw te!\r\n            ...\r\n            +--rw inter-layer-lock-id*              uint32\r\n            +--rw inter-layer-sequence-number?      uint32\r\n\r\n```\r\n\r\n[Muxponder.Constraints.v2.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11507738/Muxponder.Constraints.v2.pptx)\r\n",
+          "createdAt": "2023-05-18T12:27:02Z",
+          "updatedAt": "2023-05-18T12:31:11Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "\r\n[Muxponder.Constraints.v3.1 (6).pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/12728742/Muxponder.Constraints.v3.1.6.pptx)\r\nSlides updated based on the feedbacks/discussion during the 2023-05-18 call: [Muxponder.Constraints.v3.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11530989/Muxponder.Constraints.v3.pptx)\r\n\r\n@italobusi : Italo, just modified a bit slide 7 . Same for the rest.",
+          "createdAt": "2023-05-22T12:27:16Z",
+          "updatedAt": "2023-09-26T14:27:14Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "This capability will be discussed/documented in Optical Impairments I-D. https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-optical-impairment-topology-yang/issues/120 ",
+          "createdAt": "2023-09-14T12:29:03Z",
+          "updatedAt": "2023-09-14T12:29:03Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Waiting on Dieter, Sergio and Aihua to propose some text for the Optical Impairment I-D that can be references from the Flexi-Grid work. Dieter suggested that maybe some ASCII art might be useful. ",
+          "createdAt": "2023-09-28T12:15:04Z",
+          "updatedAt": "2023-09-28T12:16:06Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Close with https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-optical-impairment-topology-yang/issues/120",
+          "createdAt": "2023-12-14T13:19:51Z",
+          "updatedAt": "2023-12-14T13:19:51Z"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "id": "I_kwDOEaoOG85c4So8",
+      "title": "Support for a single and multiple topology instance across multi-layer networks",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/57",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [
+        "bug",
+        "agreed"
+      ],
+      "body": "It seems that there are gaps when the current flexi-grid topology model is used to support a single topology instance across multi-layer networks, using network types multi-inheritance.\r\n\r\nFor example, it might be possible to use multi-inheritance to expose a single topology instance across flexi-grid, OTN and ETH networks:\r\n\r\n```\r\n      |  +--rw tet:te-topology!\r\n      |     +--rw flexigt:flexi-grid-topology!\r\n      |     +--rw otnt:otn-topology!\r\n      |     +--rw eth-tet:eth-tran-topology!\r\n```\r\n",
+      "createdAt": "2023-01-26T14:48:05Z",
+      "updatedAt": "2023-07-06T13:18:52Z",
+      "closedAt": "2023-07-06T13:18:52Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "**2023-01-26 Flexi-grid call**\r\n\r\nSome details about the issues identified with the current flexi-grid, OTN and ETH topology models, as discussed during the audio today:\r\n\r\n[current-ml-topology-models-00.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10510413/current-ml-topology-models-00.txt)\r\n\r\nSome initial brainstorming analysis for possible options to resolve di issue, , as discussed during the audio today:\r\n\r\n[new-ml-topology-models-00.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10510430/new-ml-topology-models-00.txt)\r\n",
+          "createdAt": "2023-01-26T14:52:01Z",
+          "updatedAt": "2023-01-26T14:52:17Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Created topology examples for single instance and multiple topologies over multi-layer networks. \r\n\r\n[MLN Topologies v1.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10795135/MLN.Topologies.v1.pptx)\r\n",
+          "createdAt": "2023-02-21T15:47:16Z",
+          "updatedAt": "2023-02-21T15:47:16Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Updated use cases. \r\n\r\n[MLN.Topologies.v2.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10871263/MLN.Topologies.v2.pptx)\r\n",
+          "createdAt": "2023-03-02T12:28:48Z",
+          "updatedAt": "2023-03-02T12:28:48Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "It is worth noting that the flexibility to support either multiple single-layer topology instances or a single multi-layer topology instance (see slides 6 and 4 in [MLN.Topologies.v2.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10871263/MLN.Topologies.v2.pptx)) is similar to the options for GMPLS as described in [RFC5212](https://datatracker.ietf.org/doc/html/rfc5212) (thanks to @sergiobelotti for the reference)",
+          "createdAt": "2023-03-09T09:36:49Z",
+          "updatedAt": "2023-03-09T09:37:36Z"
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "id": "I_kwDOEaoOG85ebSfJ",
+      "title": "Boundary between Layer 0 and Layer 1",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/58",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi",
+        "sergiobelotti",
+        "ggalimba56",
+        "ggrammel",
+        "dieterbeller"
+      ],
+      "labels": [
+        "discussion required"
+      ],
+      "body": "Since 3R modelling is in the scope of this document, I think that the layer 1 functionality of the transponders are also in the scope of this document.\r\n\r\nFor example, the inverse multiplexing and FEC are layer 1 functionality of the transponders which are in the scope of this document.\r\n\r\nMaybe it is a terminology issue. IMHO, the aggregation (multiplexing) of client layer signals is performed by muxponders and not by transponders. A muxponder can be modelled as a layer 1 functionality providing the aggregation (multiplexing) of client layer signals and a transponder functionality. In this case, I agree that the aggregation (multiplexing) of client layer signals is outside the scope of this document.\r\n\r\nI do not recall if these issues have been all addressed in the 3R model (need to double check).\r\n\r\nMy suggestion is to keep the text as it is now and to track this as an issue for discussion after IETF 112.\r\n\r\n_Originally posted by @italobusi in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-optical-impairment-topology-yang/pull/94#discussion_r734500969_",
+      "createdAt": "2021-10-27T09:55:02Z",
+      "updatedAt": "2023-12-20T13:25:46Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "As discussed during yesterday's call, the text description needs further improvements to clarify the boundary between what is in the scope (layer 0) and what is out of scope (layer 1)\r\n\r\n[layer0-boundary-00.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-optical-impairment-topology-yang/files/7425089/layer0-boundary-00.pptx)\r\n",
+          "createdAt": "2021-10-27T09:55:56Z",
+          "updatedAt": "2021-10-27T09:55:56Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Slides updated with more detailed examples of transponders and muxponders:\r\n\r\n[layer0-boundary-01.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-optical-impairment-topology-yang/files/8255504/layer0-boundary-01.pptx)",
+          "createdAt": "2022-03-15T16:48:02Z",
+          "updatedAt": "2022-03-15T16:48:02Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Need to discuss how/what to model/map for Layer 0 and Layer 1, including the types, functions and capabilities, at each specific layer. This may include: 3R, multiplexing, FEC, encryption, et al. This should not preclude implementation options. It would be useful to look at higher-layer examples (L1/L2/L3). This description/advice would then be documented in a specific document, which is currently undecided - could be existing I-D or new I-D.   ",
+          "createdAt": "2023-09-14T12:51:23Z",
+          "updatedAt": "2023-09-14T12:55:01Z"
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "id": "I_kwDOEaoOG85eoWHU",
+      "title": "Working Group update on open issues and proposed resolution of Flexi-Grid Topology",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/59",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "A few slides summarising the current issues affecting the Flexi-Grid topology document.  \r\n[Open Issues for Flexi-Grid v2.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10756205/Open.Issues.for.Flexi-Grid.v2.pptx)\r\n",
+      "createdAt": "2023-02-16T12:59:12Z",
+      "updatedAt": "2023-05-18T12:25:00Z",
+      "closedAt": "2023-05-18T12:25:00Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Proposed email to AD, Chairs and Working Group. \r\n\r\n>>\r\nDear John, Chairs and Working Group, \r\n\r\nAs you know, the authors of the Flexi-Grid Topology requested to pause the document (before the AD Review) as additional requirements were proposed that would require a substantive change to the Flexi-Grid Topology I-D (draft-ietf-ccamp-flexigrid-yang).\r\n\r\nSeveral authors of the affected I-Ds and related documents have concluded our initial analysis. We feel a new approach (YANG model) may be required to address the requirements for mixed technology environments. Furthermore, we have highlighted these requirements in key uses (Slides) documented in the following GitHub issue (57):\r\n\r\nhttps://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/57\r\n\r\nAs mentioned, a solution may require a new single modular optical model that can be used for multiple technologies, or a new layer-0 optical model with extended capabilities for specific higher-layer technologies, or adapting the existing work-in-progress models. We have not decided which solution to pursue and will seek consensus from the current authors and the wider CCAMP community.\r\n\r\nWe will provide a more detailed update during the CCAMP session at IETF 116, including the following:\r\n\r\n1.            A summary of the technology impacted, requirements and use cases\r\n2.            Which documents are affected?\r\n3.            How to address the requirements and use cases, single modular model or multiple new/updated models? \r\n4.            What do we intend to do with the affected documents (modify or start a new I-D)?\r\n5.            Provide an overview of the new (or modified) YANG model(s) to address the requirements and use case scenarios\r\n6.            Propose a sequence of actions\r\n\r\nDuring the IETF 116 CCAMP meeting, we hope to receive feedback from the wider CCAMP community. \r\n\r\nBR, Dan (on behalf of the Flexi-Grid discussion participants).  \r\n<<",
+          "createdAt": "2023-03-02T12:40:21Z",
+          "updatedAt": "2023-03-02T14:15:49Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Version 3 of the requirements and use case, slides. \r\n\r\n[MLN.Topologies.v3.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10872173/MLN.Topologies.v3.pptx)\r\n",
+          "createdAt": "2023-03-02T14:16:40Z",
+          "updatedAt": "2023-03-02T14:16:40Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "> Version 3 of the requirements and use case, slides.\r\n> \r\n> [MLN.Topologies.v3.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10872173/MLN.Topologies.v3.pptx)\r\n\r\nI would suggest to remove (or to move in backup) the physical layer topology cases:\r\n- it is a new, potentially controversial, requirement which still needs to be discussed and could cause unnecessary opposition to the work; \r\n- it increases the number of scenarios causing loss of focus on the urgent requirements we need to be addressed; \r\n- if we are able to update the current models to be more modular, adding the physical topology in a modular way at a later stage will not be an issue",
+          "createdAt": "2023-03-07T14:19:16Z",
+          "updatedAt": "2023-03-07T14:19:16Z"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "id": "I_kwDOEaoOG85grVRR",
+      "title": "Coexistence of WSON and flexi-grid topology models",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/60",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi",
+        "sergiobelotti"
+      ],
+      "labels": [
+        "question",
+        "agreed"
+      ],
+      "body": "During the call on 2023-03-09, the possibility to use multi-inheritance to support the co-existence of fixed-grid (DWDM and CWDM) and flexi-grid links within the same topology model has been analyzed:\r\n\r\n[current-l0-topology-models-00.txt](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10960139/current-l0-topology-models-00.txt)\r\n",
+      "createdAt": "2023-03-13T17:51:30Z",
+      "updatedAt": "2023-12-20T13:29:50Z",
+      "closedAt": "2023-09-14T12:26:48Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "- [ ] @italobusi @sergiobelotti : provide some text proposal to describe the solution",
+          "createdAt": "2023-05-25T12:37:01Z",
+          "updatedAt": "2023-05-25T12:37:01Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Documentation for deployment use will be available in ietf-ccamp-wg/transport-nbi#108 ",
+          "createdAt": "2023-09-14T12:26:48Z",
+          "updatedAt": "2023-09-14T12:27:00Z"
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "id": "I_kwDOEaoOG85hmv_Q",
+      "title": "Slides for IETF 116 CCAMP Session",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/61",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Slides to provide working group update on status of Flexi-Grid work and next steps. \r\n[Flexi-Grid Update - IETF 116 v2.pdf](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11051291/Flexi-Grid.Update.-.IETF.116.v2.pdf)\r\n[Flexi-Grid Update - IETF 116 v2.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11051292/Flexi-Grid.Update.-.IETF.116.v2.pptx)\r\n",
+      "createdAt": "2023-03-23T13:28:59Z",
+      "updatedAt": "2023-05-18T12:24:41Z",
+      "closedAt": "2023-05-18T12:24:41Z",
+      "comments": []
+    },
+    {
+      "number": 62,
+      "id": "I_kwDOEaoOG85jUe2B",
+      "title": "Check impact of mixed technology use case on OTN YANG models ",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/62",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "To be investigated. ",
+      "createdAt": "2023-04-13T12:22:17Z",
+      "updatedAt": "2023-09-14T12:25:28Z",
+      "closedAt": "2023-09-14T12:25:27Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "At least OTN topology is impacted: https://github.com/haomianzheng/IETF-ACTN-YANG-Model/pull/136",
+          "createdAt": "2023-04-27T11:36:55Z",
+          "updatedAt": "2023-04-27T11:36:55Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Closed, the YANG OTN model is updated. ",
+          "createdAt": "2023-09-14T12:25:27Z",
+          "updatedAt": "2023-09-14T12:25:27Z"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "id": "I_kwDOEaoOG85jWOcx",
+      "title": "Type of node",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/63",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "In a multi-technology network topology instance, there is a need to identify the type of node (e.g., OTN, flexi-grid, ...)\r\n\r\nThere are two options to define the type of node:\r\n1) implicit based on the type of LTPs of the node (e.g., a node is an OTN node if it has at least one OTN LTP)\r\n2) explicit based on some presence containers\r\n\r\nSee: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10510430/new-ml-topology-models-00.txt\r\n\r\nNeed to decide which option to adopt and change the YANG model(s) accordingly\r\n\r\nNote that RFC9093 defines a `wson-node` presence container to explicitly indicate that the node is a WSON node\r\n",
+      "createdAt": "2023-04-13T16:48:04Z",
+      "updatedAt": "2023-09-14T12:24:11Z",
+      "closedAt": "2023-09-14T12:24:11Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "**2023-05-04 Flexi-grid call**\r\n\r\nPreference expressed for option 2\r\n\r\n- [ ] @italobusi update the proposal in PR #65 accordingly",
+          "createdAt": "2023-05-04T12:54:10Z",
+          "updatedAt": "2023-05-11T10:04:32Z"
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "id": "I_kwDOEaoOG85jWP5n",
+      "title": "Type of LTP",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/64",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "In a multi-technology network topology instance, there is a need to identify the type of LTP (e.g., OTN, flexi-grid, ...)\r\n\r\nThere are two options to define the type of LTP:\r\n1) implicit based on the type of Links terminated on the LTP\r\n2) explicit based on some presence containers and the `interface-switching-capability` list\r\n3) implicit when the LTP terminates one or more Links or explicit when the LTP does not terminate any Link (e.g., at the edge of a network domain)\r\n\r\nNotes:\r\n- if solution 1) is adopted:\r\n  1. inter-domain links MUST always be reported as open-ended Links (to report the type of Link)\r\n  2. the `interface-switching-capability` list, defined in RFC8795, is always empty\r\n- if solution 2) is adopted there will be duplication of information between the type of Link and the type of LTP when the LTP terminates one or more Links\r\n\r\nSee: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/10510430/new-ml-topology-models-00.txt\r\n\r\nNeed to decide which option to adopt and change the YANG model(s) accordingly\r\n",
+      "createdAt": "2023-04-13T16:52:43Z",
+      "updatedAt": "2023-12-20T13:28:05Z",
+      "closedAt": "2023-09-14T12:23:52Z",
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Some slides describing the two options as discussed during the call on 2023-04-27: [inter-domain-ltp-00.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11371091/inter-domain-ltp-00.pptx)\r\n",
+          "createdAt": "2023-05-02T08:15:10Z",
+          "updatedAt": "2023-05-02T08:15:10Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "**2023-05-25 Weekly call**\r\n\r\nWith option 2 there is duplication of information in the data schema as well as in the data instance (at least for intra-domain links). With option 3 there is duplication only in the data schema but not in the data instance (the information is reported either on the LTP or on the Link terminated by the LTP but not on both).\r\n\r\nWith option 3 we need to describe that the information in the LTP cannot be present in the data instance when the LTP is terminating a Link: need to check if this condition can be enforced with YANG syntax (e.g., with a `when` statement), see issue ietf-ccamp-wg/transport-nbi#107\r\n\r\nAdvantages of option 1 and 3 is to avoid duplicated information in the data instance which can be inconsistent.\r\n\r\nAdvantages of option 2 and 3 is that they allow not reporting open-ended links, which could be hard to define in case the LTP in unconnected.\r\n\r\nAgreement to propose option 3 to CCAMP WG\r\n\r\n- [ ] @italobusi : update the YANG model in PR ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang#65 \r\n",
+          "createdAt": "2023-05-25T12:35:25Z",
+          "updatedAt": "2023-05-25T12:35:25Z"
+        },
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> Some slides describing the two options as discussed during the call on 2023-04-27: [inter-domain-ltp-00.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11371091/inter-domain-ltp-00.pptx)\r\n\r\nI think we should update the slides considering also Option 3. We can exploit today's meeting to adjourn that together.",
+          "createdAt": "2023-06-15T11:06:38Z",
+          "updatedAt": "2023-06-15T11:06:38Z"
+        },
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> **2023-05-25 Weekly call**\r\n> \r\n> With option 2 there is duplication of information in the data schema as well as in the data instance (at least for intra-domain links). With option 3 there is duplication only in the data schema but not in the data instance (the information is reported either on the LTP or on the Link terminated by the LTP but not on both).\r\n> \r\n> With option 3 we need to describe that the information in the LTP cannot be present in the data instance when the LTP is terminating a Link: need to check if this condition can be enforced with YANG syntax (e.g., with a `when` statement), see issue ietf-ccamp-wg/transport-nbi#107\r\n> \r\n> Advantages of option 1 and 3 is to avoid duplicated information in the data instance which can be inconsistent.\r\n> \r\n> Advantages of option 2 and 3 is that they allow not reporting open-ended links, which could be hard to define in case the LTP in unconnected.\r\n> \r\n> Agreement to propose option 3 to CCAMP WG\r\n> \r\n> * [ ]  @italobusi : update the YANG model in PR [Updates to support multi-layer topology instances\u00a0#65](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/65)\r\n\r\nOption 3 means that in case of inter-domain link and then the need to use LTP information you need presence container or just using interface-switching-capabilitity-list grouping or both?\r\n",
+          "createdAt": "2023-06-15T11:10:13Z",
+          "updatedAt": "2023-06-15T11:10:13Z"
+        },
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> Some slides describing the two options as discussed during the call on 2023-04-27: [inter-domain-ltp-00.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11371091/inter-domain-ltp-00.pptx)\r\n\r\n@all : I've tried to add a slide of summary and explanation , one slide for legenda and one more since the options are 3.\r\n@italobusi : please check if the message is correct\r\n[inter-domain-ltp-01 (2).pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11817715/inter-domain-ltp-01.2.pptx)\r\n",
+          "createdAt": "2023-06-21T12:55:54Z",
+          "updatedAt": "2023-06-21T12:55:54Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Need to develop text that describes how the multi-technology single instance will be used and we can then decide where to place the text, in the flexi-grid topo I-D, another I-D, all technology (Ethernet, OTN, MPLS, et al.) I-Ds?",
+          "createdAt": "2023-06-22T12:36:50Z",
+          "updatedAt": "2023-06-22T12:36:50Z"
+        },
+        {
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I've updated the slide for what I remembered form the last week discussion.\r\n[inter-domain-ltp-02.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11904517/inter-domain-ltp-02.pptx)\r\n",
+          "createdAt": "2023-06-29T10:01:12Z",
+          "updatedAt": "2023-06-29T10:01:12Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "We have simplified a bit the slides to focus the description only to intra-domain and inter-domain links without describing how the MDSC is processing the information:\r\n\r\n[inter-domain-ltp-03.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/11996106/inter-domain-ltp-03.pptx)\r\n\r\nCo-authored-by: sergio belotti <sergio.belotti@nokia.com>\r\n",
+          "createdAt": "2023-07-09T21:25:43Z",
+          "updatedAt": "2023-07-09T21:25:53Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "This is now referenced by ietf-ccamp-wg/transport-nbi#107 ",
+          "createdAt": "2023-09-14T12:23:53Z",
+          "updatedAt": "2023-09-14T12:23:53Z"
+        }
+      ]
+    },
+    {
+      "number": 67,
+      "id": "I_kwDOEaoOG85rdh-i",
+      "title": "Prepare slides for IETF 117",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/67",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Draft slides for WG presentation. \r\n[Flexi-Grid Update - IETF 117 v1.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/12039280/Flexi-Grid.Update.-.IETF.117.v1.pptx)\r\n",
+      "createdAt": "2023-07-13T12:19:08Z",
+      "updatedAt": "2023-09-14T12:00:51Z",
+      "closedAt": "2023-09-14T12:00:51Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Latest slide deck to be discussed on today's Flexi-Grid call. \r\n[Flexi-Grid Update - IETF 117 v4.pptx](https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/files/12105481/Flexi-Grid.Update.-.IETF.117.v4.pptx)\r\n",
+          "createdAt": "2023-07-20T11:24:18Z",
+          "updatedAt": "2023-07-20T11:24:18Z"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "id": "I_kwDOEaoOG85xCWIx",
+      "title": "Chase authors of other technology I-Ds impacted by multi-technology support",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/68",
+      "state": "CLOSED",
+      "author": "danielkinguk",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "danielkinguk",
+        "italobusi",
+        "sergiobelotti"
+      ],
+      "labels": [],
+      "body": "Need to chase authors of...\r\n\r\n- Microwave Topology (CCAMP)\r\nWaiting on review of new text, before submission of new version. \r\n\r\n- Ethernet TE Topology (CCAMP)\r\nDraft expired, waiting for review of proposed changes. \r\n\r\n- MPLS-TE  (TEAS)\r\nComments outstanding from Adrian, will need to update and submit new version. \r\n",
+      "createdAt": "2023-09-14T12:12:53Z",
+      "updatedAt": "2024-01-11T13:15:11Z",
+      "closedAt": "2024-01-11T13:15:11Z",
+      "comments": [
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Just checking to see what documents are impacted. I think we will also need to consider changing the name of core technology topology I-D. Can discuss on next Flexi-Grid call.",
+          "createdAt": "2024-01-11T12:23:25Z",
+          "updatedAt": "2024-01-11T12:23:25Z"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "id": "I_kwDOEaoOG85x7fNC",
+      "title": "Name for the channel spacing type",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/71",
+      "state": "OPEN",
+      "author": "sergiobelotti",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "There is a wrong definition in 9093 about channel spacing in the context of flexible grid. \r\nSee the issue in RFC9093-bis https://github.com/ietf-ccamp-wg/ietf-ccamp-layer0-types-ext-RFC9093-bis/issues/56\r\n",
+      "createdAt": "2023-09-25T12:37:26Z",
+      "updatedAt": "2023-12-21T13:26:31Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "Need to import the l0-types from RFC9093-bis: this creates a dependency between the flexi-grid topology and RFC9093-bis\r\n",
+          "createdAt": "2023-12-14T13:22:09Z",
+          "updatedAt": "2023-12-14T13:22:09Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "YANG model updated in PR #70 \r\n\r\nNeed also to update the reference in the I-D: to be discussed with @danielkinguk \r\n",
+          "createdAt": "2023-12-15T14:50:17Z",
+          "updatedAt": "2023-12-15T14:50:17Z"
+        },
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "> Need also to update the reference in the I-D: to be discussed with @danielkinguk\r\n\r\n- [ ] @italobusi : update the I-D accordingly",
+          "createdAt": "2023-12-21T13:26:30Z",
+          "updatedAt": "2023-12-21T13:26:30Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "MDExOlB1bGxSZXF1ZXN0NDg5MTMwNDQw",
+      "title": "Align with the scope of WSON topology",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/1",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Aligned with the scope of wson-topology (spectrum allocation): see also https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-wson-yang/pull/3\r\n\r\nAligned also with the latest version of layer0-types\r\n\r\nCo-authored-by: danielkinguk <dk@danielking.net>\r\n",
+      "createdAt": "2020-09-18T07:23:00Z",
+      "updatedAt": "2020-09-28T14:04:43Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "7bb1b21d67d9d564b1651e75fbe733c042d48775",
+      "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "wson-alignment",
+      "headRefOid": "691dce37f9bc75857cd2b66a59af96aa458215ab",
+      "closedAt": "2020-09-21T15:55:00Z",
+      "mergedAt": "2020-09-21T15:54:59Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "4ed47bc1ea758db65c7ce22379e36cf3a171efaf"
+      },
+      "comments": [
+        {
+          "author": "haomianzheng",
+          "authorAssociation": "MEMBER",
+          "body": "> In general, the changes are all augmentation without explicit description of the scope of that augmentation: why to add that specific parameter/entity?\r\n> Second, but it is not a problem of flex-grid, the module is using l0-types definitons , not clear and that need to be completed with better description. I put comment along the file.\r\n\r\nA question for clarification on the first point, are we looking for 'why to add' or 'what to be added'? I am preferring the latter as it makes sense to explain how the augmentation is done and what can be achieved by providing guidances. To answer 'why' it's a problem more to generic TE models, not tech-specific models. \r\n\r\nI agree that we should give more explicit descriptions. The proper place is in this model, not in ietf-layer0-types. Once we confirm which grouping should be used, we need to indicate those leaf/list/container usage in the description section of this model. ",
+          "createdAt": "2020-09-21T02:17:52Z",
+          "updatedAt": "2020-09-21T02:17:52Z"
+        },
+        {
+          "author": "agva123",
+          "authorAssociation": "NONE",
+          "body": "Requested changes were discussed and addressed by Italo's commits. ",
+          "createdAt": "2020-09-21T15:45:41Z",
+          "updatedAt": "2020-09-21T15:45:41Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTA5MjMx",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T14:18:32Z",
+          "updatedAt": "2020-09-18T14:18:33Z",
+          "comments": [
+            {
+              "originalPosition": 482,
+              "body": "Two comments here:\r\n1) this is related to l0-types:l0-label-range-info: the  definition in l0-types is very confusing. The term label is misleading, I know the need for alignment with teas-topology, but a more clear description of which information is provided in the grouping is needed . \r\n2) Why you need to augment LTP source netry of connectiivty matrix with grid information? I possible to add  a brief description of the technical scope : since the term (label) is already misleading at least a clear description is needed. ",
+              "createdAt": "2020-09-18T14:18:32Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTMzMDI4",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T14:45:26Z",
+          "updatedAt": "2020-09-18T14:45:26Z",
+          "comments": [
+            {
+              "originalPosition": 511,
+              "body": "see comment above. ",
+              "createdAt": "2020-09-18T14:45:26Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTQxNTM0",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T14:55:17Z",
+          "updatedAt": "2020-09-18T14:55:17Z",
+          "comments": [
+            {
+              "originalPosition": 569,
+              "body": "Need a clear description of the scope of the augmentation with l0-label-range-info.\r\n",
+              "createdAt": "2020-09-18T14:55:17Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTQxODg5",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T14:55:42Z",
+          "updatedAt": "2020-09-18T14:55:42Z",
+          "comments": [
+            {
+              "originalPosition": 613,
+              "body": "same as previous comment",
+              "createdAt": "2020-09-18T14:55:42Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTQyMTg4",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T14:56:01Z",
+          "updatedAt": "2020-09-18T14:56:01Z",
+          "comments": [
+            {
+              "originalPosition": 642,
+              "body": "same comment",
+              "createdAt": "2020-09-18T14:56:01Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTQ2MTUw",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T15:00:30Z",
+          "updatedAt": "2020-09-18T15:00:30Z",
+          "comments": [
+            {
+              "originalPosition": 689,
+              "body": "Also for Local Link Connectivity List entries, it is needed an explanation of the scope of the augmentation with l0-labe-range-info. This comment is valid also of the previous augmentation of TTP.",
+              "createdAt": "2020-09-18T15:00:30Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTQ5Nzcz",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T15:04:58Z",
+          "updatedAt": "2020-09-18T15:04:58Z",
+          "comments": [
+            {
+              "originalPosition": 716,
+              "body": "Again , due to the misleading name , it is not clear the intention of this specific augmentation: label-range is in fact just information regarding the grid type",
+              "createdAt": "2020-09-18T15:04:58Z",
+              "updatedAt": "2020-09-21T15:42:07Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTkyNjc3",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T15:58:41Z",
+          "updatedAt": "2020-09-18T15:58:41Z",
+          "comments": [
+            {
+              "originalPosition": 744,
+              "body": "Also for te-link it is needed to have a description of the scope of this augmentation",
+              "createdAt": "2020-09-18T15:58:41Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTk5MTU1",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T16:07:10Z",
+          "updatedAt": "2020-09-18T16:07:10Z",
+          "comments": [
+            {
+              "originalPosition": 805,
+              "body": "l0-types:flexi-grid-label-start-end is practically the n value to claculate nominal central frequency.  Is possible to have a description of the meaning of this augmentation?",
+              "createdAt": "2020-09-18T16:07:10Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNTk5Njg5",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T16:07:58Z",
+          "updatedAt": "2020-09-18T16:07:59Z",
+          "comments": [
+            {
+              "originalPosition": 832,
+              "body": "same as previous comment.",
+              "createdAt": "2020-09-18T16:07:58Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNjA0MzQx",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T16:14:16Z",
+          "updatedAt": "2020-09-18T16:14:16Z",
+          "comments": [
+            {
+              "originalPosition": 884,
+              "body": "Again two problems:\r\n1)  Augmentation description \r\n2) In l0-types  flexi-grid-label-hop description is not clear : what does it mean flexi grid path label ??  the content of the grouping seems to represent the frequency slot (n and m parameters for nominal central frequency and slot width).  ",
+              "createdAt": "2020-09-18T16:14:16Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNjEwMzY2",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-18T16:22:51Z",
+          "updatedAt": "2020-09-18T16:22:51Z",
+          "comments": [
+            {
+              "originalPosition": 1030,
+              "body": "Augmentation description and misleading term for flexi-grid-label-start-end: it is expecting two labels but instead is just one",
+              "createdAt": "2020-09-18T16:22:51Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkxNjEzNjYy",
+          "commit": {
+            "abbreviatedOid": "1c6f855"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "CHANGES_REQUESTED",
+          "body": "In general, the changes are all augmentation without explicit description of the scope of that augmentation: why to add that specific parameter/entity?\r\nSecond, but it is not a problem of flex-grid, the module is using l0-types definitons , not clear and that need to be completed with better description. I put comment along the file.",
+          "createdAt": "2020-09-18T16:27:35Z",
+          "updatedAt": "2020-09-18T16:27:35Z",
+          "comments": []
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyMjQ3MTg2",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "haomianzheng",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T01:50:29Z",
+          "updatedAt": "2020-09-21T01:50:29Z",
+          "comments": [
+            {
+              "originalPosition": 482,
+              "body": "A follow up question here: \r\nShall we use the grouping 'l0-label-range-info'? or 'flexi-grid-label-range-info'? both of them are defined in ietf-layer0-types, and I am preferring the latter, proposing a GLOBAL replacement of 'uses l0-types:l0-label-range-info' to 'uses l0-types:flexi-grid-label-range-info'. \r\n\r\nChecking the details of the two groupings: \r\nl0-label-range-info: provide grid-type (expected to be flexi-grid-dwdm here) and the priority in RFC4203; \r\nflexi-grid-label-range-info: include all l0-label-range-info, and also include SWG and min/max slot width factor, this grouping is specially designed for this module. \r\n\r\nMoreover, if we don't use flexi-grid-label-range-info in this module (as the current shape), we should remove it from layer0-types. ",
+              "createdAt": "2020-09-21T01:50:29Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyMjQ3MzM3",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "haomianzheng",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T01:51:32Z",
+          "updatedAt": "2020-09-21T01:51:32Z",
+          "comments": [
+            {
+              "originalPosition": 511,
+              "body": "same above. ",
+              "createdAt": "2020-09-21T01:51:32Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyMjQ5NjQz",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "haomianzheng",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T02:07:25Z",
+          "updatedAt": "2020-09-21T02:07:25Z",
+          "comments": [
+            {
+              "originalPosition": 910,
+              "body": "Not a question to this model but to flexi-grid scope: are we supporting super channel? We are not doing this in GMPLS flexi-grid, so that we suggest to remove it. \r\n\r\nThen we may need to change the layer0-types, and keep flexi-grid-label-hop to contain only single channel. (Let's report in the interim and then check whether we change l0-types or not. )",
+              "createdAt": "2020-09-21T02:07:25Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyMjUwODA4",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "haomianzheng",
+          "authorAssociation": "MEMBER",
+          "state": "CHANGES_REQUESTED",
+          "body": "Comments provided with changes requesting... ",
+          "createdAt": "2020-09-21T02:14:49Z",
+          "updatedAt": "2020-09-21T02:14:49Z",
+          "comments": []
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjc3ODM1",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:42:43Z",
+          "updatedAt": "2020-09-21T14:42:43Z",
+          "comments": [
+            {
+              "originalPosition": 482,
+              "body": "Regarding Sergio's comment (https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/1/files?file-filters%5B%5D=.yang#r490981902), it seems worthwhile describing the concept of layer0 labels in layer0-types-ext draft:\r\n\r\nhttps://github.com/ietf-ccamp-wg/ietf-ccamp-layer0-types-ext/issues/5\r\n\r\nRegarding Haomain's comment (https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/1/files?file-filters%5B%5D=.yang#r491763723), the l0-types:flexi-grid-label-range-info grouping should be used: \r\n\r\nhttps://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/1/commits/85704e1b86892b75fc63f15b649858662320a2ed",
+              "createdAt": "2020-09-21T14:42:43Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjgwMjU4",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:43:48Z",
+          "updatedAt": "2020-09-21T14:43:48Z",
+          "comments": [
+            {
+              "originalPosition": 569,
+              "body": "See comment above",
+              "createdAt": "2020-09-21T14:43:48Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjgyMzA0",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:44:44Z",
+          "updatedAt": "2020-09-21T14:44:44Z",
+          "comments": [
+            {
+              "originalPosition": 689,
+              "body": "See comment above\r\n",
+              "createdAt": "2020-09-21T14:44:44Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjgyODU3",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:45:11Z",
+          "updatedAt": "2020-09-21T14:45:11Z",
+          "comments": [
+            {
+              "originalPosition": 716,
+              "body": "See comment above",
+              "createdAt": "2020-09-21T14:45:11Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjgzMzEz",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:45:36Z",
+          "updatedAt": "2020-09-21T14:45:37Z",
+          "comments": [
+            {
+              "originalPosition": 744,
+              "body": "See comment above\r\n",
+              "createdAt": "2020-09-21T14:45:37Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjg3MTQw",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:47:54Z",
+          "updatedAt": "2020-09-21T14:47:54Z",
+          "comments": [
+            {
+              "originalPosition": 805,
+              "body": "See comment above",
+              "createdAt": "2020-09-21T14:47:54Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjkwMDc4",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:49:05Z",
+          "updatedAt": "2020-09-21T14:49:06Z",
+          "comments": [
+            {
+              "originalPosition": 832,
+              "body": "See comment above\r\n",
+              "createdAt": "2020-09-21T14:49:06Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjkxMTM4",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:49:32Z",
+          "updatedAt": "2020-09-21T14:49:32Z",
+          "comments": [
+            {
+              "originalPosition": 884,
+              "body": "Description in layer0-types to be fixed: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-layer0-types/pull/13\r\n",
+              "createdAt": "2020-09-21T14:49:32Z",
+              "updatedAt": "2020-09-21T15:51:03Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNjkxOTU0",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:49:52Z",
+          "updatedAt": "2020-09-21T14:49:52Z",
+          "comments": [
+            {
+              "originalPosition": 1030,
+              "body": "Description in layer0-types to be fixed: https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-layer0-types/pull/13\r\n",
+              "createdAt": "2020-09-21T14:49:52Z",
+              "updatedAt": "2020-09-21T15:51:12Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDkyNzA0NDg2",
+          "commit": {
+            "abbreviatedOid": "6e195e8"
+          },
+          "author": "haomianzheng",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-21T14:57:33Z",
+          "updatedAt": "2020-09-21T14:57:33Z",
+          "comments": [
+            {
+              "originalPosition": 910,
+              "body": "> Not a question to this model but to flexi-grid scope: are we supporting super channel? We are not doing this in GMPLS flexi-grid, so that we suggest to remove it.\r\n> \r\n> Then we may need to change the layer0-types, and keep flexi-grid-label-hop to contain only single channel. (Let's report in the interim and then check whether we change l0-types or not. )\r\n\r\nagreed to withdraw the comment, i.e., include the super channel case in the module. ",
+              "createdAt": "2020-09-21T14:57:33Z",
+              "updatedAt": "2020-09-21T15:42:08Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDk3MzQ2MDcz",
+          "commit": {
+            "abbreviatedOid": "691dce3"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2020-09-28T09:38:41Z",
+          "updatedAt": "2020-09-28T09:38:42Z",
+          "comments": [
+            {
+              "originalPosition": 482,
+              "body": "@italobusi : Agree, and commented in https://github.com/ietf-ccamp-wg/ietf-ccamp-layer0-types-ext/issues/5#issuecomment-699895542\r\n\r\nAbout the second comment: ideally both ODU , wson, and flexgrid should have the same groupings for the label obviously with different naming .\r\nE.g. for flexgrid, I see flex-grid-label-range-info, as in ODU there is otn-label-range-info grouping, I see flex-grid-label-step as for ODU there is otn-label-step grouping. But for example flexgrid frequency slot , as reported in RFC7698, is defined by  nominal central frequency and slot width, while here is reported flex-grid-frequency-slot as  just M value for slot-width, that is misleading. We can take into account in l0-types-ext draft to define better the usage of all these groupings.",
+              "createdAt": "2020-09-28T09:38:42Z",
+              "updatedAt": "2020-09-28T14:04:43Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "MDExOlB1bGxSZXF1ZXN0NTA2Njc3ODcx",
+      "title": "Fixing minor issues",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/2",
+      "state": "MERGED",
+      "author": "dperdices",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "While checking RFC 8407 (YANG Guidelines) and YANGDOCTORS reviews of draft-ietf-ccamp-layer0-types and draft-ietf-ccamp-wson-yang, I found some minor issues that can be easily fixed. Find next the changes we propose to fix them:\r\n\r\n- In contact section, one of the mailto links was not a proper link.\r\n- Description of the YANG module has been extended.\r\n- Yang => YANG.\r\n- Fixed some inconsistencies with the capitalization of Flexi-grid. Now, it is consistent with draft-ietf-ccamp-layer0-types.\r\n- First occurrence of acronyms has been expanded.\r\n- All descriptions end with a period/full stop.",
+      "createdAt": "2020-10-20T10:34:23Z",
+      "updatedAt": "2021-02-11T11:34:15Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "4ed47bc1ea758db65c7ce22379e36cf3a171efaf",
+      "headRepository": "dperdices/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "master",
+      "headRefOid": "dee2caccbddd16a44529cecfd54a937ee984675e",
+      "closedAt": "2021-02-11T11:34:15Z",
+      "mergedAt": "2021-02-11T11:34:15Z",
+      "mergedBy": "danielkinguk",
+      "mergeCommit": {
+        "oid": "b39b150868b8203cc7fe7dcc98e3738e2ac9678e"
+      },
+      "comments": [
+        {
+          "author": "dperdices",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "As pointed out by Jorge, [RFC7698](https://tools.ietf.org/html/rfc7698) do already use a naming convention for flexi-grid. I changed the description of one of the augments thanks to Italo comments about te-node-attributes in last meeting.",
+          "createdAt": "2020-10-22T09:02:28Z",
+          "updatedAt": "2020-10-22T09:10:54Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 37,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njk0MTg1Mzc5",
+      "title": "Align YANG model with draft-ietf-ccamp-flexigrid-yang-10",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/37",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Align with the YANG model in https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-flexigrid-yang-10",
+      "createdAt": "2021-07-21T08:59:31Z",
+      "updatedAt": "2021-09-30T12:11:57Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "37aa8c588cd504a859579948cf1289fa54d1cf4d",
+      "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "yang-align",
+      "headRefOid": "ade34d43496cc099be012f3dba2e293b5a544d6b",
+      "closedAt": "2021-09-30T12:11:43Z",
+      "mergedAt": "2021-09-30T12:11:43Z",
+      "mergedBy": "danielkinguk",
+      "mergeCommit": {
+        "oid": "1d3b0a0bbb15f5b613579109e2154410fbae5746"
+      },
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "body": "@danielkinguk : why the revision date is set to 2020-02-22? Should we change it to a 2021 date?\r\n",
+          "createdAt": "2021-07-21T09:00:15Z",
+          "updatedAt": "2021-07-21T09:00:15Z"
+        },
+        {
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Yes, that looks like a typo. ",
+          "createdAt": "2021-07-21T09:02:38Z",
+          "updatedAt": "2021-07-21T09:02:38Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 43,
+      "id": "PR_kwDOEaoOG84x-7nq",
+      "title": "Proposed updates to README.md",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/43",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "danielkinguk"
+      ],
+      "labels": [],
+      "body": "Aligned with other repositories\r\n",
+      "createdAt": "2022-02-02T18:16:47Z",
+      "updatedAt": "2022-03-07T08:44:35Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "f379866b16dfbbb24f93b1a00ee81fce0be0b74b",
+      "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "readme",
+      "headRefOid": "ab264ba3d1262f85f7122fb5813ef0592721e1cc",
+      "closedAt": "2022-03-07T08:15:26Z",
+      "mergedAt": "2022-03-07T08:15:26Z",
+      "mergedBy": "danielkinguk",
+      "mergeCommit": {
+        "oid": "4c108aa4faf1f26a8ba08b9abb3bf1e1de5285d1"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 45,
+      "id": "PR_kwDOEaoOG84z9zbo",
+      "title": "Address WG last call comments",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/45",
+      "state": "MERGED",
+      "author": "agva123",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Address WG last call comments\r\n\r\nCo-Authored-By: sergio belotti <sergio.belotti@nokia.com>\r\nCo-Authored-By: italobusi <italo.busi@huawei.com>\r\n",
+      "createdAt": "2022-03-04T16:53:20Z",
+      "updatedAt": "2022-03-07T08:37:56Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "f379866b16dfbbb24f93b1a00ee81fce0be0b74b",
+      "headRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "wg-lc",
+      "headRefOid": "6292ae6a58748e44c8d082413a80ea507230dffd",
+      "closedAt": "2022-03-07T08:14:36Z",
+      "mergedAt": "2022-03-07T08:14:36Z",
+      "mergedBy": "danielkinguk",
+      "mergeCommit": {
+        "oid": "9c536d6aeb17f1154b9195e35cb11a94c437a3aa"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 50,
+      "id": "PR_kwDOEaoOG846y2f0",
+      "title": "Lc review",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/50",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-07-04T12:24:29Z",
+      "updatedAt": "2023-04-26T11:12:29Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "dee2b886e2cb2ab6ce76bbed4d8bafdb6c6b4213",
+      "headRepository": "italobusi/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "lc-review",
+      "headRefOid": "a23114c5d01ca50596f3a04d4a51908f8e064f09",
+      "closedAt": "2022-07-04T12:24:53Z",
+      "mergedAt": "2022-07-04T12:24:53Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "b938e2ec7a430aace30e8c70fa2693321f3d32c5"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 65,
+      "id": "PR_kwDOEaoOG85PRQlD",
+      "title": "Updates to support multi-layer topology instances",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/65",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [
+        "danielkinguk",
+        "italobusi"
+      ],
+      "labels": [],
+      "body": "Updated label-range to indicate it is a flexi-grid range: see #57",
+      "createdAt": "2023-04-27T08:06:43Z",
+      "updatedAt": "2023-07-06T13:18:50Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "b938e2ec7a430aace30e8c70fa2693321f3d32c5",
+      "headRepository": "italobusi/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "ml-topo",
+      "headRefOid": "9d16b9e3a8239ce70a707c05cfa6ec30960922ae",
+      "closedAt": "2023-07-06T13:18:50Z",
+      "mergedAt": "2023-07-06T13:18:50Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "395e40d678e20aa0369ea9ec152dbea42b9ad305"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOEaoOG85UOB2Z",
+          "commit": {
+            "abbreviatedOid": "a19161b"
+          },
+          "author": "italobusi",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-05-04T12:17:25Z",
+          "updatedAt": "2023-05-04T12:17:26Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "```suggestion\r\n     (ietf-te-topology, RFC 9795) based on RFC 7698 and RFC 7699.\r\n```",
+              "createdAt": "2023-05-04T12:17:26Z",
+              "updatedAt": "2023-05-04T12:17:26Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOEaoOG85aX-WS",
+          "commit": {
+            "abbreviatedOid": "0630c55"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-07-06T10:24:33Z",
+          "updatedAt": "2023-07-06T10:24:33Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "id": "PR_kwDOEaoOG85aw2HA",
+      "title": "Remove RWA/RSA from YANG abstract and update layer0-types import",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/70",
+      "state": "MERGED",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated YANG description: fix #54\r\nUpdated import statement for layer0-types: see #71 \r\n",
+      "createdAt": "2023-09-20T09:34:32Z",
+      "updatedAt": "2024-01-11T12:21:45Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "master",
+      "baseRefOid": "395e40d678e20aa0369ea9ec152dbea42b9ad305",
+      "headRepository": "italobusi/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "fix-rwa",
+      "headRefOid": "91faf802b5c4a85772fc1b390946e00af4c8ab5d",
+      "closedAt": "2024-01-11T12:21:45Z",
+      "mergedAt": "2024-01-11T12:21:45Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "143a301550bc52a288a1216d5ad699dcc787da0c"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOEaoOG85hpR4j",
+          "commit": {
+            "abbreviatedOid": "00c1d26"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-09-21T15:54:33Z",
+          "updatedAt": "2023-09-21T15:54:33Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOEaoOG85qWgGh",
+          "commit": {
+            "abbreviatedOid": "91faf80"
+          },
+          "author": "sergiobelotti",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-12-15T14:57:15Z",
+          "updatedAt": "2023-12-15T14:57:15Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOEaoOG85qWiGQ",
+          "commit": {
+            "abbreviatedOid": "91faf80"
+          },
+          "author": "aguoietf",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-12-15T14:59:51Z",
+          "updatedAt": "2023-12-15T14:59:51Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "id": "PR_kwDOEaoOG85kLFUl",
+      "title": "Convert I-D to kramdown",
+      "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/72",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Converted I-D text to kramdown\r\n\r\nIncluded latest version of YANG: see #70 \r\n\r\nUpdated reference to RFC9093-bis: fix #71\r\n\r\nRemoved NMDA statement from the abstract: fix #55 \r\n\r\nUpdated text in Section 4: fix #52 \r\n\r\n---\r\n\r\n[Compare to Working Group Draft](https://author-tools.ietf.org/diff?doc_1=draft-ietf-ccamp-flexigrid-yang&url_2=https://raw.githubusercontent.com/italobusi/draft-ietf-ccamp-flexigrid-yang/kramdown/draft-ietf-ccamp-flexigrid-yang.txt)\r\n",
+      "createdAt": "2024-01-16T10:30:42Z",
+      "updatedAt": "2024-01-16T10:49:30Z",
+      "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
+      "baseRefName": "main",
+      "baseRefOid": "42b837ed8a4b31200e39d51a46ab80e71c16e758",
+      "headRepository": "italobusi/draft-ietf-ccamp-flexigrid-yang",
+      "headRefName": "kramdown",
+      "headRefOid": "8a271f1ce26d802500d3ac9618bb453d57856118",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
