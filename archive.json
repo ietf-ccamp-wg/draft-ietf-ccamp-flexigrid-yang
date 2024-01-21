@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-18T01:00:46.904172+00:00",
+  "timestamp": "2024-01-21T01:06:06.780428+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
   "labels": [
     {
@@ -1244,7 +1244,7 @@
       "id": "I_kwDOEaoOG85TarFc",
       "title": "Update text in Section 4",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/52",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "danielkinguk",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [
@@ -1255,8 +1255,8 @@
       ],
       "body": "Proposed text:\r\n\r\n\"In order to configure a flexi-grid network to interconnect transponders A and E, first of all we have to populate the flexi-grid    topology YANG model with all elements in the network:\"",
       "createdAt": "2022-10-06T12:18:06Z",
-      "updatedAt": "2023-12-20T13:26:26Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-19T16:57:59Z",
+      "closedAt": "2024-01-19T16:57:59Z",
       "comments": []
     },
     {
@@ -1302,7 +1302,7 @@
       "id": "I_kwDOEaoOG85TbU17",
       "title": "Remove NMDA statement from the abstract",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/55",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "italobusi",
       "authorAssociation": "MEMBER",
       "assignees": [
@@ -1313,8 +1313,8 @@
       ],
       "body": "Dhruv suggests \"removing the NMDA statement from the abstract, you have it covered in the Introduction\"\r\n\r\nI have checked RFC8407 and it seems that the NMDA statement is needed only in the Introduction:\r\n\r\nhttps://datatracker.ietf.org/doc/html/rfc8407#section-3.5",
       "createdAt": "2022-10-06T13:49:05Z",
-      "updatedAt": "2023-12-20T13:26:46Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-19T16:57:59Z",
+      "closedAt": "2024-01-19T16:57:59Z",
       "comments": []
     },
     {
@@ -1784,7 +1784,7 @@
       "id": "I_kwDOEaoOG85x7fNC",
       "title": "Name for the channel spacing type",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/issues/71",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "sergiobelotti",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [
@@ -1795,8 +1795,8 @@
       ],
       "body": "There is a wrong definition in 9093 about channel spacing in the context of flexible grid. \r\nSee the issue in RFC9093-bis https://github.com/ietf-ccamp-wg/ietf-ccamp-layer0-types-ext-RFC9093-bis/issues/56\r\n",
       "createdAt": "2023-09-25T12:37:26Z",
-      "updatedAt": "2023-12-21T13:26:31Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-19T16:57:58Z",
+      "closedAt": "2024-01-19T16:57:58Z",
       "comments": [
         {
           "author": "italobusi",
@@ -2716,26 +2716,55 @@
       "id": "PR_kwDOEaoOG85kLFUl",
       "title": "Convert I-D to kramdown",
       "url": "https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang/pull/72",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "italobusi",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Converted I-D text to kramdown\r\n\r\nIncluded latest version of YANG: see #70 \r\n\r\nUpdated reference to RFC9093-bis: fix #71\r\n\r\nRemoved NMDA statement from the abstract: fix #55 \r\n\r\nUpdated text in Section 4: fix #52 \r\n\r\n---\r\n\r\n[Compare to Working Group Draft](https://author-tools.ietf.org/diff?doc_1=draft-ietf-ccamp-flexigrid-yang&url_2=https://raw.githubusercontent.com/italobusi/draft-ietf-ccamp-flexigrid-yang/kramdown/draft-ietf-ccamp-flexigrid-yang.txt)\r\n",
       "createdAt": "2024-01-16T10:30:42Z",
-      "updatedAt": "2024-01-16T10:49:30Z",
+      "updatedAt": "2024-01-19T16:58:41Z",
       "baseRepository": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
       "baseRefName": "main",
       "baseRefOid": "42b837ed8a4b31200e39d51a46ab80e71c16e758",
       "headRepository": "italobusi/draft-ietf-ccamp-flexigrid-yang",
       "headRefName": "kramdown",
       "headRefOid": "8a271f1ce26d802500d3ac9618bb453d57856118",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-01-19T16:57:57Z",
+      "mergedAt": "2024-01-19T16:57:57Z",
+      "mergedBy": "danielkinguk",
+      "mergeCommit": {
+        "oid": "eb3fa02ca1be0f938de91c3ea19326e000a7ad7d"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOEaoOG85tQyRL",
+          "commit": {
+            "abbreviatedOid": "8a271f1"
+          },
+          "author": "aguoietf",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-01-19T15:54:30Z",
+          "updatedAt": "2024-01-19T15:54:30Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOEaoOG85tRWMS",
+          "commit": {
+            "abbreviatedOid": "8a271f1"
+          },
+          "author": "danielkinguk",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "Looks good. ",
+          "createdAt": "2024-01-19T16:58:41Z",
+          "updatedAt": "2024-01-19T16:58:41Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
