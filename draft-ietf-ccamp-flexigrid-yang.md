@@ -196,7 +196,7 @@ prefixes from {{!I-D.ietf-ccamp-rfc9093-bis}}, {{!RFC8345}}, and {{!RFC8795}}.
 | Prefix      | YANG module              | Reference       |
 |-------------|--------------------------|-----------------+
 | l0-types    | ietf-layer0-types        | \[RFCYYYY]      |
-| flexgt      | ietf-flexi-grid-topology | RFCXXXX         |
+| flexgt      | ietf-flexi-grid-topology | RFC XXXX        |
 | nw          | ietf-network             | {{!RFC8345}}    |
 | nt          | ietf-network-topology    | {{!RFC8345}}    |
 | tet         | ietf-te-topology         | {{!RFC8795}}    |
