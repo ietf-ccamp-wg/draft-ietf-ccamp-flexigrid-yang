@@ -25,10 +25,12 @@ venue:
 
 author:
   -
+    ins: J.E. Lopez de Vergara
     name: Jorge E. Lopez de Vergara Mendez
     org: Naudit HPCN
     email: jorge.lopez_vergara@uam.es
   -
+    ins: D. Perdices Burrero
     name: Daniel Perdices Burrero
     org: Universidad Autonoma de Madrid
     email: daniel.perdices@uam.es
