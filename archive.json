@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-03-05T00:56:12.515599+00:00",
+  "timestamp": "2024-03-07T00:47:01.337586+00:00",
   "repo": "ietf-ccamp-wg/draft-ietf-ccamp-flexigrid-yang",
   "labels": [
     {
@@ -1450,9 +1450,9 @@
       "author": "italobusi",
       "authorAssociation": "MEMBER",
       "assignees": [
+        "EstherLerouzic",
         "italobusi",
         "sergiobelotti",
-        "ggalimba56",
         "ggrammel",
         "dieterbeller"
       ],
@@ -1461,7 +1461,7 @@
       ],
       "body": "Since 3R modelling is in the scope of this document, I think that the layer 1 functionality of the transponders are also in the scope of this document.\r\n\r\nFor example, the inverse multiplexing and FEC are layer 1 functionality of the transponders which are in the scope of this document.\r\n\r\nMaybe it is a terminology issue. IMHO, the aggregation (multiplexing) of client layer signals is performed by muxponders and not by transponders. A muxponder can be modelled as a layer 1 functionality providing the aggregation (multiplexing) of client layer signals and a transponder functionality. In this case, I agree that the aggregation (multiplexing) of client layer signals is outside the scope of this document.\r\n\r\nI do not recall if these issues have been all addressed in the 3R model (need to double check).\r\n\r\nMy suggestion is to keep the text as it is now and to track this as an issue for discussion after IETF 112.\r\n\r\n_Originally posted by @italobusi in https://github.com/ietf-ccamp-wg/draft-ietf-ccamp-optical-impairment-topology-yang/pull/94#discussion_r734500969_",
       "createdAt": "2021-10-27T09:55:02Z",
-      "updatedAt": "2024-02-29T13:17:06Z",
+      "updatedAt": "2024-03-05T13:41:59Z",
       "closedAt": null,
       "comments": [
         {
