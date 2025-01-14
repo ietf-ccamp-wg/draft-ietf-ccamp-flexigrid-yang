@@ -5,14 +5,14 @@
 CCAMP Working Group                               J. E. Lopez de Vergara
 Internet-Draft                                               Naudit HPCN
 Intended status: Standards Track                     D. Perdices Burrero
-Expires: 30 July 2024                     Universidad Autonoma de Madrid
+Expires: 18 July 2025                     Universidad Autonoma de Madrid
                                                                  D. King
                                                       Old Dog Consulting
                                                                   Y. Lee
                                                                  Samsung
                                                                 H. Zheng
                                                      Huawei Technologies
-                                                         27 January 2024
+                                                         14 January 2025
 
 
            A YANG Data Model for Flexi-Grid Optical Networks
@@ -59,11 +59,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 30 July 2024.
+   This Internet-Draft will expire on 18 July 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -187,7 +187,7 @@ Table of Contents
             +==========+==========================+===========+
             | l0-types | ietf-layer0-types        | [RFCYYYY] |
             +----------+--------------------------+-----------+
-            | flexgt   | ietf-flexi-grid-topology | RFCXXXX   |
+            | flexgt   | ietf-flexi-grid-topology | RFC XXXX  |
             +----------+--------------------------+-----------+
             | nw       | ietf-network             | [RFC8345] |
             +----------+--------------------------+-----------+
@@ -3108,12 +3108,12 @@ Table of Contents
 10.1.  Normative References
 
    [I-D.ietf-ccamp-rfc9093-bis]
-              Belotti, S., Busi, I., Beller, D., Zheng, H., Le Rouzic,
-              E., Guo, A., and D. King, "A YANG Data Model for Layer 0
-              Types", Work in Progress, Internet-Draft, draft-ietf-
-              ccamp-rfc9093-bis-07, 23 October 2023,
+              Belotti, S., Busi, I., Beller, D., Le Rouzic, E., and A.
+              Guo, "Common YANG Data Types for Layer 0 Networks", Work
+              in Progress, Internet-Draft, draft-ietf-ccamp-rfc9093-bis-
+              12, 4 December 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-
-              rfc9093-bis-07>.
+              rfc9093-bis-12>.
 
    [ITU-T_G.694.1]
               ITU-T Recommendation G.694.1, "Spectral grids for WDM
@@ -3201,9 +3201,9 @@ Table of Contents
               Beller, D., Le Rouzic, E., Belotti, S., Galimberti, G.,
               and I. Busi, "A YANG Data Model for Optical Impairment-
               aware Topology", Work in Progress, Internet-Draft, draft-
-              ietf-ccamp-optical-impairment-topology-yang-14, 23 October
-              2023, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              ccamp-optical-impairment-topology-yang-14>.
+              ietf-ccamp-optical-impairment-topology-yang-17, 21 October
+              2024, <https://datatracker.ietf.org/doc/html/draft-ietf-
+              ccamp-optical-impairment-topology-yang-17>.
 
    [RFC7698]  Gonzalez de Dios, O., Ed., Casellas, R., Ed., Zhang, F.,
               Fu, X., Ceccarelli, D., and I. Hussain, "Framework and
