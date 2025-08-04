@@ -355,7 +355,7 @@ flexi-grid-label-hop and flexi-grid-label-step groupings defined in
 # YANG Model (Tree Structure) for Flexi-Grid Topology
 
 ~~~~ ascii-art
-{::include ./ietf-flexi-grid-topology.tree}
+{::include-fold ./ietf-flexi-grid-topology.tree}
 ~~~~
 {: #fig-flexig-topo-tree artwork-name="ietf-flexi-grid-topology.tree"}
 

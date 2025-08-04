@@ -25,3 +25,5 @@ draft-ietf-ccamp-flexigrid-yang.xml
 package-lock.json
 report.xml
 !requirements.txt
+*.bash
+pretty/
