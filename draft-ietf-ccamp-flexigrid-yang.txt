@@ -5,14 +5,14 @@
 CCAMP Working Group                               J. E. Lopez de Vergara
 Internet-Draft                                               Naudit HPCN
 Intended status: Standards Track                     D. Perdices Burrero
-Expires: 18 July 2025                     Universidad Autonoma de Madrid
+Expires: 5 February 2026                  Universidad Autonoma de Madrid
                                                                  D. King
                                                       Old Dog Consulting
                                                                   Y. Lee
                                                                  Samsung
                                                                 H. Zheng
                                                      Huawei Technologies
-                                                         14 January 2025
+                                                           4 August 2025
 
 
            A YANG Data Model for Flexi-Grid Optical Networks
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 July 2025.
+   This Internet-Draft will expire on 5 February 2026.
 
 Copyright Notice
 
@@ -474,19 +474,19 @@ Table of Contents
                /tet:label-restrictions/tet:label-restriction
                /tet:label-start/tet:te-label/tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:label-restrictions/tet:label-restriction
                /tet:label-end/tet:te-label/tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:label-restrictions/tet:label-restriction
                /tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -496,17 +496,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:underlay/tet:backup-path/tet:path-element/tet:type
@@ -514,17 +514,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:optimizations/tet:algorithm/tet:metric
@@ -535,17 +535,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:optimizations/tet:algorithm/tet:metric
@@ -556,17 +556,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:path-properties/tet:path-route-objects
@@ -575,37 +575,37 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:from/tet:label-restrictions
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:from/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:from/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -614,20 +614,20 @@ Table of Contents
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:to/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:to/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -638,17 +638,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:underlay/tet:backup-path
@@ -657,17 +657,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:optimizations/tet:algorithm
@@ -678,17 +678,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:optimizations/tet:algorithm
@@ -699,17 +699,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:te-node-attributes/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:path-properties
@@ -718,35 +718,35 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:label-restrictions/tet:label-restriction
                /tet:label-start/tet:te-label/tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:label-restrictions/tet:label-restriction
                /tet:label-end/tet:te-label/tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:label-restrictions/tet:label-restriction
                /tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--ro flexi-grid-channel-spacing?   identityref
+          o--ro flexi-grid-channel-spacing?   identityref
           +--ro flexi-ncfg?                   identityref
           +--ro flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -756,17 +756,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:underlay/tet:backup-path/tet:path-element/tet:type
@@ -774,17 +774,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:optimizations/tet:algorithm/tet:metric
@@ -795,17 +795,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:optimizations/tet:algorithm/tet:metric
@@ -816,17 +816,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:path-properties/tet:path-route-objects
@@ -835,37 +835,37 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:from/tet:label-restrictions
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:from/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:from/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--ro flexi-grid-channel-spacing?   identityref
+          o--ro flexi-grid-channel-spacing?   identityref
           +--ro flexi-ncfg?                   identityref
           +--ro flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -874,20 +874,20 @@ Table of Contents
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:to/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:to/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--ro flexi-grid-channel-spacing?   identityref
+          o--ro flexi-grid-channel-spacing?   identityref
           +--ro flexi-ncfg?                   identityref
           +--ro flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -898,17 +898,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:underlay/tet:backup-path
@@ -917,17 +917,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:optimizations/tet:algorithm
@@ -938,17 +938,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:optimizations/tet:algorithm
@@ -959,17 +959,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:information-source-entry/tet:connectivity-matrices
                /tet:connectivity-matrix/tet:path-properties
@@ -978,37 +978,37 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:label-restrictions
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -1019,17 +1019,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:underlay
@@ -1038,17 +1038,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:optimizations
@@ -1059,17 +1059,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:optimizations
@@ -1080,17 +1080,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities/tet:path-properties
@@ -1099,17 +1099,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
@@ -1117,7 +1117,7 @@ Table of Contents
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
@@ -1125,14 +1125,14 @@ Table of Contents
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
                /tet:local-link-connectivity/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nw:node/tet:te
@@ -1144,17 +1144,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
@@ -1164,17 +1164,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
@@ -1186,17 +1186,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
@@ -1208,17 +1208,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nw:node/tet:te
                /tet:tunnel-termination-point
                /tet:local-link-connectivities
@@ -1228,17 +1228,17 @@ Table of Contents
        +--:(flexi-grid)
           +--ro (single-or-super-channel)?
              +--:(single)
-             |  +--ro flexi-n?              l0-types:flexi-n
-             |  +--ro flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--ro subcarrier-flexi-n* [flexi-n]
-             |     +--ro flexi-n    l0-types:flexi-n
-             |     +--ro flexi-m?   l0-types:flexi-m
+             |  +--ro flexi-n?              flexi-n
+             |  +--ro flexi-m?              flexi-m
+             o--:(super)
+             |  o--ro subcarrier-flexi-n* [flexi-n]
+             |     +--ro flexi-n    flexi-n
+             |     +--ro flexi-m?   flexi-m
              +--:(multi)
                 +--ro frequency-slots
                    +--ro frequency-slot* [flexi-n]
-                      +--ro flexi-n    l0-types:flexi-n
-                      +--ro flexi-m?   l0-types:flexi-m
+                      +--ro flexi-n    flexi-n
+                      +--ro flexi-m?   flexi-m
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:te-link-attributes/tet:underlay/tet:primary-path
                /tet:path-element/tet:type/tet:label/tet:label-hop
@@ -1246,17 +1246,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:te-link-attributes/tet:underlay/tet:backup-path
                /tet:path-element/tet:type/tet:label/tet:label-hop
@@ -1264,34 +1264,34 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:te-link-attributes/tet:label-restrictions
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:te-link-attributes/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:te-link-attributes/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
      augment /nw:networks/nw:network/nt:link/tet:te
@@ -1299,18 +1299,18 @@ Table of Contents
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:information-source-entry/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--ro flexi-n?   l0-types:flexi-n
+          +--ro flexi-n?   flexi-n
      augment /nw:networks/nw:network/nt:link/tet:te
                /tet:information-source-entry/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--ro flexi-grid-channel-spacing?   identityref
+          o--ro flexi-grid-channel-spacing?   identityref
           +--ro flexi-ncfg?                   identityref
           +--ro flexi-n-step?                 uint8
      augment /nw:networks/tet:te/tet:templates/tet:link-template
@@ -1320,17 +1320,17 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/tet:te/tet:templates/tet:link-template
                /tet:te-link-attributes/tet:underlay/tet:backup-path
                /tet:path-element/tet:type/tet:label/tet:label-hop
@@ -1338,34 +1338,34 @@ Table of Contents
        +--:(flexi-grid)
           +--rw (single-or-super-channel)?
              +--:(single)
-             |  +--rw flexi-n?              l0-types:flexi-n
-             |  +--rw flexi-m?              l0-types:flexi-m
-             x--:(super)
-             |  +--rw subcarrier-flexi-n* [flexi-n]
-             |     +--rw flexi-n    l0-types:flexi-n
-             |     +--rw flexi-m?   l0-types:flexi-m
+             |  +--rw flexi-n?              flexi-n
+             |  +--rw flexi-m?              flexi-m
+             o--:(super)
+             |  o--rw subcarrier-flexi-n* [flexi-n]
+             |     +--rw flexi-n    flexi-n
+             |     +--rw flexi-m?   flexi-m
              +--:(multi)
                 +--rw frequency-slots
                    +--rw frequency-slot* [flexi-n]
-                      +--rw flexi-n    l0-types:flexi-n
-                      +--rw flexi-m?   l0-types:flexi-m
+                      +--rw flexi-n    flexi-n
+                      +--rw flexi-m?   flexi-m
      augment /nw:networks/tet:te/tet:templates/tet:link-template
                /tet:te-link-attributes/tet:label-restrictions
                /tet:label-restriction/tet:label-start/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/tet:te/tet:templates/tet:link-template
                /tet:te-link-attributes/tet:label-restrictions
                /tet:label-restriction/tet:label-end/tet:te-label
                /tet:technology:
        +--:(flexi-grid)
-          +--rw flexi-n?   l0-types:flexi-n
+          +--rw flexi-n?   flexi-n
      augment /nw:networks/tet:te/tet:templates/tet:link-template
                /tet:te-link-attributes/tet:label-restrictions
                /tet:label-restriction/tet:label-step/tet:technology:
        +--:(flexi-grid)
-          x--rw flexi-grid-channel-spacing?   identityref
+          o--rw flexi-grid-channel-spacing?   identityref
           +--rw flexi-ncfg?                   identityref
           +--rw flexi-n-step?                 uint8
 
@@ -3111,9 +3111,8 @@ Table of Contents
               Belotti, S., Busi, I., Beller, D., Le Rouzic, E., and A.
               Guo, "Common YANG Data Types for Layer 0 Networks", Work
               in Progress, Internet-Draft, draft-ietf-ccamp-rfc9093-bis-
-              12, 4 December 2024,
-              <https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-
-              rfc9093-bis-12>.
+              15, 17 June 2025, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-ccamp-rfc9093-bis-15>.
 
    [ITU-T_G.694.1]
               ITU-T Recommendation G.694.1, "Spectral grids for WDM
@@ -3201,9 +3200,9 @@ Table of Contents
               Beller, D., Le Rouzic, E., Belotti, S., Galimberti, G.,
               and I. Busi, "A YANG Data Model for Optical Impairment-
               aware Topology", Work in Progress, Internet-Draft, draft-
-              ietf-ccamp-optical-impairment-topology-yang-17, 21 October
-              2024, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              ccamp-optical-impairment-topology-yang-17>.
+              ietf-ccamp-optical-impairment-topology-yang-19, 7 July
+              2025, <https://datatracker.ietf.org/doc/html/draft-ietf-
+              ccamp-optical-impairment-topology-yang-19>.
 
    [RFC7698]  Gonzalez de Dios, O., Ed., Casellas, R., Ed., Zhang, F.,
               Fu, X., Ceccarelli, D., and I. Hussain, "Framework and
