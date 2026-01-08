@@ -1,3 +1,4 @@
+*.bash
 *.html
 *.pdf
 *.redxml
@@ -23,7 +24,6 @@ archive.json
 draft-ietf-ccamp-flexigrid-yang.xml
 draft-ietf-ccamp-flexigrid-yang.xml
 package-lock.json
+pretty/
 report.xml
 !requirements.txt
-*.bash
-pretty/
