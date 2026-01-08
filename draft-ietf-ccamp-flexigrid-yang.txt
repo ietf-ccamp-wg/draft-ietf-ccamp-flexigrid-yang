@@ -5,14 +5,14 @@
 CCAMP Working Group                               J. E. Lopez de Vergara
 Internet-Draft                                               Naudit HPCN
 Intended status: Standards Track                     D. Perdices Burrero
-Expires: 5 February 2026                  Universidad Autonoma de Madrid
+Expires: 12 July 2026                     Universidad Autonoma de Madrid
                                                                  D. King
                                                       Old Dog Consulting
                                                                   Y. Lee
                                                                  Samsung
                                                                 H. Zheng
                                                      Huawei Technologies
-                                                           4 August 2025
+                                                          8 January 2026
 
 
            A YANG Data Model for Flexi-Grid Optical Networks
@@ -59,11 +59,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 February 2026.
+   This Internet-Draft will expire on 12 July 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -3109,10 +3109,11 @@ Table of Contents
 
    [I-D.ietf-ccamp-rfc9093-bis]
               Belotti, S., Busi, I., Beller, D., Le Rouzic, E., and A.
-              Guo, "Common YANG Data Types for Layer 0 Networks", Work
-              in Progress, Internet-Draft, draft-ietf-ccamp-rfc9093-bis-
-              15, 17 June 2025, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-ccamp-rfc9093-bis-15>.
+              Guo, "Common YANG Data Types for Layer 0 Optical
+              Networks", Work in Progress, Internet-Draft, draft-ietf-
+              ccamp-rfc9093-bis-19, 3 November 2025,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-
+              rfc9093-bis-19>.
 
    [ITU-T_G.694.1]
               ITU-T Recommendation G.694.1, "Spectral grids for WDM
@@ -3200,9 +3201,9 @@ Table of Contents
               Beller, D., Le Rouzic, E., Belotti, S., Galimberti, G.,
               and I. Busi, "A YANG Data Model for Optical Impairment-
               aware Topology", Work in Progress, Internet-Draft, draft-
-              ietf-ccamp-optical-impairment-topology-yang-19, 7 July
+              ietf-ccamp-optical-impairment-topology-yang-20, 10 October
               2025, <https://datatracker.ietf.org/doc/html/draft-ietf-
-              ccamp-optical-impairment-topology-yang-19>.
+              ccamp-optical-impairment-topology-yang-20>.
 
    [RFC7698]  Gonzalez de Dios, O., Ed., Casellas, R., Ed., Zhang, F.,
               Fu, X., Ceccarelli, D., and I. Hussain, "Framework and
