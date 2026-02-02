@@ -5,14 +5,14 @@
 CCAMP Working Group                               J. E. Lopez de Vergara
 Internet-Draft                                               Naudit HPCN
 Intended status: Standards Track                     D. Perdices Burrero
-Expires: 13 July 2026                     Universidad Autonoma de Madrid
+Expires: 6 August 2026                    Universidad Autonoma de Madrid
                                                                  D. King
                                                       Old Dog Consulting
                                                                   Y. Lee
                                                                  Samsung
                                                                 H. Zheng
                                                      Huawei Technologies
-                                                          9 January 2026
+                                                         2 February 2026
 
 
            A YANG Data Model for Flexi-Grid Optical Networks
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 July 2026.
+   This Internet-Draft will expire on 6 August 2026.
 
 Copyright Notice
 
